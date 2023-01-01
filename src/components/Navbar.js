@@ -7,7 +7,7 @@ const Navbar = () => {
             position: "sticky",
             top: 0
         }} 
-        className='bg-white px-8 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between'>
+        className='bg-white px-8 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between space-between'>
             <div className='flex items-center space-x-4'>
                 <img
                     src = "https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
