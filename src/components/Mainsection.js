@@ -17,7 +17,7 @@ const Mainsection = () => {
             <p className="text-5xl font-bold text-charcoal mb-4">{data.heading}<br /></p>
             <p className="px-4 text-2xl tracking-wide font-semibold text-justify mb-4">{data.text}</p>
           </div>
-          <main className="px-8 pt-4 pb-8 mb-4 lg:px-[calc(vw/12)] grid grid-cols-2 gap-6 bg-white mt-12 bg-opacity-60 rounded-lg">
+          <main className="px-8 pt-4 pb-8 mb-4 lg:px-[calc(100vw/12)] grid grid-cols-2 gap-6 bg-white mt-12 bg-opacity-60 rounded-lg">
             <div className="flex flex-col justify-center items-center">
               <h1 className="text-2xl p-3 font-semiboldtracking-wide">Are You a Caterer?</h1>
               <img
