@@ -19,9 +19,10 @@ const Navbar = () => {
                 </img>
                 <h1 className = "text-2xl font-bold text-red-500 m-4"> CaterBid </h1>
             </div>
-            <div className='flex items-center space-x-4 px-16 '>
-                <button>How it Works</button>
-                <button>About Us</button>
+            <div className='flex items-center space-x-4 px-16'>
+                <button className='font-mont uppercase'>How it Works</button>
+                <p className='font-mont uppercase'>|</p>
+                <button className='font-mont uppercase'>About Us</button>
             </div>
             <div className='space-x-2 flex'>
                 <button className='bg-white rounded-md hover:bg-orange-100 hover:rounded-md text-black font-semibold  px-1 py-1 size-5px'>
