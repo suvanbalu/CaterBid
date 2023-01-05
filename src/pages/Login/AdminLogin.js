@@ -32,12 +32,9 @@ const AdminLogin = () => {
                             className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
-                    <a
-                        href="#"
-                        className="text-xs text-purple-600 hover:underline"
-                    >
+                    <button className="text-xs text-purple-600 hover:underline">
                         Forget Password?
-                    </a>
+                    </button>
                     <div className="mt-6">
                         <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
                             Login
@@ -48,12 +45,11 @@ const AdminLogin = () => {
                 <p className="mt-8 text-xs font-light text-center text-gray-700">
                     {" "}
                     Don't have an account?{" "}
-                    <a
-                        href="#"
-                        className="font-medium text-purple-600 hover:underline"
+                    <button
+                        className="text-xs text-purple-600 hover:underline"
                     >
                         Sign up
-                    </a>
+                    </button>
                 </p>
             </div>
         </div>
