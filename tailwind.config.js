@@ -6,7 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "charcoal": "#F09124",
+        "phorange": "#F09124",
+      },
+      fontFamily: {
+        poppins: ['Poppins', "sans-serif"],
+        mont: ['Montserrat', "sans-serif"],
       }
     },
   },
