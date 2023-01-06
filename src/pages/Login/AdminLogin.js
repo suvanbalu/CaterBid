@@ -5,7 +5,7 @@ const AdminLogin = () => {
     const [Mailid, setMailid] = useState("");
     const [pwd, setpwd] = useState("");
     return (
-        <div className="flex flex-col justify-center min-h-screen overflow-hidden bg-white">
+        <div className="flex flex-col justify-center h-max overflow-hidden bg-white">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
                   Admin Login
