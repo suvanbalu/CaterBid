@@ -5,9 +5,9 @@ import Mainsection from "../components/Mainsection";
 const Home = () => {
   return (
     <React.Fragment>
-      <div className="w-screen h-screen overflow-x-hidden font-sans ">
-        <Navbar />
-        <Mainsection className="w-full" />
+      <div className="w-full h-fulloverflow-hidden font-sans flex flex-col justify-center lg:fixed">
+        <Navbar className="mb-8"/>
+        <Mainsection className="w-full h-full" />
       </div>
     </React.Fragment>
   );
