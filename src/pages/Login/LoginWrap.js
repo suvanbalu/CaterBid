@@ -36,8 +36,8 @@ const LoginWrap = () => {
   return (
    
       <section className="">
-        <div className="h-full w-full px-8 pt-8 items-center">
-          <p className="text-lg uppercase tracking-wider mb-8">Login</p>
+        <div className="items-center w-full h-full px-8 pt-8">
+          <p className="mb-8 text-lg tracking-wider uppercase">Login</p>
           <header className=""> 
             {tabMenuItems.map((item, idx) => {
               return (

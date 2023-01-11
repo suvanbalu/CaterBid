@@ -4,26 +4,26 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className='bg-white px-8 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between top-0 '>
-            <div className='flex items-center space-x-4'>
+        <nav className='bg-white px-8 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between top-0 fixed w-full'>
+            <div className='flex space-x-4 -center'>
                 <img
                     src = "https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-                    className='lg:h-14 px-1 h-10'
+                    className='h-10 px-1 lg:h-14'
                     alt="logo"
                 >
                 </img>
-                <h1 className = "text-2xl font-bold text-red-500 m-4"> CaterBid </h1>
+                <h1 className = "m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
             </div>
-            <div className='flex items-center space-x-4 px-16'>
-                <button className='font-mont uppercase '>How it Works</button>
-                {/* <p className='font-mont uppercase'>|</p> */}
-                <button className='font-mont uppercase'>About Us</button>
+            <div className='flex items-center px-16 space-x-4'>
+                <button className='uppercase font-mont '>How it Works</button>
+                {/* <p className='uppercase font-mont'>|</p> */}
+                <button className='uppercase font-mont'>About Us</button>
             </div>
-            <div className='space-x-2 flex'>
-                <button className='bg-white rounded-md hover:bg-orange-100 hover:rounded-md text-black font-semibold  px-1 py-1 size-5px'>
+            <div className='flex space-x-2'>
+                <button className='px-1 py-1 font-semibold text-black bg-white rounded-md hover:bg-orange-100 hover:rounded-md size-5px'>
                 <Link to='/login'>Login</Link>
                 </button>
-                <button className='bg-white rounded-md hover:bg-orange-100 hover:rounded-md text-black font-semibold  px-1 py-1 size-5px'>
+                <button className='px-1 py-1 font-semibold text-black bg-white rounded-md hover:bg-orange-100 hover:rounded-md size-5px'>
                     Sign Up
                 </button>
             </div>

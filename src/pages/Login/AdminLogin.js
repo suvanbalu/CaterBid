@@ -2,7 +2,7 @@ import React from 'react';
 
 const AdminLogin = () => {
     return (
-        <div className="flex flex-col justify-center min-h-screen overflow-hidden bg-white">
+        <div className="flex flex-col items-center justify-center w-full min-h-screen pb-8 overflow-hidden bg-white lg:fixed lg:pb-24">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
                   Admin Login
