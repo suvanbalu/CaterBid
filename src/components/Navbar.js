@@ -10,25 +10,25 @@ const Navbar = () => {
             top: 0
         }} 
         className='bg-white px-8 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between space-between'>
-            <div className='flex items-center space-x-4'>
+            <div className='flex items-center w-1/3 space-x-4'>
                 <img
                     src = "https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-                    className='h-14 px-1'
+                    className='px-1 h-14'
                     alt="logo"
                 >
                 </img>
-                <h1 className = "text-2xl font-bold text-red-500 m-4"> CaterBid </h1>
+                <h1 className = "m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
             </div>
-            <div className='flex items-center space-x-4 px-16'>
-                <button className='font-mont uppercase'>How it Works</button>
-                <p className='font-mont uppercase'>|</p>
-                <button className='font-mont uppercase'>About Us</button>
+            <div className='flex items-center m-4 space-x-4 w-1/3px-16'>
+                <button className='uppercase font-mont'>How it Works</button>
+                <p className='uppercase font-mont'>|</p>
+                <button className='uppercase font-mont'>About Us</button>
             </div>
-            <div className='space-x-2 flex'>
-                <button className='bg-white rounded-md hover:bg-orange-100 hover:rounded-md text-black font-semibold  px-1 py-1 size-5px'>
+            <div className='flex items-center justify-end w-1/3 space-x-4'>
+                <button className='rounded-md px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 '>
                 <Link to='/login'>Login</Link>
                 </button>
-                <button className='bg-white rounded-md hover:bg-orange-100 hover:rounded-md text-black font-semibold  px-1 py-1 size-5px'>
+                <button className='font-semibold rounded-md px-2 py-1 transition ease-in-out text-red-500 hover:scale-110 duration-150'>
                     Sign Up
                 </button>
             </div>
