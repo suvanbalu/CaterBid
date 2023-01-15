@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Inputfield from "../../components/TextInput"
 
-const AdminLogin = () => {
+const CatererLogin = () => {
     const [Mailid, setMailid] = useState("");
     const [pwd, setpwd] = useState("");
     return (
         <div className="flex flex-col justify-center h-max overflow-hidden bg-white">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
-                  Admin Login
+                  Caterer Login
                 </h1>
                 <form className="mt-6">
                     <div className="mb-2">
@@ -50,4 +50,4 @@ const AdminLogin = () => {
         </div>
     );
 }
-export default AdminLogin;
+export default CatererLogin;

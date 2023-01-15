@@ -1,8 +1,8 @@
 import React, { createContext, useState } from "react";
 import UserLogin from "./UserLogin";
-import AdminLogin from "./AdminLogin";
-
-
+import CatererLogin from "./CatererLogin";
+import {BiArrowBack} from 'react-icons/bi'
+import { Link } from "react-router-dom";
 
 export const LoginWrapTab = createContext();
 
@@ -14,8 +14,8 @@ const LoginWrap = () => {
       
     },
     {
-      text: "Admin Login",
-      tab: <AdminLogin />,
+      text: "Caterer Login",
+      tab: <CatererLogin />,
     },
   ];
 
@@ -37,7 +37,12 @@ const LoginWrap = () => {
    
       <section className="">
         <div className="h-full w-full px-8 pt-8 items-center">
-          <p className="text-lg uppercase tracking-wider mb-8">Login</p>
+          <div className="flex space-x-4 ">
+            <Link to="/">
+            <BiArrowBack size={24}></BiArrowBack>
+            </Link>
+            <p className="text-lg uppercase tracking-wider mb-8">Login</p>
+          </div>
           <header className=""> 
             {tabMenuItems.map((item, idx) => {
               return (
