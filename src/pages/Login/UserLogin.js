@@ -18,7 +18,7 @@ const UserLogin = () => {
                         title="Email"
                         placeholder="Enter Mail ID"
                     />
-
+                    console.log(Mailid);
                     </div>
                     <div className="mb-2">
                     <Inputfield
@@ -28,12 +28,11 @@ const UserLogin = () => {
                         type='password'
                     />
                     </div>
-                    <a
-                        href="#"
+                    <button
                         className="text-xs text-purple-600 hover:underline"
                     >
                         Forget Password?
-                    </a>
+                    </button>
                     <div className="mt-6">
                         <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
                             Login
