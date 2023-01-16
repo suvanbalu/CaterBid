@@ -8,7 +8,7 @@ const Mainsection = () => {
     <section
           style={{
             backgroundImage:
-              "linear-gradient(to right, rgba(220, 229, 230, 0.4), rgba(0, 50, 35, 0.7)), url(https://images.unsplash.com/photo-1526894198609-10b3cdf45c52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1144&q=80)",
+              "linear-gradient(to right, rgba(220, 229, 230, 0.2), rgba(0, 50, 35, 0.7)), url(https://images.unsplash.com/photo-1526894198609-10b3cdf45c52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1144&q=80)",
               backgroundSize : "cover",
               backgroundPosition : "center",
               backgroundRepeat : "no-repeat",
