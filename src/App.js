@@ -5,6 +5,7 @@ import CatererLogin from './pages/Login/CatererLogin'
 import UserLogin from './pages/Login/UserLogin'
 import AboutUs from './pages/AboutUs'
 import Profile from './pages/User/Profile'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />
         <Route path="/User/:userId" element={<Profile /> } />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
