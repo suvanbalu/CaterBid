@@ -27,7 +27,7 @@ const AboutUs = () => {
               <h1 className = "m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
           </div>
     </nav>
-       <section className='bg-black h-screen w-full p-4 flex justify-center'>
+       <section className='bg-gradient-to-b from-slate-800 to-slate-600 h-screen w-full p-4 flex justify-center'>
         <div className='container'>
                 <div className=' about_us_text text-white text-center'>
                     <h2 className='header bold text-4xl p-2'>
@@ -56,11 +56,11 @@ const AboutUs = () => {
 
                             <div className='mt-4 flex justify-center space-x-0'>
                             <Link to= "//www.github.com/suvanbalu">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    class="pointer-events-none h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
                                     
                                     Github
                                     </span>
@@ -69,11 +69,11 @@ const AboutUs = () => {
                             </Link>
 
                             <Link to= "//www.instagram.com/suvan.balu/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
                                     Instagram
                                     </span>
                                 </div>
@@ -82,11 +82,11 @@ const AboutUs = () => {
 
 
                             <Link to= "//www.linkedin.com/in/suvanbalu/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
                                     Linkedln
                                     </span>
                                 </div>
@@ -112,11 +112,11 @@ const AboutUs = () => {
 
                             <div className='mt-4 flex justify-center py-2 px-20'>
                             <Link to= "//www.github.com/asxwin">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    class="pointer-events-none  h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
                                     
                                     Github
                                     </span>
@@ -125,11 +125,11 @@ const AboutUs = () => {
                             </Link>
 
                             <Link to= "//www.instagram.com/ashwin.in/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
                                     Instagram
                                     </span>
                                 </div>
@@ -138,11 +138,11 @@ const AboutUs = () => {
 
 
                             <Link to= "//www.linkedin.com/in/ashwin-v-108068219/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
                                     Linkedin
                                     </span>
                                 </div>
@@ -171,11 +171,11 @@ const AboutUs = () => {
 
                             <div className='mt-4 flex justify-center py-2 px-20'>
                             <Link to= "//www.github.com/shxvani">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    class="pointer-events-none h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
                                     
                                     Github
                                     </span>
@@ -184,11 +184,11 @@ const AboutUs = () => {
                             </Link>
 
                             <Link to= "//www.instagram.com/shxvani/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    class="pointer-events-none h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
                                     Instagram
                                     </span>
                                 </div>
@@ -197,11 +197,11 @@ const AboutUs = () => {
 
 
                             <Link to= "//www.linkedin.com/in/shivani-s-b640241b2/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    class="pointer-events-none h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
                                     Linkedin
                                     </span>
                                 </div>
@@ -229,11 +229,11 @@ const AboutUs = () => {
 
                             <div className='mt-4 flex justify-center py-2 px-20'>
                             <Link to= "//www.github.com/NashitaV">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    class="pointer-events-none h-full w-fit flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
                                     
                                     Github
                                     </span>
@@ -242,11 +242,11 @@ const AboutUs = () => {
                             </Link>
 
                             <Link to= "//www.instagram.com/na_shhhhh/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
                                     Instagram
                                     </span>
                                 </div>
@@ -255,11 +255,11 @@ const AboutUs = () => {
 
 
                             <Link to= "//www.linkedin.com/in/nashita-v-972563219/">
-                            <div class="p-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
                                     Linkedin
                                     </span>
                                 </div>
@@ -319,7 +319,7 @@ const AboutUs = () => {
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none h-full w-fit block text-center justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    class="pointer-events-none h-full w-fit flex text-center justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
                                     Linkedin
                                     </span>
                                 </div>
