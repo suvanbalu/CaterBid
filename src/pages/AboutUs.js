@@ -12,7 +12,7 @@ const AboutUs = () => {
         
        <section className='bg-white h-full w-full p-4 flex justify-center'>
         <div className='container'>
-                <div className='text-center'>
+                <div className=' about_us_text text-center'>
                     <h2 className='header bold text-4xl p-2'>
                         About Us
                     </h2>
@@ -21,9 +21,9 @@ const AboutUs = () => {
                     </br>
                 </div>
                 
-                <div className = 'grid grid-cols-3 text-center space-x-4 lg:grid-cols-5 m-4 h-full w-full p-4 flex justify-center'>
+                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-full w-full justify-center'>
 
-                    <div className='team-item  border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 '>
+                    <div className='suvan team-item  border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 m-2'>
                         
                         <img 
                         src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full"/>
@@ -81,7 +81,7 @@ const AboutUs = () => {
                 
 
                 
-                    <div className='team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='ashwin team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 m-2'>
                         
                         <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
                         <br></br>
@@ -140,7 +140,7 @@ const AboutUs = () => {
 
 
                 
-                    <div className='team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='shivani m-2 team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
                         
                         <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
                         <br></br>
@@ -198,7 +198,7 @@ const AboutUs = () => {
                 
 
                 
-                    <div className='team-item border-black border-2 rounded shodow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='nash m-2 team-item border-black border-2 rounded shodow-md bg-white-500 hover:bg-slate-300'>
                         
                         <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png '  className='team-img rounded-full' alt = "pic"/>
                         <br></br>
@@ -256,7 +256,7 @@ const AboutUs = () => {
                 
 
                 
-                    <div className='team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='sivesh m-2 team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
                         
                         <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full ' alt = "pic"/>
                         <br></br>
@@ -278,7 +278,7 @@ const AboutUs = () => {
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    class="pointer-events-none absolute  h-full w-12 flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
                                     
                                     Github
                                     </span>
@@ -291,7 +291,7 @@ const AboutUs = () => {
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    class="pointer-events-none absolute h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
                                     Instagram
                                     </span>
                                 </div>
