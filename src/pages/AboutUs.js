@@ -38,14 +38,14 @@ const AboutUs = () => {
                     </br>
                 </div>
                 
-                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center'>
+                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white'>
 
-                    <div className='suvan team-item  border-white shadow-md bg-white-500 hover:bg-slate-300 m-2 rounded-2xl border-2 '>
+                    <div className='suvan team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 '>
                         
                         <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
-                        <h3 className='bold text-xl'>Suvan Sathyendira</h3>
-                        <div className='team-info italic'>
+                        <h3 className='bold text-xl '>Suvan Sathyendira</h3>
+                        <div className='team-info italic '>
                             <p>
                                 PSG College of Technology
                             </p>
@@ -109,7 +109,7 @@ const AboutUs = () => {
                                 Ashwin is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-0'>
+                            <div className='mt-4 flex justify-center py-2 px-20'>
                             <Link to= "//www.github.com/asxwin">
                             <div class="p-2">
                                 <div class="group relative w-max">
@@ -154,7 +154,7 @@ const AboutUs = () => {
 
 
                 
-                    <div className='shivani m-2 team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='shivani team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 '>
                         
                     <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
@@ -168,7 +168,7 @@ const AboutUs = () => {
                                 Shivani is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-0'>
+                            <div className='mt-4 flex justify-center py-2 px-20'>
                             <Link to= "//www.github.com/shxvani">
                             <div class="p-2">
                                 <div class="group relative w-max">
@@ -212,7 +212,7 @@ const AboutUs = () => {
                 
 
                 
-                    <div className='nash m-2 team-item border-black border-2 rounded shodow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='nash team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 '>
                         
                     <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
@@ -226,7 +226,7 @@ const AboutUs = () => {
                                 Nashita is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-0'>
+                            <div className='mt-4 flex justify-center py-2 px-20'>
                             <Link to= "//www.github.com/NashitaV">
                             <div class="p-2">
                                 <div class="group relative w-max">
@@ -270,7 +270,7 @@ const AboutUs = () => {
                 
 
                 
-                    <div className='sivesh m-2 team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
+                    <div className='sivesh team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 '>
                         
                     <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
@@ -285,10 +285,10 @@ const AboutUs = () => {
                             </p>
                             
 
-                            <div className='mt-4 flex justify-center '>
+                            <div className='mt-4 flex justify-center py-2 px-20'>
                         
                             <Link to= "//www.github.com/siveshk">
-                            <div class="pl-15 pt-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
@@ -301,7 +301,7 @@ const AboutUs = () => {
                             </Link>
 
                             <Link to= "//www.instagram.com/sivesh_k/">
-                            <div class="p-0 pt-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
@@ -314,7 +314,7 @@ const AboutUs = () => {
 
 
                             <Link to= "//www.linkedin.com/in/sivesh-kannan-455811252/">
-                            <div class="pr-15 pt-2">
+                            <div>
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
