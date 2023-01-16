@@ -13,7 +13,7 @@ const Mainsection = () => {
               backgroundPosition : "center",
               backgroundRepeat : "no-repeat",
           }}
-          className="flex flex-col items-center w-full h-full pt-24 bg-black lg:py-12 justify-top">
+          className="flex flex-col items-center w-full h-screen pt-24 bg-black lg:py-12 justify-top">
 
           <div className='flex flex-col items-center justify-center w-sfull h-full'>
           <div className="w-full p-2 pt-4 mt-12 text-center text-white border-dashed border-2 lg:w-2/3 md:mt-22 md:w-2/3" >

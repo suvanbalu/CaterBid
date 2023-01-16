@@ -10,7 +10,7 @@ const AboutUs = () => {
     let message ='This is a sample text sample sample sample sample sample'
     return (
         
-       <section className='bg-white h-full w-full p-4 flex justify-center'>
+       <section className='bg-black h-screen w-full p-4 flex justify-center'>
         <div className='container'>
                 <div className=' about_us_text text-center'>
                     <h2 className='header bold text-4xl p-2'>
@@ -21,12 +21,11 @@ const AboutUs = () => {
                     </br>
                 </div>
                 
-                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-full w-full justify-center'>
+                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center'>
 
-                    <div className='suvan team-item  border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 m-2'>
+                    <div className='suvan team-item  border-white shadow-md bg-white-500 hover:bg-slate-300 m-2 rounded-2xl border-2 '>
                         
-                        <img 
-                        src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full"/>
+                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
                         <h3 className='bold text-xl'>Suvan Sathyendira</h3>
                         <div className='team-info italic'>
@@ -83,7 +82,7 @@ const AboutUs = () => {
                 
                     <div className='ashwin team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 m-2'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
+                    <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
                         <h3 className='Ashwin bold text-xl'>Ashwin V</h3>
                         <div className='team-info italic'>
@@ -128,7 +127,7 @@ const AboutUs = () => {
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
                                     class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                                    Linkedln
+                                    Linkedin
                                     </span>
                                 </div>
                             </div>
@@ -142,7 +141,7 @@ const AboutUs = () => {
                 
                     <div className='shivani m-2 team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
+                    <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
                         <h3 className='Shivani bold text-xl'>Shivani Sri</h3>
                         <div className='team-info italic'>
@@ -187,7 +186,7 @@ const AboutUs = () => {
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
                                     class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                                    Linkedln
+                                    Linkedin
                                     </span>
                                 </div>
                             </div>
@@ -200,7 +199,7 @@ const AboutUs = () => {
                 
                     <div className='nash m-2 team-item border-black border-2 rounded shodow-md bg-white-500 hover:bg-slate-300'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png '  className='team-img rounded-full' alt = "pic"/>
+                    <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
                         <h3 className='Nashita bold text-xl'>Nashita V</h3>
                         <div className='team-info italic'>
@@ -245,7 +244,7 @@ const AboutUs = () => {
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
                                     class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                                    Linkedln
+                                    Linkedin
                                     </span>
                                 </div>
                             </div>
@@ -258,7 +257,7 @@ const AboutUs = () => {
                 
                     <div className='sivesh m-2 team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full ' alt = "pic"/>
+                    <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
                         <h3 className='Sivesh bold text-xl'>Sivesh Kannan</h3>
                         <div className='team-info italic'>
@@ -271,14 +270,14 @@ const AboutUs = () => {
                             </p>
                             
 
-                            <div className='mt-4 flex justify-center space-x-2'>
+                            <div className='mt-4 flex justify-center '>
                         
                             <Link to= "//www.github.com/siveshk">
-                            <div class="p-2">
+                            <div class="pl-15 pt-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute  h-full w-12 flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-xl p-1 text-white">
                                     
                                     Github
                                     </span>
@@ -287,11 +286,11 @@ const AboutUs = () => {
                             </Link>
 
                             <Link to= "//www.instagram.com/sivesh_k/">
-                            <div class="p-2">
+                            <div class="p-0 pt-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
                                     Instagram
                                     </span>
                                 </div>
@@ -300,12 +299,12 @@ const AboutUs = () => {
 
 
                             <Link to= "//www.linkedin.com/in/sivesh-kannan-455811252/">
-                            <div class="p-2">
+                            <div class="pr-15 pt-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                                    Linkedln
+                                    class="pointer-events-none h-full w-fit block text-center justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    Linkedin
                                     </span>
                                 </div>
                             </div>
