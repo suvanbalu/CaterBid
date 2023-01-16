@@ -22,7 +22,10 @@ const Navbar = () => {
             <div className='flex items-center m-4 space-x-4 w-1/3px-16'>
                 <button className='uppercase font-mont'>How it Works</button>
                 <p className='uppercase font-mont'>|</p>
-                <button className='uppercase font-mont'>About Us</button>
+                <button className='uppercase font-mont'>
+                    <Link to="/AboutUs">About Us
+                    </Link>
+                    </button>
             </div>
             <div className='flex items-center justify-end w-1/3 space-x-4'>
                 <button className='rounded-md px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 '>
