@@ -27,7 +27,8 @@ const AboutUs = () => {
                     <div className='team-item  border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 '>
                         
                         <img 
-                        src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-t-full"/>
+                        src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full"/>
+                        <br></br>
                         <h3 className='bold text-xl'>Suvan Sathyendira</h3>
                         <div className='team-info italic'>
                             <p>
@@ -38,12 +39,44 @@ const AboutUs = () => {
                                 Suvan is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-4'>
-                              <Link to="www.google.com"> 
-                              <AiOutlineGithub size={30} />
-                              </Link>
-                              <AiOutlineInstagram size={30} />
-                              <AiOutlineLinkedin size={30} />
+                            <div className='mt-4 flex justify-center space-x-0'>
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineGithub size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    
+                                    Github
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineInstagram size={30}  /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    Instagram
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineLinkedin size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    Linkedln
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
                             </div>
                     </div>
                 
@@ -51,7 +84,8 @@ const AboutUs = () => {
                 
                     <div className='team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-t-full' alt = "pic"/>
+                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
+                        <br></br>
                         <h3 className='Ashwin bold text-xl'>Ashwin V</h3>
                         <div className='team-info italic'>
                             <p>
@@ -62,12 +96,44 @@ const AboutUs = () => {
                                 Ashwin is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-4'>
-                                <a href ="//www.google.com">
-                              <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" className='h-8'/>
-                              </a>
-                              <AiOutlineInstagram size={30} />
-                              <AiOutlineLinkedin size={30} />
+                            <div className='mt-4 flex justify-center space-x-0'>
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineGithub size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    
+                                    Github
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineInstagram size={30}  /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    Instagram
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineLinkedin size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    Linkedln
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
                             </div>
 
                     </div>
@@ -77,7 +143,8 @@ const AboutUs = () => {
                 
                     <div className='team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-t-full' alt = "pic"/>
+                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
+                        <br></br>
                         <h3 className='Shivani bold text-xl'>Shivani Sri</h3>
                         <div className='team-info italic'>
                             <p>
@@ -88,12 +155,44 @@ const AboutUs = () => {
                                 Shivani is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-4'>
-                              <Link to="www.google.com"> 
-                              <AiOutlineGithub size={30} />
-                              </Link>
-                              <AiOutlineInstagram size={30} />
-                              <AiOutlineLinkedin size={30} />
+                            <div className='mt-4 flex justify-center space-x-0'>
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineGithub size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    
+                                    Github
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineInstagram size={30}  /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    Instagram
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineLinkedin size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    Linkedln
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
                             </div>
 
                     </div>
@@ -102,7 +201,8 @@ const AboutUs = () => {
                 
                     <div className='team-item border-black border-2 rounded shodow-md bg-white-500 hover:bg-slate-300'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png '  className='team-img rounded-t-full' alt = "pic"/>
+                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png '  className='team-img rounded-full' alt = "pic"/>
+                        <br></br>
                         <h3 className='Nashita bold text-xl'>Nashita V</h3>
                         <div className='team-info italic'>
                             <p>
@@ -113,12 +213,44 @@ const AboutUs = () => {
                                 Nashita is our sample sample sample
                             </p>
 
-                            <div className='mt-4 flex justify-center space-x-4'>
-                              <Link to="www.google.com"> 
-                              <AiOutlineGithub size={30} />
-                              </Link>
-                              <AiOutlineInstagram size={30} />
-                              <AiOutlineLinkedin size={30} />
+                            <div className='mt-4 flex justify-center space-x-0'>
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineGithub size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                                    
+                                    Github
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineInstagram size={30}  /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                                    Instagram
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
+
+
+                            <Link to= "//www.google.com">
+                            <div class="p-2">
+                                <div class="group relative w-max">
+                                    <button><AiOutlineLinkedin size={30} /></button>
+                                    <span
+                                    class="pointer-events-none absolute h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    Linkedln
+                                    </span>
+                                </div>
+                            </div>
+                            </Link>
                             </div>
 
                     </div>
@@ -142,7 +274,7 @@ const AboutUs = () => {
 
                             <div className='mt-4 flex justify-center space-x-0'>
                         
-                            
+                            <Link to= "//www.google.com">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
@@ -153,8 +285,9 @@ const AboutUs = () => {
                                     </span>
                                 </div>
                             </div>
+                            </Link>
 
-
+                            <Link to= "//www.google.com">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
@@ -164,7 +297,10 @@ const AboutUs = () => {
                                     </span>
                                 </div>
                             </div>
+                            </Link>
 
+
+                            <Link to= "//www.google.com">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
@@ -174,6 +310,7 @@ const AboutUs = () => {
                                     </span>
                                 </div>
                             </div>
+                            </Link>
                                 
                             </div>
 
