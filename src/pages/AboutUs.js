@@ -1,11 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
-  AiOutlineGithub} 
-  from 'react-icons/ai'
-  
+  AiOutlineGithub,
+} from "react-icons/ai";
 
 const AboutUs = () => {
     let message ='This is a sample text sample sample sample sample sample'
@@ -317,9 +316,8 @@ const AboutUs = () => {
                     </div>
                 </div>
         </div>
-       </section>
-    )
-
-}
+    </section>
+  );
+};
 
 export default AboutUs;
