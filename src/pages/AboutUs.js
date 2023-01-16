@@ -29,7 +29,7 @@ const AboutUs = () => {
     </nav>
        <section className='bg-black h-screen w-full p-4 flex justify-center'>
         <div className='container'>
-                <div className=' about_us_text text-center'>
+                <div className=' about_us_text text-white text-center'>
                     <h2 className='header bold text-4xl p-2'>
                         About Us
                     </h2>
@@ -95,7 +95,8 @@ const AboutUs = () => {
                             </div>
                     </div>
 
-                    <div className='ashwin team-item border-black rounded shadow-lg bg-green-100 hover:bg-slate-300 m-2'>
+                
+                    <div className='ashwin team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 '>
                         
                     <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
                         <br></br>
