@@ -5,12 +5,29 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import Navbar from "../components/Navbar";
 
 const AboutUs = () => {
     let message ='This is a sample text sample sample sample sample sample'
     return (
-        
-       <section className='bg-white h-full w-full p-4 flex justify-center'>
+      <>
+      <nav
+        style={{
+            position: "sticky",
+            top: 0
+        }} 
+        className='bg-white px-4 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between space-between'>
+            <div className='flex items-center w-1/3 space-x-4'>
+                <img
+                    src = "https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
+                    className='px-1 h-10 lg:h-14'
+                    alt="logo"
+                >
+                </img>
+                <h1 className = "m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
+            </div>
+      </nav>
+      <section className=' h-screen w-full p-4 flex justify-center bg-green-200'>
         <div className='container'>
                 <div className=' about_us_text text-center'>
                     <h2 className='header bold text-4xl p-2'>
@@ -21,9 +38,9 @@ const AboutUs = () => {
                     </br>
                 </div>
                 
-                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-full w-full justify-center'>
+                <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center'>
 
-                    <div className='suvan team-item  border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 m-2'>
+                    <div className='suvan team-item  border-black  rounded shadow-lg bg-green-100 hover:bg-slate-300 m-2'>
                         
                         <img 
                         src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full"/>
@@ -78,10 +95,8 @@ const AboutUs = () => {
                             </Link>
                             </div>
                     </div>
-                
 
-                
-                    <div className='ashwin team-item border-black border-2 rounded shadow-md bg-white-500 hover:bg-slate-300 m-2'>
+                    <div className='ashwin team-item border-black rounded shadow-lg bg-green-100 hover:bg-slate-300 m-2'>
                         
                         <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png'  className='team-img rounded-full' alt = "pic"/>
                         <br></br>
@@ -317,6 +332,7 @@ const AboutUs = () => {
                 </div>
         </div>
     </section>
+    </>
   );
 };
 
