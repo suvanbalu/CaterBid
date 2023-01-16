@@ -15,7 +15,7 @@ function App() {
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />
-        <Route path="/User/Profile" element={<Profile /> } />
+        <Route path="/User/:userId" element={<Profile /> } />
       </Routes>
     </BrowserRouter>
   );
