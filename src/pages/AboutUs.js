@@ -271,7 +271,7 @@ const AboutUs = () => {
                             </p>
                             
 
-                            <div className='mt-4 flex justify-center space-x-0'>
+                            <div className='mt-4 flex justify-center space-x-2'>
                         
                             <Link to= "//www.github.com/siveshk">
                             <div class="p-2">
