@@ -40,7 +40,7 @@ const AboutUs = () => {
                             </p>
 
                             <div className='mt-4 flex justify-center space-x-0'>
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.github.com/suvanbalu">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
@@ -53,7 +53,7 @@ const AboutUs = () => {
                             </div>
                             </Link>
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.instagram.com/suvan.balu/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
@@ -66,7 +66,7 @@ const AboutUs = () => {
                             </Link>
 
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.linkedin.com/in/suvanbalu/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
@@ -97,7 +97,7 @@ const AboutUs = () => {
                             </p>
 
                             <div className='mt-4 flex justify-center space-x-0'>
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.github.com/asxwin">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
@@ -110,7 +110,7 @@ const AboutUs = () => {
                             </div>
                             </Link>
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.instagram.com/ashwin.in/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
@@ -123,7 +123,7 @@ const AboutUs = () => {
                             </Link>
 
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.linkedin.com/in/ashwin-v-108068219/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
@@ -156,7 +156,7 @@ const AboutUs = () => {
                             </p>
 
                             <div className='mt-4 flex justify-center space-x-0'>
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.github.com/shxvani">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
@@ -169,7 +169,7 @@ const AboutUs = () => {
                             </div>
                             </Link>
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.instagram.com/shxvani/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
@@ -182,7 +182,7 @@ const AboutUs = () => {
                             </Link>
 
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.linkedin.com/in/shivani-s-b640241b2/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
@@ -214,7 +214,7 @@ const AboutUs = () => {
                             </p>
 
                             <div className='mt-4 flex justify-center space-x-0'>
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.github.com/NashitaV">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
@@ -227,7 +227,7 @@ const AboutUs = () => {
                             </div>
                             </Link>
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.instagram.com/na_shhhhh/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
@@ -240,7 +240,7 @@ const AboutUs = () => {
                             </Link>
 
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.linkedin.com/in/nashita-v-972563219/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
@@ -274,7 +274,7 @@ const AboutUs = () => {
 
                             <div className='mt-4 flex justify-center space-x-0'>
                         
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.github.com/siveshk">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineGithub size={30} /></button>
@@ -287,7 +287,7 @@ const AboutUs = () => {
                             </div>
                             </Link>
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.instagram.com/sivesh_k/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineInstagram size={30}  /></button>
@@ -300,7 +300,7 @@ const AboutUs = () => {
                             </Link>
 
 
-                            <Link to= "//www.google.com">
+                            <Link to= "//www.linkedin.com/in/sivesh-kannan-455811252/">
                             <div class="p-2">
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
