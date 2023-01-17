@@ -5,6 +5,9 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import {
+    TbArrowBack
+} from "react-icons/tb"
 import Navbar from "../components/Navbar";
 
 const AboutUs = () => {
@@ -25,6 +28,11 @@ const AboutUs = () => {
               >
               </img>
               <h1 className = "m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
+          </div>
+          <div>
+          <Link to="/">
+            <TbArrowBack size={30}></TbArrowBack>
+            </Link>
           </div>
     </nav>
        <section className='bg-gradient-to-b from-slate-800 to-slate-600 h-screen w-full p-4 flex justify-center'>
@@ -286,7 +294,7 @@ const AboutUs = () => {
                             </p>
                             
 
-                            <div className='mt-4 flex justify-center py-2 px-20'>
+                            <div className='mt-4 flex justify-center py-2 px-20 pb-5'>
                         
                             <Link to= "//www.github.com/siveshk">
                             <div>
@@ -319,7 +327,7 @@ const AboutUs = () => {
                                 <div class="group relative w-max">
                                     <button><AiOutlineLinkedin size={30} /></button>
                                     <span
-                                    class="pointer-events-none h-full w-fit flex text-center justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                                    class="pointer-events-none h-full w-fit flex text-center justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white  ">
                                     Linkedin
                                     </span>
                                 </div>
