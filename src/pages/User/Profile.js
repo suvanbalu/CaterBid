@@ -101,9 +101,6 @@ const Profile = () => {
               </form>
             </div>
 
-            
-           
-            
             </div>
             
     
@@ -133,8 +130,119 @@ const Profile = () => {
               </form>
             </div>
             </div>
+
+            <div className='main-grid  grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center p-2 space-x-10'>
             
-            <div className='main-grid flex-col'>
+            <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify-center h-48 w-70 p-4 border-2 text-xl'>
+              
+              <form method=''>
+                <div className='row p-2'>
+                <div className='flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Full Name :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div>
+                  <div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Email_ID :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div>
+                  <div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Phone :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div>
+                  <div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Address :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div><div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Preferences :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                  
+                </div>
+                </div>
+              </form>
+            </div>
+
+            <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify-center h-48 w-70 p-4 border-2 text-xl'>
+              
+              <form method=''>
+                <div className='row p-2'>
+                <div className='flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Full Name :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div>
+                  <div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Email_ID :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div>
+                  <div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Phone :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div>
+                  <div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Address :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                    
+                  </div><div className=' flex justify-left px-20'>
+                    <div className='flex justify-start'>
+                      <label> Preferences :</label>
+                    </div>
+                    <div className=' flex justify-center'>
+                      <p>  bdfkshbfshdk</p>
+                    </div>
+                  
+                </div>
+                </div>
+              </form>
+            </div>
+
+            
+            </div>
+
+            
+            
+            {/* <div className='main-grid flex-col'>
  
             <ul class="nav nav-tabs">
 
@@ -146,11 +254,11 @@ const Profile = () => {
                       </li>
             </ul>
 
-            </div>
+            </div> */}
 
             
 
-            <div className='pl-5 about-info'>
+            {/* <div className='pl-5 about-info'>
               <div className='tab-content profile-tab' id="myTabContent">
                 <div className='tab-pane fade show active:' id='home' role='tabpanel' aria-labelledby ="home-tab">
 
@@ -204,7 +312,33 @@ const Profile = () => {
 
                 </div>
 
-              </div>
+              </div> */}
+
+<div class="container m-auto p-4">
+  <div class="flex flex-row space-x-4">
+    
+    <div class="flex w-full flex-col space-y-4 bg-red-200">
+      <div class="h-40 rounded-lg bg-red-500"></div>
+      <div class="h-32 rounded-lg bg-red-500"></div>
+      <div class="h-60 rounded-lg bg-red-500"></div>
+    </div>
+    
+    <div class="flex w-full flex-col space-y-4 bg-blue-200">
+      <div class="h-12 rounded-lg bg-blue-500"></div>
+      <div class="h-72 rounded-lg bg-blue-500"></div>
+      <div class="h-48 rounded-lg bg-blue-500"></div>
+    </div>
+    
+    <div class="flex w-full flex-col space-y-4 bg-green-200">
+      <div class="h-28 rounded-lg bg-green-500"></div>
+      <div class="h-40 rounded-lg bg-green-500"></div>
+      <div class="h-64 rounded-lg bg-green-500"></div>
+    </div>
+  </div>
+</div>
+
+
+
             </div>
       
     
