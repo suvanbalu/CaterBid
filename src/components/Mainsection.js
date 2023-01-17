@@ -13,34 +13,34 @@ const Mainsection = () => {
               backgroundPosition : "center",
               backgroundRepeat : "no-repeat",
           }}
-          className="flex flex-col items-center w-full h-screen pt-24 bg-black lg:py-12 justify-top">
+          className="flex flex-col items-center w-full h-full p-4 bg-black lg:py-0 justify-top">
 
           <div className='flex flex-col items-center justify-center w-full h-full'>
-          <div className="w-full p-2 pt-4 mt-12 text-center text-white border-dashed border-2 lg:w-2/3 md:mt-22 md:w-2/3" >
-            <p className="mb-4 text-5xl font-bold text-phorange font-mont">{data.heading}<br /></p>
-            <p className="px-4 mb-4 text-2xl text-justify font-mont">{data.text}</p>
+          <div className="w-full p-2 pt-4 mt-12 text-center text-white border-dashed border-2 lg:w-2/3 md:mt-20 md:w-2/3" >
+            <p className="mb-4 sm:text-5xl mobile:text-3xl font-bold text-phorange font-mont">{data.heading}<br /></p>
+            <p className="px-4 mb-4 sm:text-2xl mobile:text-base text-justify font-mont">{data.text}</p>
           </div>
           <main className="px-8 pt-4 pb-8 lg:w-2/3 lg:px-[calc(100vw/12)] h-fit grid grid-cols-2 gap-6 bg-white mt-12 mb-12 bg-opacity-60 rounded-lg">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="p-3 text-2xl font-mont">Are You a Caterer?</h1>
+              <h1 className="p-3 mobile:text-xl sm:text-2xl font-mont">Are You a Caterer?</h1>
               <img
               src="https://cdn-icons-png.flaticon.com/512/1940/1940899.png"
               alt="caterer.png"
               className="h-20 mb-4"
               >
               </img>
-              <button className="p-4 mt-4 transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
+              <button className="p-4 mt-4 sm:text-base mobile:text-xs transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md">
                 <Link to="/CatererLogin">Create Caterer Profile</Link>
               </button>
             </div>
             <div className="flex flex-col items-center">
-              <h1 className="p-3 text-2xl font-mont">Are You a Customer?</h1>
+              <h1 className="p-3 mobile:text-xl sm:text-2xl font-mont">Are You a Customer?</h1>
               <img 
               src="https://cdn-icons-png.flaticon.com/512/4149/4149881.png"
               alt="customer.png"
               className="h-20 mb-4"
               ></img>
-              <button className="p-4 mt-4 transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
+              <button className="p-4 mt-4 transition sm:text-base mobile:text-xs ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
               <Link to="/UserLogin">Create User Profile</Link>
               </button>
             </div>

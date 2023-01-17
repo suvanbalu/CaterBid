@@ -4,12 +4,12 @@ import Mainsection from "../components/Mainsection";
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <div className="w-full h-full overflow-x-hidden font-sans ">
+      <div className="w-screen h-screen overflow-x-hidden font-sans ">
         <Navbar />
+        <div>
         <Mainsection />
+        </div>
       </div>
-    </React.Fragment>
   );
 };
 
