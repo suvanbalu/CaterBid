@@ -19,7 +19,7 @@ const AboutUs = () => {
           position: "sticky",
           top: 0
       }} 
-      className='bg-white px-4 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between space-between'>
+      className='bg-white px-4 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between '>
           <div className='flex items-center w-1/3 space-x-4'>
               <img
                   src = "https://cdn-icons-png.flaticon.com/512/1683/1683828.png"

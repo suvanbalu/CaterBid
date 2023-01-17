@@ -9,11 +9,11 @@ const Navbar = () => {
             position: "sticky",
             top: 0
         }} 
-        className='bg-white mobile:px-2 mobile:my-1 sm:px-4 lg:px-[calc(100vw/20)] py-1 font-sans  flex items-center sm:justify-between'>
-            <div className='flex items-center mobile:justify-center sm:justify-start w-1/3 mobile:space-2 m-1 space-x-4 mobile:space-x-2'>
+        className='bg-white mobile:px-2 mobile:my-1 sm:px-4 lg:px-[calc(100vw/20)] sm:py-1 font-sans  flex items-center sm:justify-between'>
+            <div className='flex items-center mobile:justify-center sm:justify-start w-1/3 mobile:space-2  sm:space-x-4 mobile:space-x-2'>
             <img
                     src = "https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-                    className='px-1 sm:h-12 mobile:h-8'
+                    className='px-1 sm:h-14 mobile:h-8'
                     alt="logo"
                 >
                 </img>
