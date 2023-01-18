@@ -48,9 +48,9 @@ const AboutUs = () => {
                 
                 <div className = 'main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white'>
 
-                    <div className='suvan team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 '>
+                    <div className='shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 grayscale hover:grayscale-0 duration-200'>
                         
-                        <img src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png' className="rounded-full p-5"/>
+                        <img src = 'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2011/7/18/0/HGTV_Color-Wheel-Full_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1400967008479.jpeg' className="rounded-full p-5 "/>
                         <br></br>
                         <h3 className='bold text-xl '>Suvan Sathyendira</h3>
                         <div className='team-info italic '>

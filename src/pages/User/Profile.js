@@ -131,15 +131,15 @@ const Profile = () => {
             </div>
             </div>
 
-            <div className='main-grid  grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center p-2 space-x-10'>
+            <div className='main-grid  grid grid-cols-3 text-center lg:grid-cols-5 m- h-fit w-full justify-center p-2 space-x-32'>
             
-            <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify-center h-48 w-70 p-4 border-2 text-xl'>
+            <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify- h-fit w-fit p-4 border-2 text-lg'>
               
               <form method=''>
                 <div className='row p-2'>
                 <div className='flex justify-left px-20'>
-                    <div className='flex justify-start'>
-                      <label> Full Name :</label>
+                    <div className='flex justify-left'>
+                      <label> No.of eventd posted :</label>
                     </div>
                     <div className=' flex justify-center'>
                       <p>  bdfkshbfshdk</p>
@@ -148,7 +148,7 @@ const Profile = () => {
                   </div>
                   <div className=' flex justify-left px-20'>
                     <div className='flex justify-start'>
-                      <label> Email_ID :</label>
+                      <label> No.of events pending:</label>
                     </div>
                     <div className=' flex justify-center'>
                       <p>  bdfkshbfshdk</p>
@@ -157,14 +157,14 @@ const Profile = () => {
                   </div>
                   <div className=' flex justify-left px-20'>
                     <div className='flex justify-start'>
-                      <label> Phone :</label>
+                      <label> No.of events successful :</label>
                     </div>
                     <div className=' flex justify-center'>
                       <p>  bdfkshbfshdk</p>
                     </div>
                     
                   </div>
-                  <div className=' flex justify-left px-20'>
+                  {/* <div className=' flex justify-left px-20'>
                     <div className='flex justify-start'>
                       <label> Address :</label>
                     </div>
@@ -172,7 +172,8 @@ const Profile = () => {
                       <p>  bdfkshbfshdk</p>
                     </div>
                     
-                  </div><div className=' flex justify-left px-20'>
+                  </div>
+                  <div className=' flex justify-left px-20'>
                     <div className='flex justify-start'>
                       <label> Preferences :</label>
                     </div>
@@ -180,12 +181,12 @@ const Profile = () => {
                       <p>  bdfkshbfshdk</p>
                     </div>
                   
-                </div>
+                </div> */}
                 </div>
               </form>
             </div>
 
-            <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify-center h-48 w-70 p-4 border-2 text-xl'>
+            <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify-center h-48 w-70 p-4 border-2 text-xl '>
               
               <form method=''>
                 <div className='row p-2'>
