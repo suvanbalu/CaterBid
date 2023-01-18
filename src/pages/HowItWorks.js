@@ -45,7 +45,7 @@ const HowItWorks = () => {
         </div>
         <div className="w-full flex items-center justify-center">
           <div className=" pt-8 pb-8 px-8  w-fit h-fit grid grid-cols-3 bg-white mt-12 mb-12 bg-opacity-60 rounded-lg items-center justify-center place-items-center">
-            <div className="flex flex-col items-center">
+            <div className="pl-8 pr-8 flex flex-col items-center">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/2073/2073019.png"
                 alt="step1.png"
@@ -53,7 +53,7 @@ const HowItWorks = () => {
               ></img>
               <h1 className=" text-2xl font-mont">1. Sign Up or Log In</h1>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="pl-8 pr-8 flex flex-col items-center">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/8131/8131463.png"
                 alt="step2.png"
@@ -61,7 +61,7 @@ const HowItWorks = () => {
               ></img>
               <h1 className=" text-2xl font-mont">2. Post Your Event</h1>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="pl-8 pr-8 flex flex-col items-center">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/3386/3386941.png"
                 alt="step3.png"
