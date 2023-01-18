@@ -18,7 +18,6 @@ const UserLogin = () => {
                         title="Email"
                         placeholder="Enter Mail ID"
                     />
-                    console.log(Mailid);
                     </div>
                     <div className="mb-2">
                     <Inputfield

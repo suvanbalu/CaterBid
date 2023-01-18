@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Mainsection = () => {
   let data = prompts.catchlines[Math.floor(Math.random() * prompts.catchlines.length)]
   return (
+    <div className='w-full h-full'>
     <section
           style={{
             backgroundImage:
@@ -48,6 +49,7 @@ const Mainsection = () => {
           </main>
           </div>
         </section>
+      </div>
   )
 }
 

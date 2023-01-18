@@ -23,8 +23,8 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <div className="flex items-center m-4 mobile:m-1 space-x-4 mobile:pr-2 mobile:space-x-2 w-1/3 px-12 mobile:px-8 justify-center">
-        <Link to="/howitworks" className="uppercase font-mont mobile:text-xs sm:text-base">
+      <div className="flex items-center m-4 mobile:m-1 space-x-4 mobile:pr-2 mobile:space-x-2 w-1/3 px-12 mobile:px-8  justify-center">
+        <Link to="/howitworks" className="uppercase font-mont mobile:text-xs sm:text-base hover:text-red-500">
           
           How it Works
         </Link>
