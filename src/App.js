@@ -5,6 +5,7 @@ import CatererLogin from './pages/Login/CatererLogin'
 import UserLogin from './pages/Login/UserLogin'
 import AboutUs from './pages/AboutUs'
 import Profile from './pages/User/Profile'
+import HowItWorks from './pages/HowItWorks'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />}/>
+        <Route path="/HowItWorks" element={<HowItWorks />}/>
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />

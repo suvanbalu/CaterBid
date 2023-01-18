@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -20,9 +21,15 @@ const Navbar = () => {
                 <h1 className = "m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
             </div>
             <div className='flex items-center m-4 space-x-4 w-1/3px-16'>
-                <button className='uppercase font-mont'>How it Works</button>
-                <p className='uppercase font-mont'>|</p>
-                <button className='uppercase font-mont'>
+                <button className='uppercase font-mont hover:text-red-500 transition duration-300'>
+                    <Link to="/HowItWorks" > How it Works
+                    </Link>
+                    </button>
+
+
+
+                <p className='uppercase font-mont '>|</p>
+                <button className='uppercase font-mont hover:text-red-500 transition duration-300'>
                     <Link to="/AboutUs">About Us
                     </Link>
                     </button>
@@ -35,6 +42,7 @@ const Navbar = () => {
                     Sign Up
                 </button>
             </div>
+            
         </nav>
     )
 }
