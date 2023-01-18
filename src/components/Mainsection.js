@@ -14,7 +14,7 @@ const Mainsection = () => {
               backgroundPosition : "center",
               backgroundRepeat : "no-repeat",
           }}
-          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 bg-black lg:py-0 ">
+          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0 ">
 
           <div className='flex flex-col items-center justify-center w-full h-full'>
           <div className="w-full p-2 pt-4 mt-12 text-center text-white border-dashed border-2 lg:w-2/3 md:mt-20 md:w-2/3" >
