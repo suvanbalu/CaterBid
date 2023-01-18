@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', "sans-serif"],
         mont: ['Montserrat', "sans-serif"],
+      },
+      screens: {
+        'mobile': '360px',
       }
     },
   },
