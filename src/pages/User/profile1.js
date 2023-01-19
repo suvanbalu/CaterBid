@@ -36,7 +36,7 @@ const Profile1 = () => {
             <div class=" m-0">
 
 
-                <div class="p-2 bg-white shadow h-screen">
+                <div class="p-2 bg-white shadow h-fit">
 
                     <div class="grid lg:grid-cols-2 px-24 items-center space-x-12">
 
@@ -104,7 +104,7 @@ const Profile1 = () => {
                         <p class="text-gray-600 text-center font-light lg:px-16">An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</p>
 
                     </div>
-                    <div class="grid lg:grid-cols-2 space-x-4 ">
+                    <div class="grid lg:grid-cols-2 space-x-4 p-12 ">
                         <div class=" bg-white shadow mt-10 grid grid-rows-3">
                             <div class="py-5 px-24 ">
                                 <p></p>
