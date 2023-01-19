@@ -17,9 +17,9 @@ const Mainsection = () => {
           className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0 ">
 
           <div className='flex flex-col items-center justify-center w-full h-full'>
-          <div className="w-full p-2 pt-4 mt-12 text-center text-white border-dashed border-2 lg:w-2/3 md:mt-20 md:w-2/3" >
+          <div className="w-full px-8 py-4 mt-12 text-center text-white border-dashed border-2 lg:w-2/3 md:mt-20 md:w-2/3" >
             <p className="mb-4 sm:text-5xl mobile:text-3xl font-bold text-phorange font-mont">{data.heading}<br /></p>
-            <p className="px-4 mb-4 sm:text-2xl mobile:text-base text-justify font-mont">{data.text}</p>
+            <p className="px-4 sm:text-xl mobile:text-base text-justify mt-8 font-mont">{data.text}</p>
           </div>
           <main className="px-8 pt-4 pb-8 lg:w-2/3 lg:px-[calc(100vw/12)] h-fit grid grid-cols-2 gap-6 bg-white mt-12 mb-12 bg-opacity-60 rounded-lg">
             <div className="flex flex-col items-center justify-center">
