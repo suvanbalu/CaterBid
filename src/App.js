@@ -7,6 +7,7 @@ import AboutUs from './pages/aboutus/AboutUs'
 import Profile from './pages/User/Profile'
 import NotFound from './pages/NotFound'
 import HowItWorks from './pages/HowItWorks'
+import Profile1 from './pages/User/profile1'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />
-        <Route path="/User/:userId" element={<Profile /> } />
+        <Route path="/User1" element={<Profile1 /> } />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

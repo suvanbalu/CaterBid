@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         "phorange": "#F09124",
+        "greneu": "#6EE7B7",
       },
       fontFamily: {
         poppins: ['Poppins', "sans-serif"],
@@ -15,7 +16,19 @@ module.exports = {
       screens: {
         'mobile': '360px',
       }
+      
     },
   },
-  plugins: [],
+  plugins: 
+    [require("daisyui")],
+    daisyui: {
+      styled: false,
+      themes: false,
+      base: true,
+      utils: true,
+      logs: true,
+      rtl: false,
+      prefix: "",
+      darkTheme: "dark",
+    },
 }
