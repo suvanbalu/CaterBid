@@ -1,18 +1,12 @@
 import React from 'react'
   
-const Progress_bar = ({bgcolor,progress,height,text}) => {
+const Progress_bar = ({bgcolor,progress,height,text,value}) => {
      
     const Parentdiv = {
         height: height,
         width: "100%",
         backgroundColor: 'whitesmoke',
         borderRadius: 40,
-        
-       
-        
-        
-        
-        
       }
       
       const Childdiv = {
@@ -36,7 +30,7 @@ const Progress_bar = ({bgcolor,progress,height,text}) => {
     <div style={Parentdiv} class="bg-phorange hover:bg-blue-300 duration-300 transition ease-in-out delay-150 hover:-translate-x-5">
       <div style={Childdiv} class="bg-phorange hover:bg-blue-300 transition ease-in-out">
        
-        <span style={progresstext}>{`${progress}`}</span>
+        <span style={progresstext}>{`${value}`}</span>
       </div>
     </div>
     </div>  

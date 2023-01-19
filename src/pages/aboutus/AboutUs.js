@@ -48,7 +48,7 @@ const AboutUs = () => {
             <TeamMemberDetail
               name="Suvan Sathyendira"
               organization={"PSG College of Technology"}
-              content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
+              content="Keen python developer specializing in web scraping, web automation and coding useful scripts. The Captain"
               image={suvan}
               githubLink = {"//www.github.com/suvanbalu"}
               instaLink = {"//www.instagram.com/suvan.balu/"}
@@ -57,7 +57,7 @@ const AboutUs = () => {
             <TeamMemberDetail
               name="Ashwin V"
               organization={"PSG College of Technology"}
-              content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
+              content="Keen python developer specializing in web scraping, web automation and coding useful scripts. The Designer"
               image={ashwin}
               githubLink = {"//www.github.com/asxwin"}
               instaLink = {"//www.instagram.com/ashwin.in/"}
@@ -66,7 +66,7 @@ const AboutUs = () => {
             <TeamMemberDetail
               name="Shivani Sri"
               organization={"PSG College of Technology"}
-              content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
+              content="Keen python developer specializing in web scraping, web automation and coding useful scripts. The Writer"
               image={shivani}
               githubLink = {"//www.github.com/shxvani"}
               instaLink = {"//www.instagram.com/shxvani/"}
@@ -75,7 +75,7 @@ const AboutUs = () => {
             <TeamMemberDetail
               name="Nashita V"
               organization={"PSG College of Technology"}
-              content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
+              content="Keen python developer specializing in web scraping, web automation and coding useful scripts. Hmmmm"
               image={nashita}
               githubLink = {"//www.github.com/NashitaV"}
               instaLink = {"//www.instagram.com/na_shhhhh/"}
@@ -84,7 +84,7 @@ const AboutUs = () => {
             <TeamMemberDetail
               name="Sivesh Kannan"
               organization={"PSG College of Technology"}
-              content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
+              content="Keen python developer specializing in web scraping, web automation and coding useful scripts. The Newbie"
               image={sivesh}
               githubLink = {"//www.github.com/siveshk"}
               instaLink = {"//www.instagram.com/sivesh_k/"}
