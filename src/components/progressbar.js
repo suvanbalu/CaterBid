@@ -33,8 +33,8 @@ const Progress_bar = ({bgcolor,progress,height,text}) => {
     return (
     <div >
     <p>{text}</p>
-    <div style={Parentdiv} class="bg-greneu hover:bg-blue-300 duration-300 transition ease-in-out delay-150 hover:-translate-x-5">
-      <div style={Childdiv} class="bg-greneu hover:bg-blue-300 transition ease-in-out">
+    <div style={Parentdiv} class="bg-phorange hover:bg-blue-300 duration-300 transition ease-in-out delay-150 hover:-translate-x-5">
+      <div style={Childdiv} class="bg-phorange hover:bg-blue-300 transition ease-in-out">
        
         <span style={progresstext}>{`${progress}`}</span>
       </div>
