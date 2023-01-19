@@ -40,7 +40,7 @@ const HowItWorks = () => {
 
         <div className="desc2_text text-white text-center">
           <h2 class="font-mont tracking-tight text-6xl p-10 text-white">
-            Your Post. Caterers Bid. You Choose.
+            You Post. Caterers Bid. You Choose.
           </h2>
         </div>
         <div className="w-full flex items-center justify-center">

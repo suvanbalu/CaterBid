@@ -8,12 +8,14 @@ import Profile from './pages/User/Profile'
 import NotFound from './pages/NotFound'
 import HowItWorks from './pages/HowItWorks'
 import Profile1 from './pages/User/profile1'
+import UserSignUp from './pages/SignUp/UserSignUp' 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/SignUp" element={<UserSignUp/>}/>
         <Route path="/AboutUs" element={<AboutUs />}/>
         <Route path="/HowItWorks" element={<HowItWorks />}/>
         <Route path="/login" element={<LoginWrap />} />
