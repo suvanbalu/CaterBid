@@ -14,9 +14,9 @@ const AboutUs = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <section className="bg-gradient-to-b from-slate-800 to-slate-600 h-full w-full p-4 flex justify-center">
+      <section className="bg-gradient-to-b from-slate-800 to-slate-600 h-screen w-full p-4 flex justify-center ">
         <div className="container">
-          <div className=" about_us_text text-black text-center">
+          <div className=" about_us_text text-slate-400 text-center">
             <h2 className="header bold text-4xl p-2">About Us</h2>
             <p className="section-subtitle text-2xl">{message}</p>
             <br></br>
@@ -24,7 +24,7 @@ const AboutUs = () => {
 
           <div className="main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white">
             <div className="suvan shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 grayscale hover:grayscale-0 duration-150">
-              <img src={sivesh} className="rounded-full p-5 h-1/3" />
+              <img src={sivesh} className="rounded-full m-auto p-5 h-64 w-64" />
               <br></br>
               <h3 className="bold text-xl ">Suvan Sathyendira</h3>
               <div className="team-info italic ">
