@@ -24,7 +24,7 @@ const AboutUs = () => {
 
           <div className="main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white">
             <div className="suvan shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 grayscale hover:grayscale-0 duration-150">
-              <img src={sivesh} className="rounded-full mx-auto mt-10 p-1 h-64 w-64" />
+              <img src={sivesh} className="rounded-full m-auto p-5 h-64 w-64" />
               <br></br>
               <h3 className="bold text-xl ">Suvan Sathyendira</h3>
               <div className="team-info italic ">
