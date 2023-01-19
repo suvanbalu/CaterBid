@@ -131,7 +131,7 @@ const Profile = () => {
             </div>
             </div>
 
-            <div className='main-grid  grid grid-cols-3 text-center lg:grid-cols-5 m- h-fit w-full justify-center p-2 space-x-32'>
+            <div className='main-grid  grid grid-cols-3 text-center lg:grid-cols-5 m- h-fit w-full justify-center p-2 space-x-'>
             
             <div className='container emp-profile  shadow-lg bg-white-500 rounded-2xl  border-black border-dotted flex justify- h-fit w-fit p-4 border-2 text-lg'>
               
