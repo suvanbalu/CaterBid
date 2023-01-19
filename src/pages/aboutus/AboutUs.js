@@ -16,10 +16,26 @@ const AboutUs = () => {
       <Navbar />
       </div>
       <section className="bg-gradient-to-b from-black to-slate-900 h-full w-full p-4 flex justify-center">
-        <div className="container">
+        <div className="container mt-10">
           <div className=" about_us_text text-white text-center">
             <h2 className="header bold text-4xl p-2">About Us</h2>
-            <p className="section-subtitle text-2xl">{message}</p>
+            <p className="section-subtitle text-1xl mt-5 ">
+            Hi! We’re a team of students from PSG College of Technology comprised of talented 
+            individuals from diverse backgrounds and experiences who are passionate about 
+            technology and innovation. We are working together to create platforms that 
+            help people stay ahead in the ever-evolving world of technology. CaterBid makes 
+            the process of finding the right caterer easier and more efficient. With our 
+            platform, users have the ability to review multiple bids and select the one 
+            that meets their budget and needs. Our platform is designed to make the process 
+            of connecting caterers and users easier and more streamlined. With our easy to 
+            use features and user friendly interface, users can quickly connect with the 
+            caterer of their choice. 
+            </p>
+            <p className="section-subtitle text-1xl mt-5 ">
+            In case of any 
+            queries, discrepancies or feedback, feel free to contact any of our members 
+            through the links listed under their profiles. We hope you enjoy using our App!
+            </p>
             <br></br>
           </div>
 
