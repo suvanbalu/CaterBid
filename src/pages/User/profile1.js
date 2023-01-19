@@ -5,12 +5,13 @@ import { CiMail } from "react-icons/ci";
 import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
 import { TbArrowBack } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import TextInput from "../../components/TextInput";
 import { useState } from "react";
 const Profile1 = () => {
   const [value, setValue] = useState(0);
+  const {cid} = useParams();
   return (
     
     <div class="m-0 w-screen h-screen">
@@ -55,11 +56,12 @@ const Profile1 = () => {
                 </svg>
               </div>
             </div>
-            <div class="mt-5 text-center border-b p-10">
-              <h1 class="text-4xl font-medium text-gray-700">
-                Arya Bhavan Catering Service{" "}
+            <div class="mt-2 text-center border-b p-8">
+              <h1 class="text-4xl font-medium ">
+                {`@${cid}`}
                 <span class="font-light text-gray-500"></span>
               </h1>
+              <p class=" text-gray-800 text-2xl mt-3">Ashwin Veluswamy</p>
               <p class="font-light text-gray-600 mt-3">Tamil Nadu, India</p>
 
               <p class="mt-8 text-gray-500 font-semibold">Signature Dish </p>
