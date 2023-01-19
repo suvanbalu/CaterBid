@@ -6,13 +6,13 @@ const UserLogin = () => {
     const [pwd, setpwd] = useState("");
     return (
    
-        <div className="flex flex-col justify-center h-max overflow-hidden bg-white">
+        <div className="flex flex-col justify-center h-max overflow-hidden">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
                   User Login
                 </h1>
                 <form className="mt-6">
-                    <div className="mb-2">
+                    <div className="mt-12">
                     <Inputfield
                         valueState={[Mailid, setMailid]}
                         title="Email"

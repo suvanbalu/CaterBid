@@ -25,7 +25,6 @@ const Navbar = () => {
           alt="logo"
         />
         <Link to="/" className="sm:text-2xl mobile:text-xl font-bold text-red-500">
-          
           CaterBid
         </Link>
       </div>
