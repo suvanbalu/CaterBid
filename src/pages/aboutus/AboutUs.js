@@ -23,272 +23,13 @@ const AboutUs = () => {
           </div>
 
           <div className="main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white">
-            <div className="suvan shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 grayscale hover:grayscale-0 duration-150">
-              <img src={sivesh} className="rounded-full p-5 h-1/3" />
-              <br></br>
-              <h3 className="bold text-xl ">Suvan Sathyendira</h3>
-              <div className="team-info italic ">
-                <p>PSG College of Technology</p>
-              </div>
-              <p>Suvan is our sample sample sample</p>
-
-              <div className="mt-4 flex justify-center space-x-0">
-                <Link to="//www.github.com/suvanbalu">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineGithub size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
-                        Github
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.instagram.com/suvan.balu/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineInstagram size={30} />
-                      </button>
-                      <span class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
-                        Instagram
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.linkedin.com/in/suvanbalu/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineLinkedin size={30} />
-                      </button>
-                      <span class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                        Linkedln
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="ashwin team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 ">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                className="rounded-full p-5"
-              />
-              <br></br>
-              <h3 className="Ashwin bold text-xl">Ashwin V</h3>
-              <div className="team-info italic">
-                <p>PSG College of Technology</p>
-              </div>
-              <p>Ashwin is our sample sample sample</p>
-
-              <div className="mt-4 flex justify-center py-2 px-20">
-                <Link to="//www.github.com/asxwin">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineGithub size={30} />
-                      </button>
-                      <span class="pointer-events-none  h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
-                        Github
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.instagram.com/ashwin.in/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineInstagram size={30} />
-                      </button>
-                      <span class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
-                        Instagram
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.linkedin.com/in/ashwin-v-108068219/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineLinkedin size={30} />
-                      </button>
-                      <span class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                        Linkedin
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="shivani team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 ">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                className="rounded-full p-5"
-              />
-              <br></br>
-              <h3 className="Shivani bold text-xl">Shivani Sri</h3>
-              <div className="team-info italic">
-                <p>PSG College of Technology</p>
-              </div>
-              <p>Shivani is our sample sample sample</p>
-
-              <div className="mt-4 flex justify-center py-2 px-20">
-                <Link to="//www.github.com/shxvani">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineGithub size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
-                        Github
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.instagram.com/shxvani/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineInstagram size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
-                        Instagram
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.linkedin.com/in/shivani-s-b640241b2/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineLinkedin size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                        Linkedin
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="nash team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 ">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                className="rounded-full p-5"
-              />
-              <br></br>
-              <h3 className="Nashita bold text-xl">Nashita V</h3>
-              <div className="team-info italic">
-                <p>PSG College of Technology</p>
-              </div>
-              <p>Nashita is our sample sample sample</p>
-
-              <div className="mt-4 flex justify-center py-2 px-20">
-                <Link to="//www.github.com/NashitaV">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineGithub size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-fit flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
-                        Github
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.instagram.com/na_shhhhh/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineInstagram size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
-                        Instagram
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.linkedin.com/in/nashita-v-972563219/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineLinkedin size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
-                        Linkedin
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="sivesh team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 ">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                className="rounded-full p-5"
-              />
-              <br></br>
-              <h3 className="Sivesh bold text-xl">Sivesh Kannan</h3>
-              <div className="team-info italic">
-                <p>PSG College of Technology</p>
-              </div>
-              <p>Sivesh is our sample sample sample</p>
-
-              <div className="mt-4 flex justify-center py-2 px-20 pb-5">
-                <Link to="//www.github.com/siveshk">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineGithub size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-xl p-1 text-white">
-                        Github
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.instagram.com/sivesh_k/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineInstagram size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-fit flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
-                        Instagram
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link to="//www.linkedin.com/in/sivesh-kannan-455811252/">
-                  <div>
-                    <div class="group relative w-max">
-                      <button>
-                        <AiOutlineLinkedin size={30} />
-                      </button>
-                      <span class="pointer-events-none h-full w-fit flex text-center justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white  ">
-                        Linkedin
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
+            <TeamMemberDetail
+              name="Ashwin V"
+              organization={"PSG College of Technology"}
+              content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
+              image={sivesh}
+            />
+            <TeamMemberDetail name="Nashita V" />
           </div>
         </div>
       </section>
@@ -297,3 +38,69 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+const TeamMemberDetail = ({
+  name,
+  organization,
+  githubLink = "",
+  instaLink = "",
+  linkedinLink = "",
+  content = "",
+  image = "",
+}) => {
+  return (
+    <div className="ashwin team-item   shadow-lg bg-white-500 hover:border-2 hover:border-orange-500 m-2 rounded-2xl border-2 border-white border-dotted hover:scale-105 duration-100 flex flex-col items-center">
+      <div
+        style={{ background: `url(${image})`, backgroundPosition: "center", backgroundSize: "cover" }}
+        className="rounded-full m-5 w-44 h-44 aspect-square bg-white"
+      />
+      <br></br>
+      <h3 className="Ashwin bold text-xl">{name}</h3>
+      <div className="team-info italic">
+        <p>{organization}</p>
+      </div>
+      <p>{content}</p>
+
+      <div className="mt-4 flex justify-center py-2 px-20">
+        <Link to={githubLink}>
+          <div>
+            <div class="group relative w-max">
+              <button>
+                <AiOutlineGithub size={30} />
+              </button>
+              <span class="pointer-events-none  h-full w-full flex justify-center  opacity-0 transition-opacity group-hover:opacity-100 bg-slate-600 rounded-2xl p-1 text-white">
+                Github
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        <Link to={instaLink}>
+          <div>
+            <div class="group relative w-max">
+              <button>
+                <AiOutlineInstagram size={30} />
+              </button>
+              <span class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-red-600 rounded-xl p-1 text-white">
+                Instagram
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        <Link to={linkedinLink}>
+          <div>
+            <div class="group relative w-max">
+              <button>
+                <AiOutlineLinkedin size={30} />
+              </button>
+              <span class="pointer-events-none  h-full w-full flex justify-center opacity-0 transition-opacity group-hover:opacity-100 bg-sky-600 rounded-2xl p-1 text-white ">
+                Linkedin
+              </span>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+};
