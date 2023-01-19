@@ -53,11 +53,11 @@ const Profile1 = () => {
                             </div>
                             <div class="mt-5 text-center border-b pb-10">
 
-                                <h1 class="text-4xl font-medium text-gray-700">Ashwin V, <span class="font-light text-gray-500">27</span></h1>
+                                <h1 class="text-4xl font-medium text-gray-700">Arya Bhavan Catering Service <span class="font-light text-gray-500"></span></h1>
                                 <p class="font-light text-gray-600 mt-3">Tamil Nadu, India</p>
 
-                                <p class="mt-8 text-gray-500">Caterer</p>
-                                <p class="mt-2 text-gray-500">Hotel Arya Bhavan</p>
+                                <p class="mt-8 text-gray-500 font-semibold">Signature Dish </p>
+                                <p class="mt-2 text-gray-500">Italian Cuisine and Chineese snacks</p>
 
                             </div>
                         </div>
@@ -78,7 +78,7 @@ const Profile1 = () => {
                             </button>
 
 
-                            <button class="grid md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-yellow-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
+                            <button class="grid md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-yellow-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1 ">
 
                                 <div class="font-bold text-gray-700 text-3xl m-auto pt-3" ><AiOutlineInstagram /></div>
                                 <div class="text-gray-400">Instagram</div>
@@ -108,14 +108,15 @@ const Profile1 = () => {
                         <div class=" bg-white shadow mt-10 grid grid-rows-3">
                             <div class="py-5 px-24 ">
                                 <p></p>
-                                <Progress_bar progress="60" height="20px" text='No of events posted' />
+                                <Progress_bar progress="100" height="20px" text='Totla no.of events assigned' value="33" />
                             </div>
                             <div class="py-5 px-24 ">
-                                <Progress_bar progress="40" height="20px" text='Nof of events pending' />
+                                <Progress_bar progress="66.66" height="20px" text='No of events successful' value="20"/>
                             </div>
                             <div class="py-5 px-24 ">
-                                <Progress_bar progress="20" height="20px" text='No of events successful' />
+                                <Progress_bar progress="33.33" height="20px" text='Nof of events pending ' value="11" />
                             </div>
+                            
 
 
                         </div>
@@ -124,6 +125,7 @@ const Profile1 = () => {
 
 
                             <div>
+                                <p className='font-bold text-2xl m-2'>User's Posts</p>
                                 <label for="my-modal" >
                                     <div class="p-8 bg-white shadow rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-blue-300 hover duration-300 ">
                                         Post 1, Hello this is your first post about blah blah, <b>Click to expand</b>
