@@ -16,7 +16,7 @@ const Navbar = () => {
         position: "sticky",
         top: 0,
       }}
-      className="bg-white mobile:px-2 mobile:py-2 mobile:my-1 sm:px-4 lg:px-[calc(100vw/20)] sm:py-1 font-sans  flex items-center sm:justify-between"
+      className="bg-white mobile:px-2 mobile:my-1 sm:px-4 lg:px-[calc(100vw/20)] sm:py-1 font-sans  flex items-center sm:justify-between"
     >
       <div className="flex items-center mobile:justify-center sm:justify-start w-1/3 mobile:space-2  sm:space-x-4 mobile:space-x-2">
         <img

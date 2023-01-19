@@ -8,6 +8,11 @@ import { TbArrowBack } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import sivesh from "./team/sivesh.jpg";
+import suvan from "./team/suvan.jpg";
+import ashwin from "./team/ashwin.jpg";
+import shivani from "./team/shivani.jpg";
+import nashita from "./team/nashita.jpg";
+
 const AboutUs = () => {
   let message = "This is a sample text sample sample sample sample sample";
   return (
@@ -15,7 +20,7 @@ const AboutUs = () => {
       <div>
       <Navbar />
       </div>
-      <section className="bg-gradient-to-b from-black to-slate-900 h-full w-full p-4 flex justify-center">
+      <section className="bg-gradient-to-b from-black to-slate-900 h-screen w-full p-4 flex justify-center">
         <div className="container">
           <div className=" about_us_text text-white text-center">
             <h2 className="header bold text-4xl p-2">About Us</h2>
@@ -28,7 +33,7 @@ const AboutUs = () => {
               name="Suvan Sathyendira"
               organization={"PSG College of Technology"}
               content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
-              image={sivesh}
+              image={suvan}
               githubLink = {"//www.github.com/suvanbalu"}
               instaLink = {"//www.instagram.com/suvan.balu/"}
               linkedinLink = {"//www.linkedin.com/in/suvanbalu/"}
@@ -37,7 +42,7 @@ const AboutUs = () => {
               name="Ashwin V"
               organization={"PSG College of Technology"}
               content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
-              image={sivesh}
+              image={ashwin}
               githubLink = {"//www.github.com/asxwin"}
               instaLink = {"//www.instagram.com/ashwin.in/"}
               linkedinLink = {"//www.linkedin.com/in/ashwin-v-108068219/"}
@@ -46,7 +51,7 @@ const AboutUs = () => {
               name="Shivani Sri"
               organization={"PSG College of Technology"}
               content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
-              image={sivesh}
+              image={shivani}
               githubLink = {"//www.github.com/shxvani"}
               instaLink = {"//www.instagram.com/shxvani/"}
               linkedinLink = {"//www.linkedin.com/in/shivani-s-b640241b2/"}
@@ -55,7 +60,7 @@ const AboutUs = () => {
               name="Nashita V"
               organization={"PSG College of Technology"}
               content="Poda punda Poda punda Poda punda Poda pundaPoda punda Poda punda Poda punda"
-              image={sivesh}
+              image={nashita}
               githubLink = {"//www.github.com/NashitaV"}
               instaLink = {"//www.instagram.com/na_shhhhh/"}
               linkedinLink = {"//www.linkedin.com/in/nashita-v-972563219/"}
