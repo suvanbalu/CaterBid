@@ -21,7 +21,7 @@ function App() {
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />
-        <Route path="/User1" element={<Profile1 /> } />
+        <Route path="/CUser/:c_id" element={<Profile1 /> } />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
