@@ -116,7 +116,7 @@ const TeamMemberDetail = ({
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="rounded-full m-5 w-44 h-44 aspect-square bg-white"
+        className="rounded-full w-44 h-44 aspect-square m-auto mt-5"
       />
       <br></br>
       <h3 className="Ashwin bold text-xl">{name}</h3>
