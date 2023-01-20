@@ -1,6 +1,6 @@
 import React from "react";
 
-const Profile = () => {
+const UserSignUp = () => {
   return (
     <div className=" w-full h-full">
       <nav
@@ -23,9 +23,16 @@ const Profile = () => {
           <br></br>
         </h1>
       </div>
-
-      <div className="min-h-screen py-24 bg-slate-300 w-full">
-        <div className="container mx-auto bg-transparent">
+      <section
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom, rgba(0, 1, 3, 0.8), rgba(1, 29, 87, 0.7)), url(https://assets.cntraveller.in/photos/60ba1a540f3a5367ec9fe38e/master/pass/image-1366x768.jpg)",
+              backgroundSize : "cover",
+              backgroundPosition : "center",
+              backgroundRepeat : "no-repeat",
+          }}
+          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0 ">
+      <div className="min-h-screen py-24 bg-[url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*')] bg-cover w-full ">
           <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden">
             <div className="flex w-fit h-fit rounded-3xl shadow-md">
             <div
@@ -48,7 +55,8 @@ const Profile = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 py-16 px-12 bg-white rounded-r-2xl">
+            <div className="flex w-full lg:w-1/2 py-16 px-12 bg-white rounded-r-2xl justify-center">
+              <div className="w-[90%]">
               <h2 className="text-3xl mb-8 font-semibold">Sign Up</h2>
               <p className="mb-6">
                 Create your account. It's free and only takes a minute!
@@ -97,7 +105,7 @@ const Profile = () => {
                 <div className="mt-5">
                   <input
                     type="checkbox"
-                    className="border border-gray-400"
+                    className="border border-gray-400 mr-1"
                   ></input>
                   <span>
                     <a> </a>I accept the{" "}
@@ -119,11 +127,12 @@ const Profile = () => {
               </form>
             </div>
             </div>
+            </div>
           </div>
         </div>
-      </div>
+        </section>
     </div>
   );
 };
 
-export default Profile;
+export default UserSignUp;
