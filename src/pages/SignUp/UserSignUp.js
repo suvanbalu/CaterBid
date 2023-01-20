@@ -1,28 +1,21 @@
 import React from "react";
+import Navbar from "../../components/Navbar";
+import { Link } from "react-router-dom";
 
 const UserSignUp = () => {
   return (
-    <div className=" w-full h-full">
-      <nav
+    <React.Fragment>
+      <Navbar />
+      <section
+        className="h-screen w-screen p-4 flex flex-col items-center justify-center"
         style={{
-          position: "sticky",
-          top: 0,
+          backgroundImage:
+            "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://images.unsplash.com/photo-1533143708019-ea5cfa80213e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
-        className="bg-white px-4 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between space-between"
-      ><div className="flex items-center w-1/3 space-x-4">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-        className="px-1 h-10 lg:h-14"
-        alt="logo"
-      ></img>
-      <h1 className="m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
-    </div>
-    </nav>
-      <div>
-        <h1>
-          <br></br>
-        </h1>
-      </div>
+      >
       <div className="h-screen w-full flex fixed ">
       <div
           style={{
@@ -132,7 +125,8 @@ const UserSignUp = () => {
           </div>
         </div>
       </div>
-    </div>
+      </section>
+    </React.Fragment>
   );
 };
 

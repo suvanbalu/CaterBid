@@ -17,7 +17,6 @@ const CatererLogin = () => {
                         title="Email"
                         placeholder="Enter Mail ID"
                     />
-
                     </div>
                     <div className="mb-2">
                     <Inputfield
