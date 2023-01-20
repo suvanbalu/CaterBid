@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-const HowItWorks = () => {
+const HowItWorksCaterer = () => {
   return (
     <React.Fragment>
       <nav>
@@ -9,12 +9,12 @@ const HowItWorks = () => {
           <Navbar />
         </div>
       </nav>
-
+    <div className='w-full h-full'>
       <section
         className="h-full w-full p-4 flex flex-col items-center justify-center"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://images.unsplash.com/photo-1533143708019-ea5cfa80213e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80)",
+            "linear-gradient(to bottom, rgba(0, 1, 3, 0.8), rgba(58, 1, 16, 0.6)), url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -22,25 +22,22 @@ const HowItWorks = () => {
       >
         <div className=" how_it_works_text font-mont text-white text-center">
           <h1 class="font-extrabold tracking-wide text-white text-5xl pt-20">
-            How does CaterBid work?
+            How is CaterBid beneficial to a caterer?
           </h1>
         </div>
 
         <div className="desc_text text-white text-center">
           <h1 class="font-mont tracking-tight text-white text-3xl pt-10">
-            <p class="p-2 break-words">It's as simple as an order form.</p>
             <p>
-              You tell us what you want, and the best caterers compatible with
-              your needs will find you. Quickly and easily. No more searching
-              through hundreds of caterers. No more calling around. No more
-              wasting time.
+              CaterBid helps you find clients by giving your businesses a platform to bid on catering opportunities posted by our users. 
+              You can also use our platform to showcase your work and get more clients.
             </p>
           </h1>
         </div>
 
         <div className="desc2_text text-white text-center">
           <h2 class="font-mont tracking-tight text-6xl p-10 text-white">
-            You Post. Caterers Bid. You Choose.
+            May the best bid win!
           </h2>
         </div>
         <div className="w-full flex items-center justify-center">
@@ -55,30 +52,31 @@ const HowItWorks = () => {
             </div>
             <div className="pl-8 pr-8 flex flex-col items-center">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/8131/8131463.png"
+                src="https://cdn-icons-png.flaticon.com/512/4056/4056002.png"
                 alt="step2.png"
                 className="h-20 mb-4"
               ></img>
-              <h1 className=" text-2xl font-mont">2. Post Your Event</h1>
+              <h1 className=" text-2xl font-mont">2. Bid on Events </h1>
             </div>
             <div className="pl-8 pr-8 flex flex-col items-center">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3386/3386941.png"
+                src="https://cdn-icons-png.flaticon.com/512/2104/2104072.png"
                 alt="step3.png"
                 className="h-20 mb-4"
               ></img>
-              <h1 className=" text-2xl font-mont">3. Pick the best bid</h1>
+              <h1 className=" text-2xl font-mont">3. Be competetive </h1>
             </div>
           </div>
         </div>
         <div>
           <button className="p-4 mt-4 transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
-            <Link to="/HowItWorksCaterer">I'm a caterer</Link>
+            <Link to="/HowItWorks">I'm a user</Link>
           </button>
         </div>
       </section>
+    </div>
     </React.Fragment>
   );
 };
 
-export default HowItWorks;
+export default HowItWorksCaterer;

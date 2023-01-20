@@ -7,6 +7,7 @@ import AboutUs from './pages/aboutus/AboutUs'
 import Profile from './pages/User/Profile'
 import NotFound from './pages/NotFound'
 import HowItWorks from './pages/HowItWorks'
+import HowItWorksCaterer from './pages/HowItWorksCaterer'
 import Profile1 from './pages/User/profile1'
 import UserSignUp from './pages/SignUp/UserSignUp' 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/SignUp" element={<UserSignUp/>}/>
         <Route path="/AboutUs" element={<AboutUs />}/>
         <Route path="/HowItWorks" element={<HowItWorks />}/>
+        <Route path="/HowItWorksCaterer" element={<HowItWorksCaterer />}/>
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />
