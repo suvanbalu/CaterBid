@@ -14,7 +14,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
         <Route path="/SignUp" element={<UserSignUp/>}/>
         <Route path="/AboutUs" element={<AboutUs />}/>
         <Route path="/HowItWorks" element={<HowItWorks />}/>
@@ -22,6 +21,7 @@ function App() {
         <Route path="/CatererLogin" element={<CatererLogin /> } />
         <Route path="/UserLogin" element={<UserLogin /> } />
         <Route path="/CUser/:cid" element={<Profile1 /> } />
+      <Route index element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
