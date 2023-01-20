@@ -6,21 +6,12 @@ const UserSignUp = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <section
-        className="h-screen w-screen p-4 flex flex-col items-center justify-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://images.unsplash.com/photo-1533143708019-ea5cfa80213e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      
       <div className="h-screen w-full flex fixed ">
       <div
           style={{
             backgroundImage:
-              "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*)",
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*)",
               backgroundSize : "cover",
               backgroundPosition : "center",
               backgroundRepeat : "no-repeat",
@@ -125,7 +116,6 @@ const UserSignUp = () => {
           </div>
         </div>
       </div>
-      </section>
     </React.Fragment>
   );
 };
