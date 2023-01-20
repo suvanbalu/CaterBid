@@ -6,7 +6,7 @@ const Home = () => {
   return (
       <div className="w-screen h-screen overflow-x-hidden font-sans fixed ">
         <Navbar />
-        <div className="md:w-full md:h-full">
+        <div className="md:w-full md:h-full fixed">
         <Mainsection />
         </div>
       </div>

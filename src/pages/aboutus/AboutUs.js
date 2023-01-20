@@ -20,7 +20,7 @@ const AboutUs = () => {
       <div>
       <Navbar />
       </div>
-      <section className="bg-gradient-to-b from-black to-slate-900 h-full w-full p-4 flex justify-center">
+      <section className="bg-gradient-to-b from-black to-slate-900 w-full p-4 flex justify-center fixed h-screen">
         <div className="container mt-10">
           <div className=" about_us_text text-white text-center">
             <h2 className="header bold text-4xl p-2">About Us</h2>
