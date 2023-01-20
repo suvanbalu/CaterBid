@@ -4,12 +4,7 @@ import { Link } from "react-router-dom";
 const HowItWorks = () => {
   return (
     <React.Fragment>
-      <nav>
-        <div className="w-full h-full overflow-x-hidden font-sans ">
-          <Navbar />
-        </div>
-      </nav>
-
+      <Navbar />
       <section
         className="h-full w-full p-4 flex flex-col items-center justify-center"
         style={{

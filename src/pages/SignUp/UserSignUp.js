@@ -1,6 +1,6 @@
 import React from "react";
 
-const Profile = () => {
+const UserSignUp = () => {
   return (
     <div className=" w-full h-full">
       <nav
@@ -23,10 +23,18 @@ const Profile = () => {
           <br></br>
         </h1>
       </div>
-
-      <div className="min-h-screen py-24 bg-slate-300 w-full">
-        <div className="container mx-auto bg-transparent">
-          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden">
+      <div className="h-screen w-full flex fixed ">
+      <div
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*)",
+              backgroundSize : "cover",
+              backgroundPosition : "center",
+              backgroundRepeat : "no-repeat",
+              
+          }}
+          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0  ">
+          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden p-28">
             <div className="flex w-fit h-fit rounded-3xl shadow-md">
             <div
               className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-slate-400 rounded-l-2xl"
@@ -48,7 +56,8 @@ const Profile = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 py-16 px-12 bg-white rounded-r-2xl">
+            <div className="flex w-full lg:w-1/2 py-16 px-12 bg-white rounded-r-2xl justify-center">
+              <div className="w-[90%]">
               <h2 className="text-3xl mb-8 font-semibold">Sign Up</h2>
               <p className="mb-6">
                 Create your account. It's free and only takes a minute!
@@ -97,7 +106,7 @@ const Profile = () => {
                 <div className="mt-5">
                   <input
                     type="checkbox"
-                    className="border border-gray-400"
+                    className="border border-gray-400 mr-1"
                   ></input>
                   <span>
                     <a> </a>I accept the{" "}
@@ -112,11 +121,12 @@ const Profile = () => {
                   </span>
                 </div>
                 <div class="mt-5">
-                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-slate-300 hover:bg-slate-500 active:bg-slate-500 focus:outline-none focus:ring focus:ring-slate-500">
+                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-slate-500 active:bg-slate-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
                     Sign Up Now
                   </button>
                 </div>
               </form>
+            </div>
             </div>
             </div>
           </div>
@@ -126,4 +136,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default UserSignUp;
