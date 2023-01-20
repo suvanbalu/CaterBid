@@ -23,17 +23,18 @@ const UserSignUp = () => {
           <br></br>
         </h1>
       </div>
-      <section
+      <div className="h-screen w-full flex fixed ">
+      <div
           style={{
             backgroundImage:
-              "linear-gradient(to bottom, rgba(0, 1, 3, 0.8), rgba(1, 29, 87, 0.7)), url(https://assets.cntraveller.in/photos/60ba1a540f3a5367ec9fe38e/master/pass/image-1366x768.jpg)",
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*)",
               backgroundSize : "cover",
               backgroundPosition : "center",
               backgroundRepeat : "no-repeat",
+              
           }}
-          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0 ">
-      <div className="min-h-screen py-24 bg-[url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*')] bg-cover w-full ">
-          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden">
+          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0  ">
+          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden p-28">
             <div className="flex w-fit h-fit rounded-3xl shadow-md">
             <div
               className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-slate-400 rounded-l-2xl"
@@ -120,7 +121,7 @@ const UserSignUp = () => {
                   </span>
                 </div>
                 <div class="mt-5">
-                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-slate-300 hover:bg-slate-500 active:bg-slate-500 focus:outline-none focus:ring focus:ring-slate-500">
+                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-slate-500 active:bg-slate-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
                     Sign Up Now
                   </button>
                 </div>
@@ -130,7 +131,7 @@ const UserSignUp = () => {
             </div>
           </div>
         </div>
-        </section>
+      </div>
     </div>
   );
 };
