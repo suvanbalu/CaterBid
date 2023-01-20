@@ -11,7 +11,7 @@ const HowItWorksCaterer = () => {
       </nav>
     <div className='w-full h-full'>
       <section
-        className="h-full w-full p-4 flex flex-col items-center justify-center"
+        className="w-full p-4 flex flex-col items-center justify-center h-screen fixed"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(0, 1, 3, 0.8), rgba(58, 1, 16, 0.6)), url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80)",
@@ -21,7 +21,7 @@ const HowItWorksCaterer = () => {
         }}
       >
         <div className=" how_it_works_text font-mont text-white text-center">
-          <h1 class="font-extrabold tracking-wide text-white text-5xl pt-20">
+          <h1 class="font-extrabold tracking-wide text-white text-5xl pt-3">
             How is CaterBid beneficial to a caterer?
           </h1>
         </div>
