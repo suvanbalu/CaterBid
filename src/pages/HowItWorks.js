@@ -6,7 +6,7 @@ const HowItWorks = () => {
     <React.Fragment>
       <Navbar />
       <section
-        className=" w-full p-4 flex flex-col items-center justify-center  h-screen fixed"
+        className=" w-full flex flex-col items-center justify-center  h-screen md:fixed"
         style={{
           backgroundImage:
             "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://images.unsplash.com/photo-1533143708019-ea5cfa80213e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80)",

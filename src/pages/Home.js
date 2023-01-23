@@ -4,9 +4,9 @@ import Mainsection from "../components/Mainsection";
 
 const Home = () => {
   return (
-      <div className="w-screen h-screen overflow-x-hidden font-sans fixed ">
+      <div className="w-screen h-screen overflow-x-hidden font-sans ">
         <Navbar />
-        <div className="md:w-full md:h-full fixed">
+        <div className="md:w-full md:h-full md:fixed">
         <Mainsection />
         </div>
       </div>

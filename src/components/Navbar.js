@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="flex items-center mobile:justify-center sm:justify-start w-1/3 mobile:space-2  sm:space-x-4 mobile:space-x-2">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-          className="px-1 sm:h-14 mobile:h-8"
+          className="px-1 sm:h-12 mobile:h-8"
           alt="logo"
         />
         <Link to="/" className="sm:text-2xl mobile:text-xl font-bold text-red-500">
