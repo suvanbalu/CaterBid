@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-catering-award-events-flaticons-lineal-color-flat-icons.png" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-catering-award-events-flaticons-lineal-color-flat-icons.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -28,6 +31,25 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("serviceWorker.js").then(
+            function (registration) {
+              // Registration was successful
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
+            },
+            function (err) {
+              // registration failed :(
+              console.log("ServiceWorker registration failed: ", err);
+            }
+          );
+        });
+      }
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
