@@ -9,6 +9,7 @@ import HowItWorks from './pages/HowItWorks'
 import HowItWorksCaterer from './pages/HowItWorksCaterer'
 import Profile1 from './pages/User/profile1'
 import UserSignUp from './pages/SignUp/UserSignUp'
+import CatererPage1 from './pages/SignUp/CatererPage1';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path="/HowItWorks" element={<HowItWorks />}/>
         <Route path="/HowItWorksCaterer" element={<HowItWorksCaterer />}/>
         <Route path="/login" element={<LoginWrap />} />
-        <Route path="/CatererLogin" element={<CatererLogin /> } />
+        <Route path="/CatererLogin" element={<CatererLogin /> }/>
+        <Route path="/CatererPage1" element={<CatererPage1 />}/>
         {/* <Route path="/User" element={<Profile1 /> } /> */}
         <Route path="/CUser/:cid" element={<Profile1 /> } />
       <Route index element={<Home />} />

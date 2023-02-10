@@ -105,8 +105,13 @@ const UserSignUp = () => {
                   </span>
                 </div>
                 <div class="mt-5">
-                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-slate-500 active:bg-slate-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-orange-600 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
                     Sign Up Now
+                  </button>
+                </div>
+                <div class="text-red-600 font-semibold text-align:center">
+                  <button class="w-full py-2 text-center text-red-500 font-semibold text-align:center hover hover:text-red-600">
+                    <Link to="/CatererPage1">I'm a Caterer </Link>
                   </button>
                 </div>
               </form>
