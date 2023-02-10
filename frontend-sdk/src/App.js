@@ -10,7 +10,7 @@ import HowItWorksCaterer from './pages/HowItWorksCaterer'
 import Profile1 from './pages/User/profile1'
 import UserSignUp from './pages/SignUp/UserSignUp'
 import CatererPage1 from './pages/SignUp/CatererPage1';
-
+import CatererPage2 from './pages/SignUp/CatererPage2';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> }/>
         <Route path="/CatererPage1" element={<CatererPage1 />}/>
+        <Route path="/CatererPage2" element={<CatererPage2 />}/>
         {/* <Route path="/User" element={<Profile1 /> } /> */}
         <Route path="/CUser/:cid" element={<Profile1 /> } />
       <Route index element={<Home />} />
