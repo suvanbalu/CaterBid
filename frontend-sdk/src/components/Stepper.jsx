@@ -50,7 +50,7 @@ const Stepper = ({ steps, currentStep }) => {
           completed: true,
         };
         count++;
-      } else if(count>stepNumber) {
+      } else {
         console.log("Im here else")
         newSteps[count] = {
           ...newSteps[count],
