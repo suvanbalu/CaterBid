@@ -53,7 +53,7 @@ const UserLogin = () => {
         //     </div>
         // </div>
 
-        <div className="h-screen w-full flex fixed ">
+        <div className="h-screen w-full flex fixed bg-white">
         <div
           style={{
             backgroundImage:

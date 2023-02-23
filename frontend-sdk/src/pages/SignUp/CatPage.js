@@ -50,7 +50,7 @@ const CatPage = ()=>{
       
       <div className="flex flex-row items-center p-4 bg-white">
         
-            <div className="w-full lg:w-[50vw] flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
+            <div className="w-full lg:w-[50vw] h-screen flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
              
             
               <div class=" w-1/3 h-8 bg-gradient-to-r from-phorange absolute inset-y-32 left-0 " ></div><br></br>
