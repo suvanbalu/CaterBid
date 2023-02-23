@@ -62,14 +62,15 @@ const CatPage = ()=>{
 
               
               <div class=" w-72 h-8 bg-gradient-to-r from-phorange absolute inset-y-80 left-0 " ></div><br></br>
-              <div class=" w-3/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-96 left-0 " ></div><br></br>
               <div className = "text-8xl text-black font-bold mx-auto  z-10 pl-48">
-                <span className="text-transparent bg-gradient-to-r bg-clip-text from-blue-500 to-green-500 ">
+                <span className="text-transparent bg-gradient-to-r bg-clip-text from-blue-400 to-green-500 ">
                 CaterBid,
                 </span>
                 <br/>
                 a place for everyone
               </div>
+              <div class=" w-3/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-96 left-0 " ></div><br></br>
+              
               
               <div class=" w-72 h-8 bg-gradient-to-r from-phorange absolute inset-y-[448px] left-0 " ></div><br></br>
               {/* <div class=" w-5/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-[448px] left-0 " ></div><br></br> */}

@@ -55,30 +55,37 @@ const UserLogin = () => {
         // </div>
 
         <div className="h-screen w-full flex fixed bg-white">
-        <div
-          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-white lg:py-0  ">
+        <div style={{
+                backgroundImage:
+                  "linear-gradient(to bottom, rgba(230, 230, 230, 0.7), rgba(230, 230, 230, 0.9)), url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+        
+          className="flex flex-col items-center mobile:w-full mobile:h-full mobile:pb-20 mobile:pt-20 bg-white lg:py-0  ">
           <div className="w-full h-1 bg-phorange"></div>
 
           <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden p-28">
-            <div className="flex w-fit h-fit rounded-3xl shadow-md">
+            <div className="flex w-2/3 h-fit rounded-3xl shadow-md">
             <div
               className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-black rounded-l-2xl"
   
             >
               <img
-                  src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
+                  src="https://raw.githubusercontent.com/suvanbalu/caterbid/main/frontend-sdk/src/pages/Login/catPic.png"
                   className="px-1 sm:h-64 mobile:h-8"
                   alt="logo"
 
                 />
-              <h1 className="text-6xl mb-3 text-slate-200 font-semibold">
+              {/* <h1 className="text-6xl mb-3 text-slate-200 font-semibold">
                 Welcome
               </h1>
               <div>
                 <p className="text-xl text-slate-300 font-semibold ">
                   user user user user user user user user user
-                </p>
-              </div>
+                </p> */}
+              {/* </div> */}
             </div>
             <div style={{
             backgroundImage:
