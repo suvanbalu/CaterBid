@@ -1,19 +1,25 @@
 // import files
-// const express = require('express');
 import express from 'express';
-// const bodyParser = require('body-parser');
 import bodyParser from 'body-parser';
-// const cors = require('cors');
 import cors from 'cors';
-
+import passport from 'passport';
 const app = express();
 const port = 3001;
 import { connect } from './mongo/conn.js';
-
+import router from './routes/auth.js';
 // use files  
 app.use(bodyParser.json());
 app.use(cors());
-
+app.use(require("express-session")({
+  secret: "node js mongodb",
+  resave: false,
+  saveUninitialized: false
+  }));
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 // set env port to 3001
 app.set('port', process.env.PORT || 3001);
 
@@ -32,6 +38,9 @@ connect(function (err) {
     console.log('Connected to Mongo');
   }
 });
+
+// use routes
+app.use('/auth', router);
 
 // get request
 app.get('/', (req, res) => {

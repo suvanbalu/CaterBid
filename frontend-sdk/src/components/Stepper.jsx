@@ -11,8 +11,8 @@ const Stepper = ({ steps, currentStep }) => {
     let count = 0;
 
     while (count < newSteps.length) {
-      console.log(newSteps);
-      console.log(count,stepNumber);
+      // console.log(newSteps);
+      console.log("First",count,stepNumber);
       if (count == stepNumber) {
         console.log("hi im herer");
         if (count === newSteps.length - 1) {
@@ -32,17 +32,9 @@ const Stepper = ({ steps, currentStep }) => {
           };
           console.log("after",newSteps,newSteps[0]);
         }
-      }
-      if (count == stepNumber - 1) {
-        console.log("Low")
-        newSteps[count] = {
-          ...newSteps[count],
-          highlighted: true,
-          selected: true,
-          completed: true,
-        };
         count++;
-      } else if (count < stepNumber) {
+      }
+      else if (count < stepNumber) {
         newSteps[count] = {
           ...newSteps[count],
           highlighted: false,
@@ -50,8 +42,9 @@ const Stepper = ({ steps, currentStep }) => {
           completed: true,
         };
         count++;
-      } else {
-        console.log("Im here else")
+      } 
+      else if (count>stepNumber){
+        console.log("Im here else",count,stepNumber)
         newSteps[count] = {
           ...newSteps[count],
           highlighted: false,

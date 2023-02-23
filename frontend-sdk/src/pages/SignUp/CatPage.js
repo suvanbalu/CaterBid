@@ -90,7 +90,7 @@ const CatPage = ()=>{
             
 
             
-            <div className="flex w-1/2 lg:w-3/5 py-10 px-2  bg-white rounded-2xl justify-center shadow-xl shadow-white border-2">
+            <div className="flex w-1/2 lg:w-3/5 py-10 px-2  bg-white rounded-2xl justify-center shadow-xl shadow-white">
               <div className="w-[80%]">
               <h2 className="text-3xl mb-8 font-semibold">Sign Up</h2>
 
