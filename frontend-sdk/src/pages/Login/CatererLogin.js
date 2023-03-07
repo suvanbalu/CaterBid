@@ -49,8 +49,8 @@ const CatererLogin = () => {
         //     </div>
         // </div>
         <div className="h-screen w-full flex fixed ">
-        <div
-          style={{
+          
+        <div style={{
             backgroundImage:
               "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*)",
               backgroundSize : "cover",
@@ -58,44 +58,53 @@ const CatererLogin = () => {
               backgroundRepeat : "no-repeat",
               
           }}
-          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0  ">
+        className="flex flex-col items-center mobile:w-full mobile:h-full  mobile:pb-20 mobile:pt-20 bg-black lg:py-0">
+        <div className="w-full h-1 bg-phorange"></div>
+
           <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden p-28">
-            <div className="flex w-fit h-fit rounded-3xl shadow-md">
+            <div className="flex w-2/3 h-fit rounded-3xl shadow-md">
             <div
-              className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-slate-400 rounded-l-2xl"
-              style={{
+              className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl"
+              
+            >
+              <img
+                  src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
+                  className="px-1 sm:h-64 mobile:h-8"
+                  alt="logo"
+
+                />
+              {/* <h1 className="text-6xl mb-3 text-black font-semibold">
+                Welcome
+              </h1>
+              <div>
+                <p className="text-xl text-black font-semibold ">
+                  caterer caterer caterer caterer caterer caterer
+                </p>
+              </div> */}
+            </div>
+            <div style={{
                 backgroundImage:
-                  "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg)",
+                  "linear-gradient(to bottom, rgba(180, 180, 180, 0.7), rgba(180, 180, 180, 0.9)), url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }}
-            >
-              <h1 className="text-6xl mb-3 text-slate-200 font-semibold">
-                Welcome
-              </h1>
-              <div>
-                <p className="text-xl text-slate-300 font-semibold ">
-                  caterer caterer caterer caterer caterer caterer
-                </p>
-              </div>
-            </div>
-            <div className="flex w-full lg:w-1/2 py-16 px-12 bg-white rounded-r-2xl justify-center">
+              className="flex w-full lg:w-1/2 py-16 px-12 bg-slate-300 rounded-r-2xl justify-center">
               <div className="w-[90%]">
-              <h2 className="text-3xl mb-8 font-semibold">Caterer login</h2>
-              <p className="mb-6">
+              <h2 className="text-3xl mb-8 font-semibold text-phorange">Caterer login</h2>
+              <p className="mb-6 text-black" >
                 Login in to your account ! 
               </p>
               <form action="#">
                 
-                <div className="mb-2">
+                <div className="mb-2 text-slate-700">
                     <Inputfield
                         valueState={[Mailid, setMailid]}
                         title="Email"
                         placeholder="Enter Mail ID"
                     />
                     </div>
-                    <div className="mb-2">
+                    <div className="mb-2 text-slate-700">
                     <Inputfield
                         valueState={[pwd, setpwd]}
                         title="Password"

@@ -48,7 +48,7 @@ const Navbar = () => {
           <Link to="/login">Login</Link>
         </button>
         <button className="font-semibold sm:text-base mobile:text-xs rounded-md sm:px-2 sm:py-1 mobile:px-0 transition ease-in-out text-red-500 hover:scale-110 duration-150">
-          <Link to="/SignUp">Sign Up</Link>
+          <Link to="/UserSignUpMain">Sign Up</Link>
         </button>
       </div>
     </nav>

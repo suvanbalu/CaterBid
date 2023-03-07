@@ -2,46 +2,57 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
 
-const UserSignUp = () => {
-  return (
-    <React.Fragment>
+const UserSignUpMain = () => {
+  
+    return(
+        <React.Fragment>
       <Navbar />
       
-      <div className="h-screen w-full flex fixed ">
-      <div
-          style={{
-            backgroundImage:
-              "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/table-filled-with-large-variety-of-food-shot-from-royalty-free-image-1659038707.jpg?crop=1.00xw:0.753xh;0,0&resize=980:*)",
-              backgroundSize : "cover",
-              backgroundPosition : "center",
-              backgroundRepeat : "no-repeat",
+      <div className="flex flex-row items-center p-4 bg-white">
+        
+            <div className="w-full lg:w-[50vw] h-screen flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
+             
+            
+              <div class=" w-1/3 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-32 left-0 " ></div><br></br>
+              <div class=" w-5/12 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-48 left-0 " ></div><br></br>
+              <div class=" w-96 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-64 left-0 " ></div><br></br>
+              {/* <div class="relative w-[576px] h-[576px] bg-black rounded-full flex justify-center items-center text-center p-5 shadow-xl z-10 font-sans">
+                  Make it simple, but significant.
+              </div> */}
+
               
-          }}
-          className="flex flex-col items-center mobile:w-full mobile:h-full p-4 mobile:pb-20 mobile:pt-20 bg-black lg:py-0  ">
-          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden p-28">
-            <div className="flex w-fit h-fit rounded-3xl shadow-md">
-            <div
-              className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-slate-400 rounded-l-2xl"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <h1 className="text-6xl mb-3 text-slate-200 font-semibold">
-                Welcome
-              </h1>
-              <div>
-                <p className="text-xl text-slate-300 font-semibold ">
-                  Not yet a customer? Please register blah blah blah blah blah
-                  blah blah
-                </p>
+              <div class=" w-72 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-80 left-0 " ></div><br></br>
+              <div className = "text-8xl text-black font-bold mx-auto  z-10 pl-48">
+                <span className="text-transparent bg-gradient-to-r bg-clip-text from-phorange to-green-500 ">
+                CaterBid,
+                </span>
+                <br/>
+                a place for everyone
               </div>
+              <div class=" w-3/12 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-96 left-0 " ></div><br></br>
+              
+              
+              <div class=" w-72 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[448px] left-0 " ></div><br></br>
+              {/* <div class=" w-5/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-[448px] left-0 " ></div><br></br> */}
+              <div class=" w-96 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[512px] left-0 " ></div><br></br>
+              <div class=" w-1/4 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[576px] left-0 " ></div><br></br>
+              <div class=" w-1/3 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[640px] left-0 " ></div><br></br>
+              <div class=" w-96 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[704px] left-0 " ></div><br></br>
+              <div class=" w-5/12 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[768px] left-0 " ></div><br></br>
+
+             
+
             </div>
-            <div className="flex w-full lg:w-1/2 py-16 px-12 bg-white rounded-r-2xl justify-center">
-              <div className="w-[90%]">
+            
+             
+              
+            
+
+            
+
+            
+            <div className="flex w-1/2 lg:w-3/5 py-10 px-2  bg-white rounded-2xl justify-center shadow-xl shadow-white">
+              <div className="w-[80%]">
               <h2 className="text-3xl mb-8 font-semibold">Sign Up</h2>
               <p className="mb-6">
                 Create your account. It's free and only takes a minute!
@@ -105,7 +116,7 @@ const UserSignUp = () => {
                   </span>
                 </div>
                 <div class="mt-5">
-                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-orange-600 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-blue-300 hover:bg-blue-500 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
                     Sign Up Now
                   </button>
                 </div>
@@ -115,14 +126,15 @@ const UserSignUp = () => {
                   </button>
                 </div>
               </form>
+             
             </div>
             </div>
             </div>
-          </div>
-        </div>
-      </div>
     </React.Fragment>
-  );
-};
+    )
+    
+    
+  
+}
 
-export default UserSignUp;
+export default UserSignUpMain;

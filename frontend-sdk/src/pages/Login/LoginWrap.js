@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import UserLogin from "./UserLogin";
 import CatererLogin from "./CatererLogin";
+import Navbar from "../../components/Navbar";
 import {BiArrowBack} from 'react-icons/bi'
 import {
   TbArrowBack
@@ -10,6 +11,8 @@ import { Link } from "react-router-dom";
 export const LoginWrapTab = createContext();
 
 const LoginWrap = () => {
+  
+  
   const initialTabMenuItems = [
     {
       text: "User Login",
@@ -62,7 +65,7 @@ const LoginWrap = () => {
                       : {}
                   }
                   className={`${selected === idx &&
-                    "bg-white rounded-t-lg box-border  font-semibold"
+                    "bg-phorange rounded-t-lg box-border  font-semibold"
                     } px-6 py-4`}
                 >
                   <p className="">{item.text}</p>
