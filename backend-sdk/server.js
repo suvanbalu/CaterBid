@@ -1,33 +1,28 @@
 // import files
-import express from 'express';
-import bodyParser from 'body-parser';
+import express from "express";
 import cors from 'cors';
-import passport from 'passport';
 const app = express();
-const port = 3001;
-import { connect } from './mongo/conn.js';
-import router from './routes/auth.js';
-// use files  
-app.use(bodyParser.json());
-app.use(cors());
-app.use(require("express-session")({
-  secret: "node js mongodb",
-  resave: false,
-  saveUninitialized: false
-  }));
-app.use(passport.initialize());
-app.use(passport.session());
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-// set env port to 3001
-app.set('port', process.env.PORT || 3001);
+const PORT = process.env.PORT || 3001;
 
-// listen to port 3001
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+import { connect } from './mongo/conn.js';
+import auth from './routes/auth.js';
+import bids from './routes/bids.js';
+import post from './routes/post.js';
+// use files  
+app.use(cors());
+app.use(express.json());
+
+app.use('/auth', auth);
+app.use('/bids', bids);
+app.use('/post', post);
+// get request
+app.get('/', async (req, res) => {
+  res.send('<h1> CATER BID API </h1>');
 });
 
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
+});
 // connect to mongo
 connect(function (err) {
   if (err) {
@@ -39,11 +34,5 @@ connect(function (err) {
   }
 });
 
-// use routes
-app.use('/auth', router);
 
-// get request
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
 
