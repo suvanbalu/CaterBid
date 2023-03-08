@@ -13,15 +13,15 @@ const UserSignUpMain = () => {
             <div className="w-full lg:w-[50vw] h-screen flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
              
             
-              <div class=" w-1/3 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-32 left-0 " ></div><br></br>
-              <div class=" w-5/12 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-48 left-0 " ></div><br></br>
-              <div class=" w-96 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-64 left-0 " ></div><br></br>
+              <div class=" w-1/3 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-32 left-0 " ></div><br></br>
+              <div class=" w-5/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-48 left-0 " ></div><br></br>
+              <div class=" w-96 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-64 left-0 " ></div><br></br>
               {/* <div class="relative w-[576px] h-[576px] bg-black rounded-full flex justify-center items-center text-center p-5 shadow-xl z-10 font-sans">
                   Make it simple, but significant.
               </div> */}
 
               
-              <div class=" w-72 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-80 left-0 " ></div><br></br>
+              <div class=" w-72 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-80 left-0 " ></div><br></br>
               <div className = "text-8xl text-black font-bold mx-auto  z-10 pl-48">
                 <span className="text-transparent bg-gradient-to-r bg-clip-text from-phorange to-green-500 ">
                 CaterBid,
@@ -29,16 +29,16 @@ const UserSignUpMain = () => {
                 <br/>
                 a place for everyone
               </div>
-              <div class=" w-3/12 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-96 left-0 " ></div><br></br>
+              <div class=" w-3/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-96 left-0 " ></div><br></br>
               
               
-              <div class=" w-72 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[448px] left-0 " ></div><br></br>
+              <div class=" w-72 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[448px] left-0 " ></div><br></br>
               {/* <div class=" w-5/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-[448px] left-0 " ></div><br></br> */}
-              <div class=" w-96 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[512px] left-0 " ></div><br></br>
-              <div class=" w-1/4 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[576px] left-0 " ></div><br></br>
-              <div class=" w-1/3 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[640px] left-0 " ></div><br></br>
-              <div class=" w-96 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[704px] left-0 " ></div><br></br>
-              <div class=" w-5/12 h-8 bg-gradient-to-r from-blue-400 absolute inset-y-[768px] left-0 " ></div><br></br>
+              <div class=" w-96 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[512px] left-0 " ></div><br></br>
+              <div class=" w-1/4 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[576px] left-0 " ></div><br></br>
+              <div class=" w-1/3 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[640px] left-0 " ></div><br></br>
+              <div class=" w-96 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[704px] left-0 " ></div><br></br>
+              <div class=" w-5/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[768px] left-0 " ></div><br></br>
 
              
 
@@ -116,7 +116,7 @@ const UserSignUpMain = () => {
                   </span>
                 </div>
                 <div class="mt-5">
-                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-blue-300 hover:bg-blue-500 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-blue-300 hover:bg-blue-500 active:bg-blue-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
                     Sign Up Now
                   </button>
                 </div>
