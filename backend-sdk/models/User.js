@@ -4,6 +4,7 @@ const schema = new Schema({
   username: { 
     type: String,
     required: true,
+    unique:true,
   },
   firstname:{
     type: String,
@@ -20,7 +21,11 @@ const schema = new Schema({
   password: {
     type: String,
     required: true,
-  }
+  },
+  phone: {
+    type: String,
+    required: true,
+  },
 });
 
 export default model("User", schema);
