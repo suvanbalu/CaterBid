@@ -4,7 +4,6 @@ import {
   AiOutlineGithub,
 } from "react-icons/ai";
 import React from "react";
-import { TbArrowBack } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import sivesh from "./team/sivesh.jpg";

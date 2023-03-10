@@ -1,14 +1,42 @@
 import React, { useState } from 'react';
 import Inputfield from "../../components/TextInput"
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
+import axios from 'axios';
 
+  
 
 const UserLogin = () => {
-    const [Mailid, setMailid] = useState("");
-    const [pwd, setpwd] = useState("");
+  const [Mailid, setMailid] = useState("");
+  const [pwd, setpwd] = useState("");
+  const navigate = useNavigate();
+  const handleClick =event => {
+    event.preventDefault()
+    console.log(pwd);
+    console.log(Mailid);
+    
+  
+  
+    axios
+        .post('http://localhost:3001/auth/ulogin', {
+          
+          email: Mailid,
+          password: pwd,
+          
+        })
+        .then((res) => {
+          let a = res.data.email;
+          localStorage.setItem("token", res.data.token);
+          localStorage.setItem("MailId", a);
+          
+          navigate("/CUser/:"+a);})
+        .catch((err) => {
+          console.log(err);})
+    };
+  
     return (
-   
+      
         // <div className="flex flex-col justify-center h-max overflow-hidden">
         //     <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
         //         <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
@@ -101,7 +129,7 @@ const UserLogin = () => {
               <p className="mb-6 text-white">
                 Login in to your account !
               </p>
-              <form action="#">
+              <form>
                 
                 <div className="mb-2 text-slate-300">
                     <Inputfield
@@ -118,6 +146,7 @@ const UserLogin = () => {
                         type='password'
                     />
                 </div>
+                </form>
                 <button className="text-xs text-phorange hover:underline">
                         Forget Password?
                 </button>
@@ -128,7 +157,7 @@ const UserLogin = () => {
                 
                 
                 <div class="mt-5">
-                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-orange-600 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                  <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-orange-600 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 " onClick={handleClick} >
                     Login
                   </button>
                 </div>
@@ -137,7 +166,7 @@ const UserLogin = () => {
                     <Link to="/CatererPage1">I'm a Caterer </Link>
                   </button>
                 </div>
-              </form>
+             
             </div>
             </div>
             </div>

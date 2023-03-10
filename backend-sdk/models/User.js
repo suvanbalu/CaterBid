@@ -1,11 +1,6 @@
 import mongoose, { Schema,model } from "mongoose"
 
 const schema = new Schema({
-  username: { 
-    type: String,
-    required: true,
-    unique:true,
-  },
   firstname:{
     type: String,
     required: true,
@@ -26,6 +21,9 @@ const schema = new Schema({
     type: String,
     required: true,
   },
+  username: {
+    type: String,
+  }
 });
 
 export default model("User", schema);

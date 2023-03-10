@@ -4,17 +4,15 @@ import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
-import { Link, useParams } from "react-router-dom";
-import Rating from '@mui/material/Rating';
-import { useState } from "react";
-const Profile1 = () => {
-  const [value, setValue] = useState(0);
-  const {cid} = useParams();
-  return (
-    
-    <div class="m-0 w-screen h-screen">
-      <Navbar/>
+import {useParams } from "react-router-dom";
+import BidPopup from "../../components/bidpopup";
 
+
+const ProfileUser = () => {
+  const { cid } = useParams();
+  return (
+    <div class="m-0 w-screen h-screen">
+      <Navbar />
       <div class="whole m-0 w-full p-2 bg-white h-full ">
         <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
           <div className=" profile_bio flex flex-col shadow w-1/3">
@@ -82,28 +80,31 @@ const Profile1 = () => {
               </div>
             </div>
           </div>
-          <div class="Review flex flex-col items-top justify-left min-h-full w-1/3">
-            <div class="ratingcomp flex flex-col justify-center m-2">
-            <p className="text-3xl font-bold align-left mb-2">Ratings</p>
-            <div class="flex items-center">
-            <Rating
-            name="read-only"
-            value={4}
-            size="large"
-            readOnly>
-            </Rating>
-            <p>1032</p>
-            </div>
-            <p className="text-3xl font-bold align-left mt-14 mb-2">Rate them!</p>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-              precision={0.5}
-              size="large"
-            />
+
+          <div class="Review flex flex-col items-top justify-left w-1/3 h-96  overflow-y-auto overflow-x-hidden pl-6">
+            <div class="ratingcomp flex flex-col justify-center w-96 ">
+              <div>
+                <BidPopup 
+                  num ="1"
+                  name="Mr Bari Wedding"  
+                  description="Mutton Briyani Yummy"
+                />
+                <BidPopup
+                  num ="2"
+                  name="Mr Ashwin Wedding"  
+                  description="Sambar Rice Yummy"
+                />
+                <BidPopup 
+                  num ="3"
+                  name="Mrs Bari Wedding"  
+                  description="Sambar Rice Yummy"
+                  />
+                <BidPopup
+                  num ="4"
+                  name="Mrs Ashwin Wedding"  
+                  description="Mutton Briyani Yummy"
+                  />
+              </div>
             </div>
           </div>
         </div>
@@ -207,4 +208,4 @@ const Profile1 = () => {
     </div>
   );
 };
-export default Profile1;
+export default ProfileUser;

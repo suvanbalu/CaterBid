@@ -79,12 +79,12 @@ const CatererPage1 = () => {
                       ></input>
                       <span>
                         <a> </a>I accept the{" "}
-                        <a href="#" className="text-grey-500 font-semibold">
+                        <a className="text-grey-500 font-semibold">
                           {" "}
                           Terms of Use
                         </a>{" "}
                         &{" "}
-                        <a href="" className="text-grey-500 font-semibold">
+                        <a className="text-grey-500 font-semibold">
                           Privacy Policy
                         </a>
                       </span>
