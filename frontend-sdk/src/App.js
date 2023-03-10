@@ -8,7 +8,6 @@ import NotFound from './pages/NotFound'
 import HowItWorks from './pages/HowItWorks'
 import HowItWorksCaterer from './pages/HowItWorksCaterer'
 import Profile1 from './pages/User/profile1'
-import UserSignUp from './pages/SignUp/UserSignUp'
 import CatererPage1 from './pages/SignUp/CatererPage1';
 import CatererPage2 from './pages/SignUp/CatererPage2';
 import CatPage from './pages/SignUp/CatPage';

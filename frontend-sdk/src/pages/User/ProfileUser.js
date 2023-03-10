@@ -4,39 +4,15 @@ import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
-import { TbArrowBack } from "react-icons/tb";
-import { Link, useParams } from "react-router-dom";
-import Rating from '@mui/material/Rating';
-import TextInput from "../../components/TextInput";
-import { useState } from "react";
-const ProfileUser = () => {
-  const [value, setValue] = useState(0);
-  const {cid} = useParams();
-  return (
-    
-    <div class="m-0 w-screen h-screen">
-      <nav
-        style={{
-          position: "sticky",
-          top: 0,
-        }}
-        className="bg-white px-4 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between "
-      >
-        <div className="flex items-center w-1/3 space-x-4">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-            className="px-1 h-10 lg:h-14"
-            alt="logo"
-          ></img>
-          <h1 className="m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
-        </div>
-        <div>
-          <Link to="/">
-            <TbArrowBack size={30}></TbArrowBack>
-          </Link>
-        </div>
-      </nav>
+import {useParams } from "react-router-dom";
+import BidPopup from "../../components/bidpopup";
 
+
+const ProfileUser = () => {
+  const { cid } = useParams();
+  return (
+    <div class="m-0 w-screen h-screen">
+      <Navbar />
       <div class="whole m-0 w-full p-2 bg-white h-full ">
         <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
           <div className=" profile_bio flex flex-col shadow w-1/3">
@@ -105,125 +81,31 @@ const ProfileUser = () => {
             </div>
           </div>
 
-          
           <div class="Review flex flex-col items-top justify-left w-1/3 h-96  overflow-y-auto overflow-x-hidden pl-6">
             <div class="ratingcomp flex flex-col justify-center w-96 ">
-
-              
               <div>
-              <p className="font-bold text-2xl m-2"></p>
-              <label for="my-modal">
-                <div class="p-5 bg-white shadow rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 ">
-                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                        <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                    </div>
-                  event 1{" "}
-                </div>
-              </label>
-
-              <input type="checkbox" id="my-modal" class="modal-toggle" />
-              <div class="modal">
-                <div class="modal-box bg-white text-black-300">
-                  <h3 class="font-bold text-lg">event1</h3>
-                  <p class="py-4">
-                    
-                  </p>
-                  <div class="modal-action">
-                    <label for="my-modal" class="btn">
-                      close
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-
-              <div>
-              <p className="font-bold text-2xl m-2"></p>
-              <label for="my-modal">
-                <div class="p-5 bg-white shadow rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 ">
-                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                        <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                    </div>
-                  event 2{" "}
-                </div>
-              </label>
-
-              <input type="checkbox" id="my-modal" class="modal-toggle" />
-              <div class="modal">
-                <div class="modal-box bg-white text-black-300">
-                  <h3 class="font-bold text-lg">event2</h3>
-                  <p class="py-4">
-                    
-                  </p>
-                  <div class="modal-action">
-                    <label for="my-modal" class="btn">
-                      close
-                    </label>
-                  </div>
-                </div>
-              </div>
-              </div>
-
-              <div>
-              <p className="font-bold text-2xl m-2"></p>
-              <label for="my-modal">
-                <div class="p-5 bg-white shadow rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 ">
-                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                        <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                    </div>
-                  event 3{" "}
-                </div>
-              </label>
-
-              <input type="checkbox" id="my-modal" class="modal-toggle" />
-              <div class="modal">
-                <div class="modal-box bg-white text-black-300">
-                  <h3 class="font-bold text-lg">event3</h3>
-                  <p class="py-4">
-                    
-                  </p>
-                  <div class="modal-action">
-                    <label for="my-modal" class="btn">
-                      close
-                    </label>
-                  </div>
-                </div>
-              </div>
+                <BidPopup 
+                  num ="1"
+                  name="Mr Bari Wedding"  
+                  description="Mutton Briyani Yummy"
+                />
+                <BidPopup
+                  num ="2"
+                  name="Mr Ashwin Wedding"  
+                  description="Sambar Rice Yummy"
+                />
+                <BidPopup 
+                  num ="3"
+                  name="Mrs Bari Wedding"  
+                  description="Sambar Rice Yummy"
+                  />
+                <BidPopup
+                  num ="4"
+                  name="Mrs Ashwin Wedding"  
+                  description="Mutton Briyani Yummy"
+                  />
               </div>
             </div>
-
-            <div>
-              <p className="font-bold text-2xl m-2"></p>
-              <label for="my-modal">
-                <div class="p-5 bg-white shadow rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 ">
-                <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                  <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                </div>
-                
-                  event 4{""}
-                </div>
-              </label>
-
-              <input type="checkbox" id="my-modal" class="modal-toggle" />
-              <div class="modal">
-                <div class="modal-box bg-white text-black-300">
-                  <h3 class="font-bold text-lg">event4</h3>
-                  <p class="py-4">
-            
-                    
-                  </p>
-                  <div class="modal-action">
-                    <label for="my-modal" class="btn">
-                      close
-                    </label>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div>
-
-            
-
           </div>
         </div>
 

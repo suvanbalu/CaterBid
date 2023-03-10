@@ -4,10 +4,8 @@ import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
-import { TbArrowBack } from "react-icons/tb";
 import { Link, useParams } from "react-router-dom";
 import Rating from '@mui/material/Rating';
-import TextInput from "../../components/TextInput";
 import { useState } from "react";
 const Profile1 = () => {
   const [value, setValue] = useState(0);
@@ -15,27 +13,7 @@ const Profile1 = () => {
   return (
     
     <div class="m-0 w-screen h-screen">
-      <nav
-        style={{
-          position: "sticky",
-          top: 0,
-        }}
-        className="bg-white px-4 lg:px-[calc(100vw/20)] py-1 font-sans flex items-center justify-between "
-      >
-        <div className="flex items-center w-1/3 space-x-4">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
-            className="px-1 h-10 lg:h-14"
-            alt="logo"
-          ></img>
-          <h1 className="m-4 text-2xl font-bold text-red-500"> CaterBid </h1>
-        </div>
-        <div>
-          <Link to="/">
-            <TbArrowBack size={30}></TbArrowBack>
-          </Link>
-        </div>
-      </nav>
+      <Navbar/>
 
       <div class="whole m-0 w-full p-2 bg-white h-full ">
         <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
