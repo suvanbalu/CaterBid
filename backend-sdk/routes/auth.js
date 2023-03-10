@@ -10,19 +10,11 @@ router.get("/",(req,res)=>{
 });
 // user signup
 router.post("/usignup", async(req, res) => {
-    console.log("1",req.body);
-    const { firstname,lastname, email, password, phone, username } = req.body;
     try {
-        const salt = bcrypt.genSaltSync(10)
-        console.log("password",password)
-        const user = await User.create({
-            firstname: firstname,
-            lastname: lastname,
-            email: email,
-            password: bcrypt.hashSync(password, salt),
-            phone: phone,
-            username: username,
-        });
+        console.log(req.body)
+        const user = await User.create(
+        req.body
+        );
         res.status(201).json({ user:user._id });
     } catch (error) {
         console.log(error);
@@ -51,7 +43,7 @@ router.post("/ulogin",async (req,res)=>{
         const {email,password} = req.body;
         const auth = await User.findOne({email: email});
         if (auth){
-            if(bcrypt.compareSync(password,auth.password)){
+            if(password===auth.password){
                 const token = jwt.sign({id:auth._id},"secret-key");
                 res.status(200).json({auth:auth._id,token:token});
             }
