@@ -28,7 +28,7 @@ function App() {
         <Route path="/CatererPage2" element={<CatererPage2 />}/>
         <Route path="/CatPage" element ={<CatPage/>}/>
         <Route path="/UserSignUpMain" element = {<UserSignUpMain/>}/>
-        <Route path ="/ProfileUser" element = {<ProfileUser/>}/>
+        <Route path ="/ProfileUser/:id" element = {<ProfileUser/>}/>
         {/* <Route path="/User" element={<Profile1 /> } /> */}
         <Route path="/CUser/:cid" element={<Profile1 /> } />
       <Route index element={<Home />} />

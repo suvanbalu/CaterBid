@@ -14,7 +14,7 @@ router.post("/usignup", async(req, res) => {
     try {
         console.log(req.body)
         const user = await User.create(
-        req.body
+        {...req.body, password: bcrypt.hashSync(req.body.password, 10)}
         );
         res.status(201).json({ user:user._id });
     } catch (error) {
@@ -81,7 +81,7 @@ router.post("/ulogin",async (req,res)=>{
         const {email,password} = req.body;
         const auth = await User.findOne({email: email});
         if (auth){
-            if(password===auth.password){
+            if(bcrypt.compareSync(password,auth.password)){
                 const token = jwt.sign({id:auth._id},"secret-key");
                 res.status(200).json({auth:auth._id,token:token,email:email});
                 

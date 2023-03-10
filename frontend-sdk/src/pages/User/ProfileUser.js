@@ -9,7 +9,7 @@ import BidPopup from "../../components/bidpopup";
 
 
 const ProfileUser = () => {
-  const { cid } = useParams();
+  const { id } = useParams();
   return (
     <div class="m-0 w-screen h-screen">
       <Navbar />
@@ -34,7 +34,7 @@ const ProfileUser = () => {
             </div>
             <div class="mt-2 text-center border-b p-8">
               <h1 class="text-4xl font-medium ">
-                {`@${cid}`}
+                {`@${id}`}
                 <span class="font-light text-gray-500"></span>
               </h1>
               <p class=" text-gray-800 text-2xl mt-3">Ashwin Veluswamy</p>
