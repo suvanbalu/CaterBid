@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/SignUp" element={<UserSignUp/>}/>
+        {/* <Route path="/SignUp" element={<UserSignUp/>}/> */}
         <Route path="/AboutUs" element={<AboutUs />}/>
         <Route path="/HowItWorks" element={<HowItWorks />}/>
         <Route path="/HowItWorksCaterer" element={<HowItWorksCaterer />}/>
