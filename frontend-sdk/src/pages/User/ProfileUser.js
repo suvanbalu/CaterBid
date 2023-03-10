@@ -88,6 +88,7 @@ const ProfileUser = () => {
                   num ="1"
                   name="Mr Bari Wedding"  
                   description="Mutton Briyani Yummy"
+                  src=""
                 />
                 <BidPopup
                   num ="2"
