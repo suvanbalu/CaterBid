@@ -45,7 +45,8 @@ router.post("/ulogin",async (req,res)=>{
         if (auth){
             if(password===auth.password){
                 const token = jwt.sign({id:auth._id},"secret-key");
-                res.status(200).json({auth:auth._id,token:token});
+                res.status(200).json({auth:auth._id,token:token,email:email});
+                
             }
             else{
             res.status(500).json({message:"Invalid Password"});

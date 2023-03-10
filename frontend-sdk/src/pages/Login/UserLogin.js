@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Inputfield from "../../components/TextInput"
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import axios from 'axios';
 
@@ -9,10 +10,12 @@ import axios from 'axios';
 const UserLogin = () => {
   const [Mailid, setMailid] = useState("");
   const [pwd, setpwd] = useState("");
+  const navigate = useNavigate();
   const handleClick =event => {
     event.preventDefault()
     console.log(pwd);
     console.log(Mailid);
+    
   
   
     axios
@@ -22,9 +25,14 @@ const UserLogin = () => {
           password: pwd,
           
         })
-        .then((response) => {
-          console.log(response);
-        });
+        .then((res) => {
+          let a = res.data.email;
+          localStorage.setItem("token", res.data.token);
+          localStorage.setItem("MailId", a);
+          
+          navigate("/CUser/:"+a);})
+        .catch((err) => {
+          console.log(err);})
     };
   
     return (
