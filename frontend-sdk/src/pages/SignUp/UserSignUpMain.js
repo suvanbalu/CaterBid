@@ -14,9 +14,12 @@ const [Phno,setPhno] = useState("");
 const [Email,setEmail] = useState("");
 const [Pwd,setPwd] = useState("");
 const [Uname,setUname] = useState("");
+const [Checkpwd,setCheckpwd] = useState("");
+
 
 
 const handleClick =event => {
+  if (Checkpwd===Pwd){
   event.preventDefault()
   console.log(Phno);
   console.log(Firstname);
@@ -36,7 +39,7 @@ const handleClick =event => {
         console.log(response);
       });
   console.log("1")
-  };
+}};
   
     return(
         <React.Fragment>
@@ -92,18 +95,26 @@ const handleClick =event => {
                 Create your account. It's free and only takes a minute!
               </p>
               <form >
-                <div className="grid grid-cols-2 gap-5">
+              <div className="mt-2">
+                  <Inputfield
+                    type="text"
+                    placeholder="username"
+                    valueState={[Uname,setUname]}
+                    className="border-gray-300 py-1 px-2 w-full rounded"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-5 mt-5">
                   <Inputfield
                     type="text"
                     valueState={[Firstname, setFirstname]}
                     placeholder="Firstname"
-                    className="border-2 border-gray-300 py-1 px-2 rounded"
+                    className=" border-gray-300 py-1 px-2 rounded"
                   />
                   <Inputfield
                     type="text"
                     valueState={[Surname,setSurname]}
                     placeholder="Surname"
-                    className="border-2 border-gray-300 py-1 px-2 rounded"
+                    className="border-gray-300 py-1 px-2 rounded"
                   />
                 </div>
                 <div className="mt-5">
@@ -111,7 +122,7 @@ const handleClick =event => {
                     type="tel"
                     placeholder="Phone.no"
                     valueState={[Phno,setPhno]}
-                    className="border-2 border-gray-300 py-1 px-2 w-full rounded"
+                    className="border-gray-300 py-1 px-2 w-full rounded"
                   />
                 </div>
                 <div className="mt-5">
@@ -119,7 +130,7 @@ const handleClick =event => {
                     type="text"
                     placeholder="Email"
                     valueState={[Email,setEmail]}
-                    className="border-2 border-gray-300 py-1 px-2 w-full rounded"
+                    className="border-gray-300 py-1 px-2 w-full rounded"
                   />
                 </div>
                 <div className="mt-5">
@@ -127,28 +138,22 @@ const handleClick =event => {
                     type="password"
                     placeholder="Password"
                     valueState={[Pwd,setPwd]}
-                    className="border-2 border-gray-300 py-1 px-2 w-full rounded"
+                    className="border-gray-300 py-1 px-2 w-full rounded"
                   />
                   </div>
-                  <div className="mt-5">
-                  <Inputfield
-                    type="text"
-                    placeholder="username"
-                    valueState={[Uname,setUname]}
-                    className="border-2 border-gray-300 py-1 px-2 w-full rounded"
-                  />
-                </div>
+                 
                 <div className="mt-5 ">
                   <Inputfield
                     type="password"
+                    valueState={[Checkpwd,setCheckpwd]}
                     placeholder="Confirm Password"
-                    className="border-2 border-gray-300 py-1 px-2 w-full rounded"
+                    className="border-gray-300 py-1 px-2 w-full rounded"
                   />
                 </div>
                 <div className="mt-5">
-                  <Inputfield
+                  <input
                     type="checkbox"
-                    className="border border-gray-400 mr-1"
+                    className="border-gray-400 mr-1"
                   />
                   <span>
                     <a> </a>I accept the{" "}
