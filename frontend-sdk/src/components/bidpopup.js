@@ -10,8 +10,8 @@ const BidPopup = ({
   eventname,
   eventdate,
 }) => {
-  const bidpopups = bids.map((bid) => (
-    <BiddersList
+  const bidpopups = bids.map((bid,idx) => (
+    <BiddersList key={idx}
       rating={4}
       cname={bid.caterer}
       clocation="coimbatore"
