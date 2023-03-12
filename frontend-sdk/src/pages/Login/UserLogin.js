@@ -30,7 +30,7 @@ const UserLogin = () => {
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("MailId", a);
           
-          navigate("/CUser/:"+a);})
+          navigate("/ProfileUser/:"+a);})
         .catch((err) => {
           console.log(err);})
     };

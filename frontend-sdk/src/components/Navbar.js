@@ -11,9 +11,17 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(location)
+    console.log("location : ",location)
   }, [])
-
+// cehck wether the user is logged in or not
+  const checkLogin = () => {
+    if(location.pathname.includes("ProfileUser") || location.pathname.includes("CUser")){
+      return true
+    }
+    else{
+      return false
+    }
+  };
   return (
     <nav
       style={{
@@ -43,14 +51,22 @@ const Navbar = () => {
           <Link to="/AboutUs">About Us</Link>
         </button>
       </div>
-      <div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
+      {/* {console.log("type",typeof(location))} */}
+      {!checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
         <button className="rounded-md sm:text-base mobile:text-xs px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 ">
           <Link to="/login">Login</Link>
         </button>
         <button className="font-semibold sm:text-base mobile:text-xs rounded-md sm:px-2 sm:py-1 mobile:px-0 transition ease-in-out text-red-500 hover:scale-110 duration-150">
           <Link to="/UserSignUpMain">Sign Up</Link>
         </button>
-      </div>
+      </div>}
+      {checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
+        <button className="rounded-md sm:text-base mobile:text-xs px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 ">
+          <Link to="/">Logout</Link>
+          {/* {console.log("type",typeof(location))} */}
+        </button>
+        </div>
+      }
     </nav>
   );
 };
