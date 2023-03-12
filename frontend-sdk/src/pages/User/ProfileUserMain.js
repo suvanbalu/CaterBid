@@ -61,7 +61,7 @@ const ProfileUserMain = () => {
   ))
   return (
     <div class="m-0 w-screen h-screen">
-      {console.log(user)}
+      {console.log("Lenght",iteratePosts.length)}
       {console.log("Logged in ?", isloggedin())}
       <Navbar />
       {isloggedin() ? (
@@ -144,9 +144,7 @@ const ProfileUserMain = () => {
           <div class="flex items-center justify-left w-[130%] h-full overflow-x-auto overflow-y-hidden scrollbar-hide pl-6 ">
             <div class="flex justify-center mt-3 h-48 w-screen">
               <div className="flex justify-center gap-x-6 ml-60">
-              <div>
                 {iteratePosts}
-                </div>
               </div>
             </div>
           </div>
