@@ -23,7 +23,7 @@ const CatererHome = () => {
   return (
     <div className="w-screen h-screen">
       <Navbar />
-      <div className=" Headline h-1/3 w-full bg-red-700 flex items-center justify-between px-24 rounded-bl-[150px]">
+      <div className=" Headline h-1/3 w-full bg-red-700 flex items-center justify-between px-24">
         <div className="w-1/2">
           <p className="text-white tracking-wide text-[80px] font-bold mb-3">
             Discover & Bid

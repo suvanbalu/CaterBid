@@ -35,7 +35,10 @@ const BidPopup = ({
           <div>
             <img src={src}></img>
           </div>
+          <div className="text-xl">
           Event {num}{" "}
+          </div>
+          
           </div>
         </div>
       </label>

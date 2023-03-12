@@ -16,15 +16,15 @@ const HowItWorks = () => {
         }}
       >
         <div className=" how_it_works_text font-mont text-white text-center">
-          <h1 class="font-extrabold tracking-wide text-white text-5xl pt-20">
+          <h1 class="font-extrabold tracking-wide text-white text-5xl mt-4">
             How does CaterBid work?
           </h1>
         </div>
 
         <div className="desc_text text-white text-center">
-          <h1 class="font-mont tracking-tight text-white text-3xl pt-10">
-            <p class="p-2 break-words">It's as simple as an order form.</p>
-            <p>
+          <h1 class="font-mont tracking-tight text-white text-3xl pt-6">
+            <p class="p-2 break-words text-phorange mb-3">It's as simple as an order form.</p>
+            <p className="mx-10">
               You tell us what you want, and the best caterers compatible with
               your needs will find you. Quickly and easily. No more searching
               through hundreds of caterers. No more calling around. No more
@@ -34,8 +34,8 @@ const HowItWorks = () => {
         </div>
 
         <div className="desc2_text text-white text-center">
-          <h2 class="font-mont tracking-tight text-6xl p-10 text-white">
-            You Post. Caterers Bid. You Choose.
+          <h2 class="font-mont tracking-tight text-6xl p-2 mt-4 text-white">
+            You <span className="text-phorange">Post.</span> Caterers <span className="text-phorange">Bid.</span> You <span className="text-phorange">Choose.</span>
           </h2>
         </div>
         <div className="w-full flex items-center justify-center">
@@ -67,7 +67,7 @@ const HowItWorks = () => {
           </div>
         </div>
         <div>
-          <button className="p-4 mt-4 transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
+          <button className="p-4 mt-2 transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
             <Link to="/HowItWorksCaterer">I'm a caterer</Link>
           </button>
         </div>
