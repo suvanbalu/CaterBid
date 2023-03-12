@@ -8,25 +8,25 @@ import axios from 'axios';
   
 
 const UserLogin = () => {
-  const [Mailid, setMailid] = useState("");
+  const [User, setUser] = useState("");
   const [pwd, setpwd] = useState("");
   const navigate = useNavigate();
   const handleClick =event => {
     event.preventDefault()
     console.log(pwd);
-    console.log(Mailid);
+    console.log(User);
     
   
   
     axios
         .post('http://localhost:3001/auth/ulogin', {
           
-          email: Mailid,
+          username: User,
           password: pwd,
           
         })
         .then((res) => {
-          let a = res.data.email;
+          let a = res.data.username;
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("MailId", a);
           
@@ -133,9 +133,9 @@ const UserLogin = () => {
                 
                 <div className="mb-2 text-slate-300">
                     <Inputfield
-                        valueState={[Mailid, setMailid]}
-                        title="Email"
-                        placeholder="Enter Mail ID"
+                        valueState={[User, setUser]}
+                        title="Username"
+                        placeholder="Enter username"
                     />
                     </div>
                     <div className="mb-2 text-slate-300">

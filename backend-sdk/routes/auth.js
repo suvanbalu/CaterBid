@@ -78,12 +78,12 @@ router.delete("/cdelete/:id",async(req,res)=>{
 //  user login
 router.post("/ulogin",async (req,res)=>{
     try{
-        const {email,password} = req.body;
-        const auth = await User.findOne({email: email});
+        const {username,password} = req.body;
+        const auth = await User.findOne({username: username});
         if (auth){
             if(bcrypt.compareSync(password,auth.password)){
                 const token = jwt.sign({id:auth._id},"secret-key");
-                res.status(200).json({auth:auth._id,token:token,email:email});
+                res.status(200).json({auth:auth._id,token:token,username:username});
                 
             }
             else{
