@@ -1,11 +1,18 @@
 import React, {useState,useEffect} from "react";
 import Progress_bar from "../../components/progressbar";
-import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
+import {
+  AiFillFileAdd,
+  AiFillGooglePlusCircle,
+  AiFillPlusCircle,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
-import {useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BidPopup from "../../components/bidpopup";
+import Inputfield from "../../components/TextInput";
 import axios from "axios";
 
 const ProfileUser = () => {
@@ -68,34 +75,73 @@ const ProfileUser = () => {
           <div class="media_Review flex justify-center h-fit w-1/4 ">
             <div className="media flex flex-col w-full h-full items-center">
               <div className="row1 flex m-2">
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-blue-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <CiMail />
+                <label htmlFor="my-modal-4">
+                  <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200 ">
+                    <div class="font-bold text-gray-700 text-9xl m-auto duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
+                      <AiFillPlusCircle />
+                    </div>
+                    <div className="font-semibold text-center">
+                      Add new event
+                    </div>
                   </div>
-                  <div class="text-gray-400">Mail</div>
-                </div>
+                </label>
 
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-orange-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <SiGooglemaps />
-                  </div>
-                  <div class="text-gray-400">Maps</div>
-                </div>
-              </div>
-              <div className="row2 flex m-2">
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-yellow-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1 ">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <AiOutlineInstagram />
-                  </div>
-                  <div class="text-gray-400">Instagram</div>
-                </div>
+                <input
+                  type="checkbox"
+                  id="my-modal-4"
+                  className="modal-toggle"
+                />
+                <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                  <label className="modal-box relative max-w-3xl h-[500px]" htmlFor="">
+                    <h3 className="text-3xl font-semibold">
+                      Enter details of new event
+                    </h3>
+                    <div className="bg-slate-300 h-[275px] w-full rounded-xl ml-3 p-4">
+            
 
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-purple-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <AiOutlineFacebook />
+                    <div className="mt-2">
+                      <Inputfield
+                        type="text"
+                        placeholder="Post headline :"
+                        className="border-gray-300 py-1 px-2 w-full rounded"
+                      />
+                    </div>
+                    <div className="mt-2">
+                      <Inputfield
+                        type="text"
+                        placeholder="Items needed :"
+                        className="border-gray-300 py-1 px-2 w-full rounded"
+                      />
+                    </div>
+                    <div className="mt-2">
+                      <Inputfield
+                        type="text"
+                        placeholder="Deadline :"
+                        className="border-gray-300 py-1 px-2 w-full rounded"
+                      />
+                    </div>
+                    <div className="mt-2">
+                      <Inputfield
+                        type="text"
+                        placeholder="Description :"
+                        className="border-gray-300 py-1 px-2 w-full rounded"
+                      />
+                    </div>
+                    <div className="mt-2">
+                      <Inputfield
+                        type="text"
+                        placeholder="Aprox people attending :"
+                        className="border-gray-300 py-1 px-2 w-full rounded"
+                      />
+                    </div>
+                    <div className="flex justify-end">
+                      <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                        Submit
+                      </button>
+                    </div>
                   </div>
-                  <div class="text-gray-400">Facebook</div>
-                </div>
+                  </label>
+                </label>
               </div>
             </div>
           </div>
@@ -103,27 +149,27 @@ const ProfileUser = () => {
           <div class="Review flex flex-col items-top justify-left w-1/3 h-96  overflow-y-auto overflow-x-hidden pl-6">
             <div class="ratingcomp flex flex-col justify-center w-96 ">
               <div>
-                <BidPopup 
-                  num ="1"
-                  name="Mr Bari Wedding"  
+                <BidPopup
+                  num="1"
+                  name="Mr Bari Wedding"
                   description="Mutton Briyani Yummy"
                   src=""
                 />
                 <BidPopup
-                  num ="2"
-                  name="Mr Ashwin Wedding"  
+                  num="2"
+                  name="Mr Ashwin Wedding"
                   description="Sambar Rice Yummy"
                 />
-                <BidPopup 
-                  num ="3"
-                  name="Mrs Bari Wedding"  
-                  description="Sambar Rice Yummy"
-                  />
                 <BidPopup
-                  num ="4"
-                  name="Mrs Ashwin Wedding"  
+                  num="3"
+                  name="Mrs Bari Wedding"
+                  description="Sambar Rice Yummy"
+                />
+                <BidPopup
+                  num="4"
+                  name="Mrs Ashwin Wedding"
                   description="Mutton Briyani Yummy"
-                  />
+                />
               </div>
             </div>
           </div>
