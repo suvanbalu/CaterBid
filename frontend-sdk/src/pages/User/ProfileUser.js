@@ -1,6 +1,6 @@
 import React from "react";
 import Progress_bar from "../../components/progressbar";
-import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
+import { AiFillFileAdd, AiFillGooglePlusCircle, AiFillPlusCircle, AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
@@ -49,34 +49,21 @@ const ProfileUser = () => {
           <div class="media_Review flex justify-center h-fit w-1/4 ">
             <div className="media flex flex-col w-full h-full items-center">
               <div className="row1 flex m-2">
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-blue-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <CiMail />
-                  </div>
-                  <div class="text-gray-400">Mail</div>
-                </div>
+                
 
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-orange-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <SiGooglemaps />
+                
+              
+                <div>
+                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
+                
+                  <div class="font-bold text-gray-700 text-9xl m-auto">
+                    <AiFillPlusCircle/>
                   </div>
-                  <div class="text-gray-400">Maps</div>
+                  
+                
                 </div>
-              </div>
-              <div className="row2 flex m-2">
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-yellow-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1 ">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <AiOutlineInstagram />
-                  </div>
-                  <div class="text-gray-400">Instagram</div>
                 </div>
-
-                <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-purple-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                  <div class="font-bold text-gray-700 text-3xl m-auto pt-3">
-                    <AiOutlineFacebook />
-                  </div>
-                  <div class="text-gray-400">Facebook</div>
-                </div>
+                
               </div>
             </div>
           </div>
