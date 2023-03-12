@@ -10,14 +10,23 @@ const BidPopup = ({
   eventname,
   eventdate,
 }) => {
+  const bidpopups = bids.map((bid) => (
+    <BiddersList
+      rating={4}
+      cname={bid.caterer}
+      clocation="coimbatore"
+      pitch={bid.pitch}
+      bamount={bid.amount}
+    />
+  ))
+  
   return (
     <div>
-      <p className="font-bold text-2xl m-2"></p>
       <label for={`my-modal${num}`}>
-        <div class="p-5  bg-white shadow rounded-xl transition ease-in-out flex-cols items-center delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 h-40 w-36 ">
-          <div className="text-center items-center">
+        <div class="p-5  bg-white shadow rounded-xl transition ease-in-out flex-cols items-center delay-[50ms] hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 h-40 w-36 ">
+          <div className="flex flex-col items-center text-center space-y-3">
           {!src && (
-            <div class="relative justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+            <div class="relative justify-center w-10 h-10 mt-3 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
               <svg
                 class="absolute w-12 h-12 text-gray-400 -left-1"
                 fill="currentColor"
@@ -63,30 +72,7 @@ const BidPopup = ({
             <div className="text-center font-semibold p-4">Current Bids</div>
 
             <div className="grid grid-cols-3 gap-4 pt-3">
-              <BiddersList
-              rating="4"
-              cname="Suvan"
-              clocation="coimbatore"
-              pitch="We offer tasty Indain style food which will be loved by yall"
-              bamount="10000"/>
-              <BiddersList
-              rating="4"
-              cname="Suvan"
-              clocation="coimbatore"
-              pitch="We offer tasty Indain style food which will be loved by yall"
-              bamount="10000"/>
-              <BiddersList
-              rating="4"
-              cname="Suvan"
-              clocation="coimbatore"
-              pitch="We offer tasty Indain style food which will be loved by yall"
-              bamount="10000"/>
-              <BiddersList
-              rating="4"
-              cname="Suvan"
-              clocation="coimbatore"
-              pitch="We offer tasty Indain style food which will be loved by yall"
-              bamount="10000"/>
+              {bidpopups}
             </div>
             <div class="modal-action">
               <label for={`my-modal${num}`} class="btn">

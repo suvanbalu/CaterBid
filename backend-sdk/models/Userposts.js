@@ -5,6 +5,10 @@ const schema = new Schema({
     type: String,
     required: true,
   },
+  post_headline:{
+    type: String,
+    required: true,
+  },
   post_description: {
     type: String,
     required: true,

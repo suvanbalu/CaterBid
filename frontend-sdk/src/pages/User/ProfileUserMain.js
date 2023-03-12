@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Progress_bar from "../../components/progressbar";
 import {
-  AiFillFileAdd,
-  AiFillGooglePlusCircle,
   AiFillPlusCircle,
-  AiFillPlusSquare,
-  AiOutlineFacebook,
-  AiOutlineInstagram,
 } from "react-icons/ai";
-import { CiMail } from "react-icons/ci";
-import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
 import { useParams } from "react-router-dom";
 import BidPopup from "../../components/bidpopup";
 import Inputfield from "../../components/TextInput";
 import axios from "axios";
 
+const isloggedin = () => {
+  const log = localStorage.getItem("Uflag");
+  if (log === "true") {
+    return true;
+  }
+  return false;
+};
 const ProfileUserMain = () => {
   const { id } = useParams();
   // get user details from backend
@@ -25,6 +26,8 @@ const ProfileUserMain = () => {
     location: "Tamil Nadu, India",
     profile_pic: "",
   });
+
+  const [postdetails, setPostdetails] = useState([]);
   // useeffect and axios to update user details
   useEffect(() => {
     axios
@@ -37,10 +40,31 @@ const ProfileUserMain = () => {
         console.log(err);
       });
   }, []);
+
+  useEffect(() => {
+    axios.get(`http://localhost:3001/post/all/${id}`).
+    then((res) => {
+      console.log("Posts",res.data);
+      setPostdetails(res.data);
+    }).
+    catch((err) => {
+      console.log(err);
+    });
+  },[]);
+  const iteratePosts = postdetails.map((post,idx) => (
+    <BidPopup
+    name = {post.post_headline}
+    num = {idx}
+    description = {post.post_description}
+    src = ""
+    bids = {post.bids}/>
+  ))
   return (
     <div class="m-0 w-screen h-screen">
       {console.log(user)}
+      {console.log("Logged in ?", isloggedin())}
       <Navbar />
+      {isloggedin() ? (
       <div class="whole m-0 w-full p-2 bg-white h-full ">
         <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
           <div className=" profile_bio flex flex-col shadow w-1/3">
@@ -67,9 +91,16 @@ const ProfileUserMain = () => {
               </h1>
               <p class=" text-gray-800 text-2xl mt-3">{`${user.firstname} ${user.lastname}`}</p>
               <p class="font-light text-gray-600 mt-3">Tamil Nadu, India</p>
-
+              <div className="flex w-full justify-center space-x-10">
+              <div className="flex flex-col items-start">
               <p class="mt-8 text-gray-500 font-semibold">Phone Number </p>
               <p class="text-gray-500">{user.phone}</p>
+              </div>
+              <div className="flex flex-col items-start">
+              <p class="mt-8 text-gray-500 font-semibold">Email Address </p>
+              <p class="text-gray-500">{user.email}</p>
+              </div>
+              </div>
             </div>
           </div>
           <div class=" bg-white shadow mt-10 grid grid-rows-3 w-2/3 h-96">
@@ -109,132 +140,12 @@ const ProfileUserMain = () => {
             solid groove structure. An artist of considerable range.
           </p>
         </div>
-
-        {/* <input
-                  type="checkbox"
-                  id="my-modal-4"
-                  className="modal-toggle"
-                /> */}
-
-        {/* <label htmlFor="my-modal-4" className="modal cursor-pointer">
-                  <label className="modal-box relative max-w-3xl h-[500px]" htmlFor="">
-                    <h3 className="text-3xl font-semibold">
-                      Enter details of new event
-                    </h3>
-                    <div className="bg-white w-full rounded-xl ml-3 p-4">
-            
-
-                    <div className="mt-2">
-                      <Inputfield
-                        type="text"
-                        placeholder="Post headline :"
-                        className="border-gray-300 py-1 px-2 w-full rounded"
-                      />
-                    </div>
-                    <div className="mt-2">
-                      <Inputfield
-                        type="text"
-                        placeholder="Items needed :"
-                        className="border-gray-300 py-1 px-2 w-full rounded"
-                      />
-                    </div>
-                    <div className="mt-2">
-                      <Inputfield
-                        type="text"
-                        placeholder="Deadline :"
-                        className="border-gray-300 py-1 px-2 w-full rounded"
-                      />
-                    </div>
-                    <div className="mt-2">
-                      <Inputfield
-                        type="text"
-                        placeholder="Description :"
-                        className="border-gray-300 py-1 px-2 w-full rounded"
-                      />
-                    </div>
-                    <div className="mt-2">
-                      <Inputfield
-                        type="text"
-                        placeholder="Aprox people attending :"
-                        className="border-gray-300 py-1 px-2 w-full rounded"
-                      />
-                    </div>
-                    <div className="flex justify-end">
-                      <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                  </label>
-                </label> */}
-
         <div class="grid grid-cols-2 space-x-4 p-12 w-full">
           <div class="flex items-center justify-left w-[130%] h-full overflow-x-auto overflow-y-hidden scrollbar-hide pl-6 ">
-            <div class="flex justify-center h-48 w-[700px]">
+            <div class="flex justify-center mt-3 h-48 w-screen">
               <div className="flex justify-center gap-x-6 ml-60">
-                <div>
-                  <BidPopup
-                    num="1"
-                    name="Mr Bari Wedding"
-                    description="Mutton Briyani Yummy"
-                    src=""
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="2"
-                    name="Mr Ashwin Wedding"
-                    description="Sambar Rice Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="3"
-                    name="Mrs Bari Wedding"
-                    description="Sambar Rice Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="4"
-                    name="Mrs Ashwin Wedding"
-                    description="Mutton Briyani Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="5"
-                    name="Mrs Ashwin Wedding"
-                    description="Mutton Briyani Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="6"
-                    name="Mrs Ashwin Wedding"
-                    description="Mutton Briyani Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="7"
-                    name="Mrs Ashwin Wedding"
-                    description="Mutton Briyani Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="8"
-                    name="Mrs Ashwin Wedding"
-                    description="Mutton Briyani Yummy"
-                  />
-                </div>
-                <div>
-                  <BidPopup
-                    num="9"
-                    name="Mrs Ashwin Wedding"
-                    description="Mutton Briyani Yummy"
-                  />
+              <div>
+                {iteratePosts}
                 </div>
               </div>
             </div>
@@ -303,7 +214,12 @@ const ProfileUserMain = () => {
             </div>
           </div>
         </div>
+      </div>):(
+      <div className="flex flex-col justify-center items-center h-full w-screen fixed pb-10">
+        <p className="text-7xl font-bold bg-clip-text text-transparent p-5 bg-gradient-to-r from-red-400 to-blue-600 mb-12">You Have Logged Out! </p>
+        <p className="text-3xl font-semibold hover:text-red-600" ><Link to="/login">Click here to log in again</Link></p>
       </div>
+      )}
     </div>
   );
 };

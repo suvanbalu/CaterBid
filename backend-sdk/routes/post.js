@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 // Rute for user to create a post that assigns a post_id based on the username
 router.post('/create/:username', async (req, res) => {
     const { username } = req.params;
-    const { post_description, event_count, deadline} = req.body;
+    const { post_description, event_count, deadline,post_headline} = req.body;
     const date = new Date();
     const year = date.getFullYear();
     const month = date.getMonth();
@@ -25,6 +25,7 @@ router.post('/create/:username', async (req, res) => {
         const post = await Userposts.create({
         username,
         post_description,
+        post_headline,
         post_id: username + stamp,
         event_count,
         deadline

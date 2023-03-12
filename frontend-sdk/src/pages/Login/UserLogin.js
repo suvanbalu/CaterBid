@@ -22,9 +22,11 @@ const UserLogin = () => {
           let a = res.data.username;
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("Uname", a);
-          navigate("/ProfileUser/"+a);})
+          localStorage.setItem("Uflag", "true");
+          localStorage.setItem("Utype", "user");
+          navigate("/");})
         .catch((err) => {
-          console.log("SUvan",err);})
+          console.log(err);})
     };
   
     return (
@@ -73,6 +75,7 @@ const UserLogin = () => {
                         valueState={[User, setUser]}
                         title="Username"
                         placeholder="Enter username"
+                        autoComplete='on'
                     />
                     </div>
                     <div className="mb-2 text-slate-300">
@@ -81,6 +84,7 @@ const UserLogin = () => {
                         title="Password"
                         placeholder="Enter Password"
                         type='password'
+                        autoComplete='on'
                     />
                 </div>
                 </form>

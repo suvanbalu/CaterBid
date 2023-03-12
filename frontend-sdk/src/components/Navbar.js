@@ -15,13 +15,17 @@ const Navbar = () => {
   }, [])
 // cehck wether the user is logged in or not
   const checkLogin = () => {
-    if(location.pathname.includes("ProfileUser") || location.pathname.includes("CUser")){
-      return true
+    const log = localStorage.getItem("Uflag");
+    if (log === "true") {
+      return true;
     }
-    else{
-      return false
-    }
+    return false;
   };
+
+  const logout = () => {
+    localStorage.removeItem("Uflag");
+  }
+
   return (
     <nav
       style={{
@@ -30,7 +34,7 @@ const Navbar = () => {
       }}
       className="bg-white mobile:px-2  sm:px-4 lg:px-[calc(100vw/20)] sm:py-1 font-sans flex items-center sm:justify-between  z-50"
     >
-      <div className="flex items-center mobile:justify-center sm:justify-start w-1/3 mobile:space-2  sm:space-x-4 mobile:space-x-2">
+      <div className="flex items-center mobile:justify-center sm:justify-start w-1/4 mobile:space-2  sm:space-x-4 mobile:space-x-2">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1683/1683828.png"
           className="px-1 sm:h-12 mobile:h-8"
@@ -41,15 +45,17 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex items-center m-4 mobile:m-1 space-x-4 mobile:pr-2 mobile:space-x-2 w-1/3 px-12 mobile:px-8  justify-center">
+      <div className="flex items-center m-4 mobile:m-1 gap-x-6 mobile:pr-2 mobile:space-x-2 w-2/3 px-12 mobile:px-8  justify-center">
         <Link to="/howitworks" className={`uppercase font-mont mobile:text-xs sm:text-base ${location.pathname === "/howitworks" && "text-red-500"} hover:text-red-500`}>
-          
           How it Works
         </Link>
-        <p className="uppercase font-mont">|</p>
         <button className={`uppercase font-mont mobile:text-xs sm:text-base hover:text-red-500 ${location.pathname==="/AboutUs" && "text-red-500"}`}>
           <Link to="/AboutUs">About Us</Link>
         </button>
+        {checkLogin()&&<button className={`uppercase font-mont mobile:text-xs sm:text-base hover:text-red-500 ${location.pathname.includes("profileuser") && "text-red-500"}`}>
+          <Link to={`/profileuser/${localStorage.getItem("Uname")}`}>Dashboard</Link>
+        </button>}
+      
       </div>
       {/* {console.log("type",typeof(location))} */}
       {!checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
@@ -61,7 +67,8 @@ const Navbar = () => {
         </button>
       </div>}
       {checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
-        <button className="rounded-md sm:text-base mobile:text-xs px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 ">
+        <button className="rounded-md sm:text-base mobile:text-xs px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 "
+        onClick={logout}>
           <Link to="/">Logout</Link>
           {/* {console.log("type",typeof(location))} */}
         </button>

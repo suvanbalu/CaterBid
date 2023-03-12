@@ -9,9 +9,8 @@ import HowItWorksCaterer from './pages/HowItWorksCaterer'
 import Profile1 from './pages/User/profile1'
 import CatPage from './pages/SignUp/CatPage';
 import UserSignUpMain from './pages/SignUp/UserSignUpMain'
-import ProfileUser from './pages/User/ProfileUser';
-import CatererHome from './pages/User/catererHome';
 import ProfileUserMain from './pages/User/ProfileUserMain';
+import CatererHome from './pages/User/catererHome';
 
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
         <Route path="/CatererLogin" element={<CatererLogin /> }/>
         <Route path="/CatPage" element ={<CatPage/>}/>
         <Route path="/UserSignUpMain" element = {<UserSignUpMain/>}/>
-        <Route path ="/ProfileUser/:id" element = {<ProfileUser/>}/>
+        <Route path ="/ProfileUser/:id" element = {<ProfileUserMain/>}/>
         <Route path ="/ProfileUserMain/:id" element = {<ProfileUserMain/>}/>
 
 
