@@ -156,11 +156,12 @@ router.get("/clogin",async (req,res)=>{
     }
 });
 // user profile
-router.get("uprofile/:id",async(req,res)=>{
+router.get("/uprofile/:id",async(req,res)=>{
     try{
-        const user = await user.findOne({username:req.params.id});
+        const user = await User.findOne({username:req.params.id});
         if(!user){
-            return res.status(404).json({error:"Not Found"});
+            console.log("User not found");
+            res.status(404).json({error:"Not Found"});
         }else{
             res.status(200).json(user);
         }
@@ -169,9 +170,9 @@ router.get("uprofile/:id",async(req,res)=>{
         console.log(err);
         res.status(500).json({error:err.message});
     }
-})
+});
 
-router.get("cprofile/:id",async(req,res)=>{
+router.get("/cprofile/:id",async(req,res)=>{
     try{
         const user = await Cuser.findOne({c_username:req.params.id});
         if(!user){
@@ -184,5 +185,5 @@ router.get("cprofile/:id",async(req,res)=>{
     catch(error){
         res.status(500).json({error:error.message});
     }
-})
+});
 export default router;

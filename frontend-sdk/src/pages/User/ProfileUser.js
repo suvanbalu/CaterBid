@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import Progress_bar from "../../components/progressbar";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
@@ -6,12 +6,31 @@ import { SiGooglemaps } from "react-icons/si";
 import Navbar from "../../components/Navbar";
 import {useParams } from "react-router-dom";
 import BidPopup from "../../components/bidpopup";
-
+import axios from "axios";
 
 const ProfileUser = () => {
   const { id } = useParams();
+  // get user details from backend
+  const [user, setUser] = useState({
+    name: "Ashwin Veluswamy",
+    email: "",
+    location: "Tamil Nadu, India",
+    profile_pic: "",
+  });
+  // useeffect and axios to update user details
+  useEffect(() => {
+    axios.get(`http://localhost:3001/auth/uprofile/${id}`)
+    .then((res) => {
+      console.log(res.data);
+      setUser(res.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }, []);
   return (
     <div class="m-0 w-screen h-screen">
+      {console.log(user)}
       <Navbar />
       <div class="whole m-0 w-full p-2 bg-white h-full ">
         <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
@@ -37,12 +56,12 @@ const ProfileUser = () => {
                 {`@${id}`}
                 <span class="font-light text-gray-500"></span>
               </h1>
-              <p class=" text-gray-800 text-2xl mt-3">Ashwin Veluswamy</p>
+              <p class=" text-gray-800 text-2xl mt-3">{`${user.firstname} ${user.lastname}`}</p>
               <p class="font-light text-gray-600 mt-3">Tamil Nadu, India</p>
 
-              <p class="mt-8 text-gray-500 font-semibold">Signature Dish </p>
-              <p class="mt-2 text-gray-500">
-                Italian Cuisine and North Indian Snacks
+              <p class="mt-8 text-gray-500 font-semibold">Phone Number </p>
+              <p class="text-gray-500">
+                {user.phone}
               </p>
             </div>
           </div>

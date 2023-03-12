@@ -7,7 +7,6 @@ import {
   TbArrowBack
 } from "react-icons/tb"
 import { Link } from "react-router-dom";
-
 export const LoginWrapTab = createContext();
 
 const LoginWrap = () => {
@@ -42,14 +41,9 @@ const LoginWrap = () => {
   return (
    
       <section className="">
-        <div className="h-full w-full px-8 pt-8 items-center">
-          <div className="flex space-x-4 justify-between px-4 ">
-          <p className="text-lg uppercase tracking-wider mb-8">Login</p>
-            <Link to="/">
-            <TbArrowBack size={24} />
-            </Link>
-          </div>
-          <header className=""> 
+        <div className="h-full w-full px-8 items-center">
+          <Navbar/>
+          <header className="pt-8"> 
             {tabMenuItems.map((item, idx) => {
               return (
                 <button
