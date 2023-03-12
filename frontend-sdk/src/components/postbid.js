@@ -7,9 +7,19 @@ const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", de
   ))
   return (
     <div>
-      <label htmlFor={`my-modal-${num}`} className="btn h-36 w-96 bg-slate-300 ">
+      <label htmlFor={`my-modal-${num}`} className="btn h-72 w-96 bg-slate-300 flex-row">
+        <div>
+          <div className="text-3xl">{postheadline}</div>
+          <div class="inline-flex items-center justify-center w-full">
+              <span class="w-80 mb-6 h-px bg-gray-200 border-0 dark:bg-gray-700">
+                {" "}
+              </span>
+            </div>
         <div className="flex flex-cols">
-          <div class="relative w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600 -left-[20px]">
+
+
+          <div>
+          <div class="relative w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600 left-3">
             <svg
               class="absolute w-28 h-28 text-gray-400 -left-1"
               fill="currentColor"
@@ -23,15 +33,31 @@ const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", de
               ></path>
             </svg>
           </div>
+          {/* <div className="text-center p-4 ">{uname}</div> */}
+          </div>
 
-          <div className="p-4">
+          <div className="p-4 ml-14 mt-1  mb-4">
             <div className="text-center text-2xl font-semibold">
-              {postheadline}
+              {uname}
             </div>
-            <div className="text-center mb-2">{uname}</div>
-            <div className="text-center">{date}</div>
+            <div className="p-2">{description}</div>
+            {/* <div className="text-center mb-2">{uname}</div>
+            <div className="text-center">{date}</div> */}
           </div>
         </div>
+        <div className="flex justify-between gap-x-12 text-phorange text-xs mt-4">
+            <div>
+              Posted on : 
+            </div>
+            <div>
+              No.of bids :
+            </div>
+            <div>
+              Deadline :
+            </div>
+        </div>
+        </div>
+       
       </label>
 
       <input type="checkbox" id={`my-modal-${num}`} className="modal-toggle" />

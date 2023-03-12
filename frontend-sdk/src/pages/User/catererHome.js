@@ -22,12 +22,31 @@ const CatererHome = () => {
           <Usercount ncaterer="352" nuser="600" nbid="20156" nevent="1032" />
         </div>
       </div>
-
-      <div className="flex cols grid-cols-5 mt-10 ml-10">
+      <div className="text-2xl font-semibold mt-4 ml-4">Events happenening near you</div>
+      <div className="grid grid-cols-4 gap-x-3 mt-4 ml-10 gap-y-8">
+        
         <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num="1" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Suvan",amount:"10000"}]}/>
         <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+
+
       </div>
-      <Index />
+
+      <div className="text-2xl font-semibold mt-4 ml-4">Events based to your signature dish</div>
+      <div className="grid grid-cols-4 gap-x-3 mt-4 ml-10 gap-y-8">
+        
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num="1" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Suvan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
+
+
+      </div>
+
+      
     </div>
   );
 };
