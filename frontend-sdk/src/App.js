@@ -12,6 +12,7 @@ import CatPage from './pages/SignUp/CatPage';
 import UserSignUpMain from './pages/SignUp/UserSignUpMain'
 import ProfileUser from './pages/User/ProfileUser';
 import CatererHome from './pages/User/catererHome';
+import ProfileUserMain from './pages/User/ProfileUserMain';
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         <Route path="/CatPage" element ={<CatPage/>}/>
         <Route path="/UserSignUpMain" element = {<UserSignUpMain/>}/>
         <Route path ="/ProfileUser/:id" element = {<ProfileUser/>}/>
+        <Route path ="/ProfileUserMain/:id" element = {<ProfileUserMain/>}/>
+
+
+
         {/* <Route path="/User" element={<Profile1 /> } /> */}
         <Route path="/CUser/:cid" element={<Profile1 /> } />
         <Route path = "/CHome/:cid" element ={<CatererHome/>}/>

@@ -4,6 +4,7 @@ import {
   AiFillFileAdd,
   AiFillGooglePlusCircle,
   AiFillPlusCircle,
+  AiFillPlusSquare,
   AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai";
@@ -72,13 +73,13 @@ const ProfileUser = () => {
               </p>
             </div>
           </div>
-          <div class="media_Review flex justify-center h-fit w-1/4 ">
+          <div class="media_Review flex justify-center items-center h-fit w-1/4 ">
             <div className="media flex flex-col w-full h-full items-center">
               <div className="row1 flex m-2">
                 <label htmlFor="my-modal-4">
-                  <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200 ">
-                    <div class="font-bold text-gray-700 text-9xl m-auto duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
-                      <AiFillPlusCircle />
+                  <div class="grid m-2 md:grid-rows-2 justify-center rounded-full ">
+                    <div class=" border border-slate-500 font-bold text-gray-700 text-9xl m-auto duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
+                      <AiFillPlusSquare />
                     </div>
                     <div className="font-semibold text-center">
                       Add new event
@@ -96,7 +97,7 @@ const ProfileUser = () => {
                     <h3 className="text-3xl font-semibold">
                       Enter details of new event
                     </h3>
-                    <div className="bg-slate-300 h-[275px] w-full rounded-xl ml-3 p-4">
+                    <div className="bg-white w-full rounded-xl ml-3 p-4">
             
 
                     <div className="mt-2">

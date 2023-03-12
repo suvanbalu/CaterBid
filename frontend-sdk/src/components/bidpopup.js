@@ -14,9 +14,10 @@ const BidPopup = ({
     <div>
       <p className="font-bold text-2xl m-2"></p>
       <label for={`my-modal${num}`}>
-        <div class="p-5 bg-white shadow rounded-xl transition ease-in-out flex items-center delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 ">
+        <div class="p-5  bg-white shadow rounded-xl transition ease-in-out flex-cols items-center delay-150 hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 h-40 w-36 ">
+          <div className="text-center items-center">
           {!src && (
-            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600 mr-8">
+            <div class="relative justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
               <svg
                 class="absolute w-12 h-12 text-gray-400 -left-1"
                 fill="currentColor"
@@ -35,6 +36,7 @@ const BidPopup = ({
             <img src={src}></img>
           </div>
           Event {num}{" "}
+          </div>
         </div>
       </label>
 
