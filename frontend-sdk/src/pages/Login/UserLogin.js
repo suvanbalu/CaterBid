@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 import axios from 'axios';
 
-  
-
 const UserLogin = () => {
   const [User, setUser] = useState("");
   const [pwd, setpwd] = useState("");
@@ -52,16 +50,7 @@ const UserLogin = () => {
                   src="https://raw.githubusercontent.com/suvanbalu/caterbid/main/frontend-sdk/src/pages/Login/catPic.png"
                   className="px-1 sm:h-64 mobile:h-8"
                   alt="logo"
-
                 />
-              {/* <h1 className="text-6xl mb-3 text-slate-200 font-semibold">
-                Welcome
-              </h1>
-              <div>
-                <p className="text-xl text-slate-300 font-semibold ">
-                  user user user user user user user user user
-                </p> */}
-              {/* </div> */}
             </div>
             <div style={{
             backgroundImage:
@@ -98,23 +87,11 @@ const UserLogin = () => {
                 <button className="text-xs text-phorange hover:underline">
                         Forget Password?
                 </button>
-                    
-                
-                
-                
-                
-                
                 <div class="mt-5">
                   <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-orange-600 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 " onClick={handleClick} >
                     Login
                   </button>
                 </div>
-                <div class="text-red-600 font-semibold text-align:center">
-                  <button class="w-full py-2 text-center text-red-500 font-semibold text-align:center hover hover:text-red-600">
-                    <Link to="/CatererPage1">I'm a Caterer </Link>
-                  </button>
-                </div>
-             
             </div>
             </div>
             </div>

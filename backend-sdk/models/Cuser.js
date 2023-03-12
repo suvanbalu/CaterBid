@@ -8,9 +8,7 @@ const schema = new Schema({
   comp_name :{
     type: String,
   },
-  b_type :{
-    type: String,
-  },
+
   c_email :{
     type: String,
   },
@@ -26,9 +24,18 @@ const schema = new Schema({
   c_rating:{
     type: Number,
   },
-  C_specials:{
+  c_specials:{
       type: Array,
 },
+  c_insta:{
+    type: String,
+  },
+  c_fb:{
+    type: String,
+  },
+  c_maps:{
+    type: String,
+  }
 })
 
 export default model("Cuser",schema);

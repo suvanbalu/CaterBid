@@ -8,8 +8,6 @@ import NotFound from './pages/NotFound'
 import HowItWorks from './pages/HowItWorks'
 import HowItWorksCaterer from './pages/HowItWorksCaterer'
 import Profile1 from './pages/User/profile1'
-import CatererPage1 from './pages/SignUp/CatererPage1';
-import CatererPage2 from './pages/SignUp/CatererPage2';
 import CatPage from './pages/SignUp/CatPage';
 import UserSignUpMain from './pages/SignUp/UserSignUpMain'
 import ProfileUser from './pages/User/ProfileUser';
@@ -26,8 +24,6 @@ function App() {
         <Route path="/HowItWorksCaterer" element={<HowItWorksCaterer />}/>
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> }/>
-        <Route path="/CatererPage1" element={<CatererPage1 />}/>
-        <Route path="/CatererPage2" element={<CatererPage2 />}/>
         <Route path="/CatPage" element ={<CatPage/>}/>
         <Route path="/UserSignUpMain" element = {<UserSignUpMain/>}/>
         <Route path ="/ProfileUser/:id" element = {<ProfileUser/>}/>

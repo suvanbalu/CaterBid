@@ -13,6 +13,7 @@ const Inputfield = ({
   title = "",
   isDisabled = false,
   className = "w-full",
+  autoComplete = "new-password",
 }) => {
   const [value, setValue] = valueState;
   const [error, setError] = errorState;
@@ -29,6 +30,7 @@ const Inputfield = ({
           type={type === "password" ? (hide ? "password" : "text") : type}
           placeholder={placeholder}
           value={value}
+          autoComplete={autoComplete}
           onChange={(e) => {
             e.preventDefault();
             setValue(e.target.value);
