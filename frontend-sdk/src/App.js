@@ -13,6 +13,8 @@ import CatererPage2 from './pages/SignUp/CatererPage2';
 import CatPage from './pages/SignUp/CatPage';
 import UserSignUpMain from './pages/SignUp/UserSignUpMain'
 import ProfileUser from './pages/User/ProfileUser';
+import CatererHome from './pages/User/catererHome';
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
         <Route path ="/ProfileUser/:id" element = {<ProfileUser/>}/>
         {/* <Route path="/User" element={<Profile1 /> } /> */}
         <Route path="/CUser/:cid" element={<Profile1 /> } />
+        <Route path = "/CHome/:cid" element ={<CatererHome/>}/>
       <Route index element={<Home />} />
         <Route path="*" element={<NotFound />} />
         </Routes>
