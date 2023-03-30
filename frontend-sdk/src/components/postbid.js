@@ -9,7 +9,7 @@ const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", de
   ))
   return (
     <div>
-      <label htmlFor={`my-modal-${num}`} className="btn h-72 w-96 bg-slate-300 flex-row">
+      <label htmlFor={`my-modal-${num}`} className="btn h-fit w-fit bg-slate-300 flex-row py-20">
         <div>
           <div className="text-3xl">{postheadline}</div>
           <div class="inline-flex items-center justify-center w-full">

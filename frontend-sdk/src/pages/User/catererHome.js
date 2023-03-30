@@ -47,7 +47,6 @@ const CatererHome = () => {
       </div>
       <div className="text-2xl font-semibold mt-4 ml-4">Events happenening near you</div>
       <div className="grid grid-cols-4 gap-x-3 mt-4 ml-10 gap-y-8">
-        HI
         {postset1}
       </div>
 

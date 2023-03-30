@@ -58,7 +58,7 @@ const CatPage = () => {
 
           <div class=" w-72 lg:h-8 bg-gradient-to-r from-phorange absolute lg:inset-y-80 left-0 mobile:h-4 mobile:inset-y-[200px] mobile:w-[19%]"></div>
           <br></br>
-          <div className="animate-bounce lg:text-8xl text-black font-bold mx-auto  z-10 pl-48 mobile:text-6xl mobile:pl-32 mobile:pt-[15px] mobile:z-10 ">
+          <div className="mobile:animate-bounce lg:text-8xl text-black font-bold mx-auto  z-10 pl-48 mobile:text-6xl mobile:pl-32 mobile:pt-[15px] mobile:z-10 ">
             <span className=" text-transparent bg-gradient-to-r bg-clip-text from-blue-400 to-green-500 ">
               CaterBid,
             </span>
