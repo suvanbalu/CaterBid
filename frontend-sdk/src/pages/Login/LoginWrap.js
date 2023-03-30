@@ -68,7 +68,9 @@ const LoginWrap = () => {
             })}
           </header>
         </div>
+        <div className="w-full h-1 bg-phorange"></div>
         {tabMenuItems[selected].tab}
+        
       </section>
   );
 };

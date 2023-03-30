@@ -172,16 +172,16 @@ const ProfileUserMain = () => {
             solid groove structure. An artist of considerable range.
           </p>
         </div>
-        <div class="grid grid-cols-2 space-x-4 p-12 w-full">
-          <div class="flex items-center justify-left w-[130%] h-full overflow-x-auto overflow-y-hidden scrollbar-hide pl-6 ">
+        <div class="flex space-x-4 p-12 w-full">
+          <div class="flex items-center justify-left w-2/3 h-full overflow-x-scroll overflow-y-scroll scrollbar-hide pl-6 mt-2">
             <div class="flex justify-center mt-3 h-48 w-screen">
               <div className="flex justify-center gap-x-6 ml-60">
                 {iteratePosts}
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-end">
-            <div className="p-5 mt-2 mr-20 flex bg-white shadow rounded-xl transition flex-cols items-center delay-150  hover duration-300 h-40 w-96 ">
+          <div className="w-1/3 flex justify-end">
+            <div className="p-5 mt-5 mr-20 flex bg-white shadow rounded-xl transition flex-cols items-center delay-150  hover duration-300 h-40 w-96 ">
               <div className="ml-10  text-3xl font-semibold">Add new Event</div>
               <label htmlFor="my-modal-4">
                 <div class=" font-bold text-gray-700 text-9xl m-auto duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  ">
@@ -203,6 +203,7 @@ const ProfileUserMain = () => {
                         type="text"
                         placeholder="Post headline :"
                         valueState={[p_headline, setp_headline]}
+                        valueState={[p_headline, setp_headline]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
@@ -210,6 +211,7 @@ const ProfileUserMain = () => {
                       <Inputfield
                         type="text"
                         placeholder="Items needed :"
+                        valueState={[p_items, setp_items]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
