@@ -20,7 +20,10 @@ const isloggedin = () => {
 const ProfileUserMain = () => {
   const [p_headline, setp_headline] = useState("");
   const [p_description, setp_description] = useState("");
-  const [p_budget, setp_budget] = useState("");
+  const [p_items, setp_items] = useState("");
+  const [p_approx, setp_approx] = useState("");
+  const [p_deadline, setp_deadline] = useState("");
+
 
   const { id } = useParams();
   // get user details from backend
@@ -57,11 +60,10 @@ const ProfileUserMain = () => {
   },[]);
 
   const createpost = () => {
-    // axios.post(`http://localhost:3001/post/create/${id}`,
-    // {
+    axios.post(`http://localhost:3001/post/create/${id}`,
+    {
 
-    // })
-    <div>dsdsd</div>
+    })
   }
 
   const iteratePosts = postdetails.map((post,idx) => (
@@ -164,16 +166,16 @@ const ProfileUserMain = () => {
             solid groove structure. An artist of considerable range.
           </p>
         </div>
-        <div class="grid grid-cols-2 space-x-4 p-12 w-full">
-          <div class="flex items-center justify-left w-[130%] h-full overflow-x-auto overflow-y-hidden scrollbar-hide pl-6 ">
+        <div class="flex space-x-4 p-12 w-full">
+          <div class="flex items-center justify-left w-2/3 h-full overflow-x-scroll overflow-y-scroll scrollbar-hide pl-6 mt-2">
             <div class="flex justify-center mt-3 h-48 w-screen">
               <div className="flex justify-center gap-x-6 ml-60">
                 {iteratePosts}
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-end">
-            <div className="p-5 mt-2 mr-20 flex bg-white shadow rounded-xl transition flex-cols items-center delay-150  hover duration-300 h-40 w-96 ">
+          <div className="w-1/3 flex justify-end">
+            <div className="p-5 mt-5 mr-20 flex bg-white shadow rounded-xl transition flex-cols items-center delay-150  hover duration-300 h-40 w-96 ">
               <div className="ml-10  text-3xl font-semibold">Add new Event</div>
               <label htmlFor="my-modal-4">
                 <div class=" font-bold text-gray-700 text-9xl m-auto duration-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105  ">
@@ -194,6 +196,7 @@ const ProfileUserMain = () => {
                       <Inputfield
                         type="text"
                         placeholder="Post headline :"
+                        valueState={[p_headline, setp_headline]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
@@ -201,12 +204,14 @@ const ProfileUserMain = () => {
                       <Inputfield
                         type="text"
                         placeholder="Items needed :"
+                        valueState={[p_items, setp_items]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
                     <div className="mt-2">
                       <Inputfield
                         type="text"
+                        valueState={[p_deadline, setp_deadline]}
                         placeholder="Deadline :"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
@@ -214,6 +219,7 @@ const ProfileUserMain = () => {
                     <div className="mt-2">
                       <Inputfield
                         type="text"
+                        valueState={[p_description, setp_description]}
                         placeholder="Description :"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
@@ -221,6 +227,7 @@ const ProfileUserMain = () => {
                     <div className="mt-2">
                       <Inputfield
                         type="text"
+                        valueState={[p_approx, setp_approx]}
                         placeholder="Aprox people attending :"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
