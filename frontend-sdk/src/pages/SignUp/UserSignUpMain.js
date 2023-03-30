@@ -34,7 +34,7 @@ const UserSignUpMain = () => {
           username: Uname,
         })
         .then((response) => {
-          toast.success("Sign In Succesful")    
+          toast.success("Sign Up Succesful")    
           console.log(response);
         });
       console.log("1");
@@ -68,7 +68,7 @@ const UserSignUpMain = () => {
 
           <div class="invisible  lg:visible w-72 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-80 left-0 "></div>
           <br></br>
-          <div className="text-7xl animate-bounce lg:text-8xl text-black font-bold mx-auto  z-10 pt-20 px-10 lg:pl-48">
+          <div className="text-7xl animate-bounce lg:animate-none lg:text-8xl text-black font-bold mx-auto  z-10 pt-20 px-10 lg:pl-48">
             <span className="text-transparent bg-gradient-to-r bg-clip-text from-phorange to-green-500 ">
               CaterBid,
             </span>
