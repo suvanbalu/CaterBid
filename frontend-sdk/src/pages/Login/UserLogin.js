@@ -30,7 +30,7 @@ const UserLogin = () => {
     };
   
     return (
-        <div className="h-screen w-full flex fixed bg-white">
+        <div className="h-full w-full flex bg-white">
         <div style={{
                 backgroundImage:
                   "linear-gradient(to bottom, rgba(230, 230, 230, 0.7), rgba(230, 230, 230, 0.9)), url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg)",
@@ -42,15 +42,15 @@ const UserLogin = () => {
           className="flex flex-col items-center mobile:w-full mobile:h-full mobile:pb-20 mobile:pt-20 bg-white lg:py-0  ">
           <div className="w-full h-1 bg-phorange"></div>
 
-          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto overflow-hidden p-28">
-            <div className="flex w-2/3 h-fit rounded-3xl shadow-md">
+          <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto p-10 pt-28 pd-28">
+            <div className="flex flex-col lg:flex-row lg:w-2/3 h-fit rounded-3xl shadow-md">
             <div
-              className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-black rounded-l-2xl"
+              className="w-full lg:rounded-l-2xl mobile:rounded-t-2xl lg:rounded-none lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-black lg:rounded-l-2xl "
   
             >
               <img
                   src="https://raw.githubusercontent.com/suvanbalu/caterbid/main/frontend-sdk/src/pages/Login/catPic.png"
-                  className="px-1 sm:h-64 mobile:h-8"
+                  className="px-1 sm:h-64 mobile:h-24"
                   alt="logo"
                 />
             </div>
@@ -62,7 +62,7 @@ const UserLogin = () => {
               backgroundRepeat : "no-repeat",
               
           }}
-          className="flex w-full lg:w-1/2 py-16 px-12 bg-slate-300 rounded-r-2xl justify-center">
+          className="flex w-full lg:w-1/2 py-16 px-12 bg-slate-300 lg:rounded-r-2xl justify-center">
               <div className="w-[90%]">
               <h2 className="text-3xl mb-8 font-semibold text-phorange">User login</h2>
               <p className="mb-6 text-white">

@@ -44,8 +44,8 @@ const CatPage = () => {
     <React.Fragment>
       <Navbar />
 
-      <div className="flex flex-row items-center p-4 bg-white h-screen">
-        <div className="w-full lg:w-[50vw] h-screen flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
+      <div className="flex flex-col lg:flex-row items-center p-4 bg-white h-screen">
+        <div className="w-full lg:w-[50vw] h-screen hidden lg:flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
           <div class=" w-1/3 h-8 bg-gradient-to-r from-phorange absolute inset-y-32 left-0 "></div>
           <br></br>
           <div class=" w-5/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-48 left-0 "></div>
@@ -82,7 +82,7 @@ const CatPage = () => {
           <br></br>
         </div>
 
-        <div className="flex w-1/2 lg:w-3/5 py-4 px-2 h-full rounded-2xl justify-center shadow-xl shadow-white">
+        <div className="flex w-full lg:w-3/5 py-4 px-2 h-full rounded-2xl justify-center shadow-xl shadow-white">
           <div className="w-[80%]">
             <h2 className="text-3xl mb-8 font-semibold">Sign Up</h2>
 
