@@ -62,7 +62,7 @@ const UserLogin = () => {
               backgroundRepeat : "no-repeat",
               
           }}
-          className="flex w-full lg:w-1/2 py-16 px-12 bg-slate-300 lg:rounded-r-2xl justify-center">
+          className="flex w-full lg:w-1/2 py-16 px-12 bg-slate-800 lg:rounded-r-2xl justify-center mobile:rounded-b-2xl">
               <div className="w-[90%]">
               <h2 className="text-3xl mb-8 font-semibold text-phorange">User login</h2>
               <p className="mb-6 text-white">
