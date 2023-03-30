@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Inputfield from "../../components/TextInput";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const UserSignUpMain = () => {
   const [Firstname, setFirstname] = useState("");
@@ -13,6 +15,16 @@ const UserSignUpMain = () => {
   const [Pwd, setPwd] = useState("");
   const [Uname, setUname] = useState("");
   const [Checkpwd, setCheckpwd] = useState("");
+  const notify = () => toast.error('Passwords dont match', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
 
   const handleClick = (event) => {
     if (Checkpwd === Pwd) {
@@ -35,6 +47,11 @@ const UserSignUpMain = () => {
           console.log(response);
         });
       console.log("1");
+    }
+    else{
+      event.preventDefault();
+      notify()
+      
     }
   };
 
@@ -156,7 +173,19 @@ const UserSignUpMain = () => {
                 >
                   Sign Up Now
                 </button>
-              </div>
+                <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                />
+                              </div>
               <div class="text-red-600 font-semibold text-align:center">
                 <button class="w-full py-2 text-center text-red-500 font-semibold text-align:center hover hover:text-red-600">
                   <Link to="/csignup">I'm a Caterer </Link>

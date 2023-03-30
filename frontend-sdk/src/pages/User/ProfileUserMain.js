@@ -10,6 +10,7 @@ import BidPopup from "../../components/bidpopup";
 import Inputfield from "../../components/TextInput";
 import axios from "axios";
 
+
 const isloggedin = () => {
   const log = localStorage.getItem("Uflag");
   if (log === "true") {
