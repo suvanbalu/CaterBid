@@ -18,6 +18,10 @@ const isloggedin = () => {
   return false;
 };
 const ProfileUserMain = () => {
+  const [p_headline, setp_headline] = useState("");
+  const [p_description, setp_description] = useState("");
+  const [p_budget, setp_budget] = useState("");
+
   const { id } = useParams();
   // get user details from backend
   const [user, setUser] = useState({
@@ -51,14 +55,34 @@ const ProfileUserMain = () => {
       console.log(err);
     });
   },[]);
+
+  const createpost = () => {
+    // axios.post(`http://localhost:3001/post/create/${id}`,
+    // {
+
+    // })
+    <div>dsdsd</div>
+  }
+
   const iteratePosts = postdetails.map((post,idx) => (
     <BidPopup
+    key = {idx}
     name = {post.post_headline}
     num = {idx}
     description = {post.post_description}
     src = ""
     bids = {post.bids}/>
   ))
+
+  const n_post = iteratePosts.length;
+  // count of bids from all posts
+  const n_bids = postdetails.reduce((acc,curr) => {
+    return acc + curr.bids.length;
+  },0);
+  // count of completed projects
+  const n_selected = postdetails.filter((post)=>{
+    return post.selected_bid !== "None";
+  }).length;
   return (
     <div class="m-0 w-screen h-screen">
       {console.log("Lenght",iteratePosts.length)}
@@ -107,26 +131,26 @@ const ProfileUserMain = () => {
             <div class="py-5 px-24 ">
               <p></p>
               <Progress_bar
-                progress="100"
+                progress={n_post*5}
                 height="20px"
-                text="Totla no.of events assigned"
-                value="33"
+                text="Total no.of events posted"
+                value={n_post}
               />
             </div>
             <div class="py-5 px-24 ">
               <Progress_bar
-                progress="66.66"
+                progress={n_selected*4}
                 height="20px"
-                text="No of events successful"
-                value="20"
+                text="No. of bids received"
+                value={n_bids}
               />
             </div>
             <div class="py-5 px-24 ">
               <Progress_bar
-                progress="33.33"
+                progress={n_selected*5}
                 height="20px"
-                text="Nof of events pending "
-                value="11"
+                text="No of events completed"
+                value={n_selected}
               />
             </div>
           </div>
@@ -202,7 +226,8 @@ const ProfileUserMain = () => {
                       />
                     </div>
                     <div className="flex justify-end">
-                      <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                      <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 "
+                      onKeyDown={createpost()}>
                         Submit
                       </button>
                     </div>
