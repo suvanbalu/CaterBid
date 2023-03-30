@@ -57,7 +57,6 @@ const BidPopup = ({
       <div className="modal w-screen">
         <div class="modal-box w-11/12 max-w-5xl h-2/3">
           <h3 class="font-bold text-lg ">Event {num}</h3>
-          {console.log(num)}
           <p class="py-4">
             <div className="text-4xl text-center text-black  p-3 rounded-xl">
               {name}

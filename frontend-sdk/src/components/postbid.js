@@ -1,7 +1,9 @@
+// Used in Caterer Home
+
 import React from "react";
 import Bidsofar from "./Bidsofar.js";
 import Inputfield from "./TextInput.js";
-const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", description="Blah blah",deadline="deadline",bids,num}) => {
+const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", description="Blah blah",deadline="deadline",bids,num,eventcount,}) => {
   const iterbidsofar = bids.map((item)=>(
     <Bidsofar c_name={item.c_name} amount={item.amount}></Bidsofar>
   ))
@@ -47,13 +49,13 @@ const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", de
         </div>
         <div className="flex justify-between gap-x-12 text-phorange text-xs mt-4">
             <div>
-              Posted on : 
+              Event Count : {eventcount}
             </div>
             <div>
-              No.of bids :
+              No.of bids : {bids.length}
             </div>
             <div>
-              Deadline :
+              Deadline : {deadline}
             </div>
         </div>
         </div>

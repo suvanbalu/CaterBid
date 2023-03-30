@@ -3,9 +3,32 @@ import Navbar from "../../components/Navbar";
 import Usercount from "../../components/usercount";
 import BidPopup from "../../components/bidpopup";
 import Postbid from "../../components/postbid";
-import Index from "../../components/carousel";
-
+import { useEffect,useState} from "react";
+import axios from "axios";
 const CatererHome = () => {
+
+  const [posts,setPosts] = useState([]);
+  useEffect(() => {
+    axios
+    .get("http://localhost:3001/post/all")
+    .then((res) => {
+      setPosts(res.data);
+      console.log(res.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }, []);
+  
+  const postset1 = posts.map((post,idx) => (
+    <Postbid
+      postheadline={post.headline}
+      uname={post.username}
+      description={post.post_description}
+      num={idx}
+      bids={post.bids}
+      eventcount={posts.event_count}
+      ></Postbid>));
   return (
     <div className="w-screen h-screen">
       <Navbar />
@@ -24,14 +47,7 @@ const CatererHome = () => {
       </div>
       <div className="text-2xl font-semibold mt-4 ml-4">Events happenening near you</div>
       <div className="grid grid-cols-4 gap-x-3 mt-4 ml-10 gap-y-8">
-        
-        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num="1" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Suvan",amount:"10000"}]}/>
-        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
-        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
-        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
-        <Postbid postheadline="Italian Fest" uname="uname" date="date" description="Blah blah" num ="2" bids={[{c_name:"Suvan",amount:"10000"},{c_name:"Svan",amount:"10000"}]}/>
-
-
+        {postset1}
       </div>
 
       <div className="text-2xl font-semibold mt-4 ml-4">Events based to your signature dish</div>

@@ -20,6 +20,7 @@ const isloggedin = () => {
 const ProfileUserMain = () => {
   const [p_headline, setp_headline] = useState("");
   const [p_description, setp_description] = useState("");
+  const [p_items, setp_items] = useState([""]);
   const [event_count, setevent_count] = useState("");
   const [deadline, setdeadline] = useState("");
 
@@ -70,8 +71,11 @@ const ProfileUserMain = () => {
       console.log("Posts",err);
     }
     );
+    // reload the page once
+    // window.location.reload();
   }
 
+  // create post popup
   const iteratePosts = postdetails.map((post,idx) => (
     <BidPopup
     key = {idx}
@@ -91,10 +95,9 @@ const ProfileUserMain = () => {
   const n_selected = postdetails.filter((post)=>{
     return post.selected !== "None";
   }).length;
+
   return (
     <div class="m-0 w-screen h-screen">
-      {console.log("Lenght",iteratePosts.length)}
-      {console.log("Logged in ?", isloggedin())}
       <Navbar />
       {isloggedin() ? (
       <div class="whole m-0 w-full p-2 bg-white h-full ">
@@ -203,7 +206,6 @@ const ProfileUserMain = () => {
                         type="text"
                         placeholder="Post headline :"
                         valueState={[p_headline, setp_headline]}
-                        valueState={[p_headline, setp_headline]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
@@ -241,7 +243,7 @@ const ProfileUserMain = () => {
                     </div>
                     <div className="flex justify-end">
                       <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 "
-                      onKeyDown={createpost}>
+                      onClick={createpost}>
                         Submit
                       </button>
                     </div>
