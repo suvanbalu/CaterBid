@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Inputfield from "../../components/TextInput"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios';
 
@@ -10,6 +12,11 @@ const UserLogin = () => {
   const [pwd, setpwd] = useState("");
   const navigate = useNavigate();
   const handleClick = event => {
+    if(User === "" || pwd === ""){
+      event.preventDefault();
+      toast.error('Please fill all the fields');
+    }
+    else{
     event.preventDefault()
     console.log(pwd);
     console.log(User);
@@ -26,9 +33,10 @@ const UserLogin = () => {
           localStorage.setItem("Utype", "user");
           navigate("/");})
         .catch((err) => {
-          alert("Invalid Credentials")
+          toast.success("Invalid Credentials")
           console.log(err);})
-    };
+    }
+  };
   
     return (
         <div className="lg:h-screen w-full flex bg-white mobile:h-full lg:fixed">
@@ -93,6 +101,18 @@ const UserLogin = () => {
                 <button className="text-xs text-phorange hover:underline">
                         Forget Password?
                 </button>
+                <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                />
                 <div class="mt-5">
                   <button class="w-full py-3 text-center text-white font-semibold rounded hover bg-phorange hover:bg-orange-600 active:bg-red-500 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 " onClick={handleClick} >
                     Login
