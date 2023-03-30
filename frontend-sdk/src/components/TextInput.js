@@ -14,6 +14,7 @@ const Inputfield = ({
   isDisabled = false,
   className = "w-full",
   autoComplete = "new-password",
+  eyecolor="black"
 }) => {
   const [value, setValue] = valueState;
   const [error, setError] = errorState;
@@ -42,7 +43,7 @@ const Inputfield = ({
         />
         {type === "password" && (
           <button
-            className="text-cloud p-2 border-2 bg-gray rounded-lg"
+            className="text-cloud p-2 border-2 bg-slate-200 rounded-lg"
             onClick={(e) => {
               e.preventDefault();
               setHide(!hide);

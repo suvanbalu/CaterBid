@@ -1,3 +1,4 @@
+// Used to 
 import React from "react";
 import BiddersList from "./biddersList";
 const BidPopup = ({
@@ -45,7 +46,7 @@ const BidPopup = ({
             <img src={src}></img>
           </div>
           <div className="text-xl">
-          Event {num}{" "}
+          {name}{" "}
           </div>
           
           </div>

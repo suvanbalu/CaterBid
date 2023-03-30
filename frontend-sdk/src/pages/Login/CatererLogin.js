@@ -24,7 +24,7 @@ const CatererLogin = () => {
               
             >
               <img
-                  src="https://raw.githubusercontent.com/suvanbalu/caterbid/main/frontend-sdk/src/pages/Login/catPic.png"
+                  src="\catPic.png"
                   className="px-1 sm:h-64 mobile:h-8"
                   alt="logo"
                 />

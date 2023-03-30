@@ -6,7 +6,7 @@ import AboutUs from './pages/aboutus/AboutUs'
 import NotFound from './pages/NotFound'
 import HowItWorks from './pages/HowItWorks'
 import HowItWorksCaterer from './pages/HowItWorksCaterer'
-import Profile1 from './pages/User/profile1'
+import Cuser from './pages/User/Cuser'
 import CatPage from './pages/SignUp/CatPage';
 import UserSignUpMain from './pages/SignUp/UserSignUpMain'
 import ProfileUserMain from './pages/User/ProfileUserMain';
@@ -23,15 +23,12 @@ function App() {
         <Route path="/HowItWorksCaterer" element={<HowItWorksCaterer />}/>
         <Route path="/login" element={<LoginWrap />} />
         <Route path="/CatererLogin" element={<CatererLogin /> }/>
-        <Route path="/CatPage" element ={<CatPage/>}/>
-        <Route path="/UserSignUpMain" element = {<UserSignUpMain/>}/>
-        <Route path ="/ProfileUser/:id" element = {<ProfileUserMain/>}/>
-        <Route path ="/ProfileUserMain/:id" element = {<ProfileUserMain/>}/>
-
-
+        <Route path="/csignup" element ={<CatPage/>}/>
+        <Route path="/usersignup" element = {<UserSignUpMain/>}/>
+        <Route path ="/User/:id" element = {<ProfileUserMain/>}/>
 
         {/* <Route path="/User" element={<Profile1 /> } /> */}
-        <Route path="/CUser/:cid" element={<Profile1 /> } />
+        <Route path="/CUser/:cid" element={<Cuser /> } />
         <Route path = "/CHome/:cid" element ={<CatererHome/>}/>
       <Route index element={<Home />} />
         <Route path="*" element={<NotFound />} />
