@@ -7,7 +7,7 @@ import Navbar from "../../components/Navbar";
 import { Link, useParams } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import { useState } from "react";
-const Profile1 = () => {
+const Cuser = () => {
   const [value, setValue] = useState(0);
   const {cid} = useParams();
   return (
@@ -207,4 +207,4 @@ const Profile1 = () => {
     </div>
   );
 };
-export default Profile1;
+export default Cuser;

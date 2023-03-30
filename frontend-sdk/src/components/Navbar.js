@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link to="/AboutUs">About Us</Link>
         </button>
         {checkLogin()&&<button className={`uppercase font-mont mobile:text-xs sm:text-base hover:text-red-500 ${location.pathname.includes("profileuser") && "text-red-500"}`}>
-          <Link to={`/profileuser/${localStorage.getItem("Uname")}`}>Dashboard</Link>
+          <Link to={`/User/${localStorage.getItem("Uname")}`}>Dashboard</Link>
         </button>}
       
       </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link to="/login">Login</Link>
         </button>
         <button className="font-semibold sm:text-base mobile:text-xs rounded-md sm:px-2 sm:py-1 mobile:px-0 transition ease-in-out text-red-500 hover:scale-110 duration-150">
-          <Link to="/UserSignUpMain">Sign Up</Link>
+          <Link to="/usersignup">Sign Up</Link>
         </button>
       </div>}
       {checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">

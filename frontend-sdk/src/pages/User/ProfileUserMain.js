@@ -20,10 +20,8 @@ const isloggedin = () => {
 const ProfileUserMain = () => {
   const [p_headline, setp_headline] = useState("");
   const [p_description, setp_description] = useState("");
-  const [p_items, setp_items] = useState("");
-  const [p_approx, setp_approx] = useState("");
-  const [p_deadline, setp_deadline] = useState("");
-
+  const [event_count, setevent_count] = useState("");
+  const [deadline, setdeadline] = useState("");
 
   const { id } = useParams();
   // get user details from backend
@@ -60,10 +58,18 @@ const ProfileUserMain = () => {
   },[]);
 
   const createpost = () => {
-    axios.post(`http://localhost:3001/post/create/${id}`,
-    {
-
-    })
+    axios.post(`http://localhost:3001/post/create/${id}`,{
+      post_headline: p_headline,
+      post_description: p_description,
+      event_count: event_count,
+      deadline: deadline
+    }).then((res) => {
+      console.log(res.data);
+      setPostdetails([...postdetails,res.data]);
+    }).catch((err) => {
+      console.log("Posts",err);
+    }
+    );
   }
 
   const iteratePosts = postdetails.map((post,idx) => (
@@ -83,7 +89,7 @@ const ProfileUserMain = () => {
   },0);
   // count of completed projects
   const n_selected = postdetails.filter((post)=>{
-    return post.selected_bid !== "None";
+    return post.selected !== "None";
   }).length;
   return (
     <div class="m-0 w-screen h-screen">
@@ -141,7 +147,7 @@ const ProfileUserMain = () => {
             </div>
             <div class="py-5 px-24 ">
               <Progress_bar
-                progress={n_selected*4}
+                progress={n_bids*5}
                 height="20px"
                 text="No. of bids received"
                 value={n_bids}
@@ -197,6 +203,7 @@ const ProfileUserMain = () => {
                         type="text"
                         placeholder="Post headline :"
                         valueState={[p_headline, setp_headline]}
+                        valueState={[p_headline, setp_headline]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
@@ -211,7 +218,7 @@ const ProfileUserMain = () => {
                     <div className="mt-2">
                       <Inputfield
                         type="text"
-                        valueState={[p_deadline, setp_deadline]}
+                        valueState={[deadline,setdeadline]}
                         placeholder="Deadline :"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
@@ -219,7 +226,7 @@ const ProfileUserMain = () => {
                     <div className="mt-2">
                       <Inputfield
                         type="text"
-                        valueState={[p_description, setp_description]}
+                        valueState={[p_description,setp_description]}
                         placeholder="Description :"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
@@ -227,14 +234,14 @@ const ProfileUserMain = () => {
                     <div className="mt-2">
                       <Inputfield
                         type="text"
-                        valueState={[p_approx, setp_approx]}
+                        valueState={[event_count,setevent_count]}
                         placeholder="Aprox people attending :"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
                     <div className="flex justify-end">
                       <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 "
-                      onKeyDown={createpost()}>
+                      onKeyDown={createpost}>
                         Submit
                       </button>
                     </div>

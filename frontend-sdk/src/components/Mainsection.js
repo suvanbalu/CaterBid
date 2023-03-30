@@ -1,6 +1,7 @@
 import React from "react";
 import prompts from "./prompts.json";
 import { Link } from "react-router-dom";
+// import { useEffect } from "react";
 
 const Mainsection = () => {
   let data =
@@ -38,7 +39,7 @@ const Mainsection = () => {
                 className=" mobile:h-20"
               ></img>
               <button className="p-4 mt-4 sm:text-base mobile:text-xs transition ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md">
-                <Link to="/CatPage">Create Caterer Profile</Link>
+                <Link to="/csignup">Create Caterer Profile</Link>
               </button>
             </div>
             <div className="flex flex-col items-center">
@@ -51,7 +52,7 @@ const Mainsection = () => {
                 className=" mobile:h-20"
               ></img>
               <button className="p-4 mt-4 transition sm:text-base mobile:text-xs ease-in-out delay-150 hover:scale-110 font-semibold text-black bg-phorange rounded shadow font-mont hover:text-white hover:bg-orange-600 hover:rounded-md size-5px">
-                <Link to="/UserSignUpMain">Create User Profile</Link>
+                <Link to="/usersignup">Create User Profile</Link>
               </button>
             </div>
           </main>

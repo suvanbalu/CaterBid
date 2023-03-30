@@ -31,6 +31,7 @@ const UserSignUpMain = () => {
           username: Uname,
         })
         .then((response) => {
+          alert("Sign In Succesful")
           console.log(response);
         });
       console.log("1");
@@ -158,7 +159,7 @@ const UserSignUpMain = () => {
               </div>
               <div class="text-red-600 font-semibold text-align:center">
                 <button class="w-full py-2 text-center text-red-500 font-semibold text-align:center hover hover:text-red-600">
-                  <Link to="/CatPage">I'm a Caterer </Link>
+                  <Link to="/csignup">I'm a Caterer </Link>
                 </button>
               </div>
             </form>
