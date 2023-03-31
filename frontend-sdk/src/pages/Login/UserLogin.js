@@ -39,7 +39,7 @@ const UserLogin = () => {
   };
   
     return (
-        <div className="lg:h-screen w-full flex bg-white mobile:h-full lg:fixed">
+        <div className="lg:h-screen w-full flex bg-white mobile:h-full lg:fixed ">
         <div style={{
                 backgroundImage:
                   "linear-gradient(to bottom, rgba(230, 230, 230, 0.7), rgba(230, 230, 230, 0.9)), url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg)",
