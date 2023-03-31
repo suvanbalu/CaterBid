@@ -56,39 +56,39 @@ const UserSignUpMain = () => {
 
       <div className="grid-cols-1  w-full lg:flex flex-row items-center p-4 bg-white">
         <div className="h-auto flex flex-col items-center justify-center bg-no-repeat bg-cover bg-white rounded-l-2xl ">
-          <div class=" invisible  lg:visible w-1/3 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-32 left-0 "></div>
+          <div class=" invisible  lg:visible w-1/3 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-32 left-0 "></div>
           <br></br>
-          <div class="invisible  lg:visible w-5/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-48 left-0 "></div>
+          <div class="invisible  lg:visible w-5/12 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-48 left-0 "></div>
           <br></br>
-          <div class="invisible  lg:visible w-96 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-64 left-0 "></div>
+          <div class="invisible  lg:visible w-96 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-64 left-0 "></div>
           <br></br>
           {/* <div class="relative w-[576px] h-[576px] bg-black rounded-full flex justify-center items-center text-center p-5 shadow-xl z-10 font-sans">
                   Make it simple, but significant.
               </div> */}
 
-          <div class="invisible  lg:visible w-72 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-80 left-0 "></div>
+          <div class="invisible  lg:visible w-72 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-80 left-0 "></div>
           <br></br>
           <div className="text-7xl animate-bounce lg:animate-none lg:text-8xl text-black font-bold mx-auto  z-10 pt-20 px-10 lg:pl-48">
-            <span className="text-transparent bg-gradient-to-r bg-clip-text from-phorange to-green-500 ">
+            <span className="text-transparent bg-gradient-to-r bg-clip-text from-slate-900 to-blue-300 ">
               CaterBid,
             </span>
             <br />a place for everyone
           </div>
-          <div class="invisible lg:visible w-3/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-96 left-0 "></div>
+          <div class="invisible lg:visible w-3/12 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-96 left-0 "></div>
           <br></br>
 
-          <div class="invisible lg:visible w-72 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[448px] left-0 "></div>
+          <div class="invisible lg:visible w-72 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-[448px] left-0 "></div>
           <br></br>
           {/* <div class=" w-5/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-[448px] left-0 " ></div><br></br> */}
-          <div class="invisible  lg:visible w-96 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[512px] left-0 "></div>
+          <div class="invisible  lg:visible w-96 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-[512px] left-0 "></div>
           <br></br>
-          <div class="invisible lg:visible w-1/4 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[576px] left-0 "></div>
+          <div class="invisible lg:visible w-1/4 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-[576px] left-0 "></div>
           <br></br>
-          <div class="invisible lg:visible w-1/3 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[640px] left-0 "></div>
+          <div class="invisible lg:visible w-1/3 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-[640px] left-0 "></div>
           <br></br>
-          <div class="invisible lg:visible w-96 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[704px] left-0 "></div>
+          <div class="invisible lg:visible w-96 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-[704px] left-0 "></div>
           <br></br>
-          <div class="invisible lg:visible w-5/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-[768px] left-0 "></div>
+          <div class="invisible lg:visible w-5/12 h-8 bg-gradient-to-r from-teal-800 absolute inset-y-[768px] left-0 "></div>
           <br></br>
         </div>
         <div className="flex w-full lg:w-3/5 py-0 lg:py-10 px-10  bg-white rounded-2xl justify-center shadow-xl shadow-white">
@@ -163,7 +163,7 @@ const UserSignUpMain = () => {
               </div>
               <div class="mt-5">
                 <button
-                  class="w-full py-3 text-center text-white font-semibold rounded hover bg-blue-300 hover:bg-blue-500 active:bg-blue-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 "
+                  class="w-full py-3 text-center text-white font-semibold rounded hover bg-teal-800 hover:bg-teal-500 active:bg-teal-600 focus:outline-none focus:ring focus:ring-teal-500 duration-50 transition ease-in-out delay-150 "
                   onClick={handleClick}
                 >
                   Sign Up Now
