@@ -15,19 +15,10 @@ const UserSignUpMain = () => {
   const [Pwd, setPwd] = useState("");
   const [Uname, setUname] = useState("");
   const [Checkpwd, setCheckpwd] = useState("");
-  const notify = () => toast.error('Passwords dont match', {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    });
+  
 
   const handleClick = (event) => {
-    if (Checkpwd === Pwd) {
+    if (Checkpwd === Pwd && Firstname !== "" && Surname !== "" && Phno !== "" && Email !== "" && Pwd !== "" && Uname !== "") {
       event.preventDefault();
       console.log(Phno);
       console.log(Firstname);
@@ -43,14 +34,18 @@ const UserSignUpMain = () => {
           username: Uname,
         })
         .then((response) => {
-          alert("Sign In Succesful")
+          toast.success("Sign Up Succesful")    
           console.log(response);
         });
       console.log("1");
     }
+    else if(Firstname === "" || Surname === "" || Phno === "" || Email === "" || Pwd === "" || Uname === "" || Checkpwd === ""){
+      event.preventDefault();
+      toast.error('Please fill all the fields');
+    }
     else{
       event.preventDefault();
-      notify()
+      toast.error('Passwords dont match');
       
     }
   };
@@ -60,7 +55,7 @@ const UserSignUpMain = () => {
       <Navbar />
 
       <div className="grid-cols-1  w-full lg:flex flex-row items-center p-4 bg-white">
-        <div className="h-auto flex flex-col items-center justify-center p-u-12 bg-no-repeat bg-cover bg-white rounded-l-2xl ">
+        <div className="h-auto flex flex-col items-center justify-center bg-no-repeat bg-cover bg-white rounded-l-2xl ">
           <div class=" invisible  lg:visible w-1/3 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-32 left-0 "></div>
           <br></br>
           <div class="invisible  lg:visible w-5/12 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-48 left-0 "></div>
@@ -73,7 +68,7 @@ const UserSignUpMain = () => {
 
           <div class="invisible  lg:visible w-72 h-8 bg-gradient-to-r from-slate-400 absolute inset-y-80 left-0 "></div>
           <br></br>
-          <div className="text-7xl animate-bounce lg:text-8xl text-black font-bold mx-auto  z-10 pt-20 px-10 lg:pl-48">
+          <div className="text-7xl animate-bounce lg:animate-none lg:text-8xl text-black font-bold mx-auto  z-10 pt-20 px-10 lg:pl-48">
             <span className="text-transparent bg-gradient-to-r bg-clip-text from-phorange to-green-500 ">
               CaterBid,
             </span>

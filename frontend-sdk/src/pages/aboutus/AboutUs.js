@@ -14,11 +14,11 @@ import nashita from "./team/nashita.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="h-screen">
+    <div className="h-full lg:h-screen">
       <div>
       <Navbar />
       </div>
-      <section className="bg-gradient-to-b from-black to-slate-900 w-full p-4 flex justify-center h-full fixed">
+      <section className="bg-gradient-to-b from-black to-slate-900 w-full p-4 flex justify-center h-full lg:fixed">
         <div className="container mt-10">
           <div className=" about_us_text text-white text-center">
             <h2 className="header bold text-4xl p-2">About Us</h2>
@@ -42,7 +42,7 @@ const AboutUs = () => {
             <br></br>
           </div>
 
-          <div className="main-grid grid grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white">
+          <div className="main-grid grid grid-cols-1 md:grid-cols-3 text-center lg:grid-cols-5 m-4 h-fit w-full justify-center text-white">
             <TeamMemberDetail
               name="Suvan Sathyendira"
               organization={"PSG College of Technology"}
