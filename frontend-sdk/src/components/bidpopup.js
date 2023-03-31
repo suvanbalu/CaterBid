@@ -23,7 +23,7 @@ const BidPopup = ({
   
   return (
     <div>
-      <label for={`my-modal${num}`}>
+      <label for={`my-modal${num} h-fit w-fit`}>
         <div class="p-5  bg-white shadow rounded-xl transition ease-in-out flex-cols items-center delay-[50ms] hover:-translate-y-1 hover:text-white hover:scale-105 hover:bg-black hover duration-300 h-40 w-36 ">
           <div className="flex flex-col items-center text-center space-y-3">
           {!src && (

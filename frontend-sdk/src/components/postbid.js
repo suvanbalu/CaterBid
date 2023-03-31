@@ -3,7 +3,31 @@
 import React from "react";
 import Bidsofar from "./Bidsofar.js";
 import Inputfield from "./TextInput.js";
-const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", description="Blah blah",deadline="deadline",bids,num,eventcount,}) => {
+import { useState } from "react";
+import axios from "axios";
+
+const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", description="Blah blah",deadline="deadline",bids,num,eventcount,postid,caterer}) => {
+  const [bidamount,setBidamount] = useState(0);
+  const [pitch,setPitch] = useState("");
+
+  const handleClick = () => {
+    console.log("clicked");
+    console.log(bidamount);
+    console.log(pitch);
+    console.log(postid);
+    console.log(caterer);
+    axios.post(`http://localhost:3001/bids/cbid/${postid}`,{
+      caterer: caterer,
+      amount: bidamount,
+      pitch: pitch
+    }).then((res)=>{
+      console.log(res);
+    }).catch((err)=>{
+      console.log(err);
+    }
+    )
+    window.location.reload();
+  }
   const iterbidsofar = bids.map((item)=>(
     <Bidsofar c_name={item.c_name} amount={item.amount}></Bidsofar>
   ))
@@ -100,6 +124,7 @@ const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", de
 
                   <div className="mt-2">
                     <Inputfield
+                      valueState={[bidamount,setBidamount]}
                       type="text"
                       placeholder="Enter your bid :"
                       className="border-gray-300 py-1 px-2 w-full rounded"
@@ -107,13 +132,15 @@ const Postbid = ({ postheadline = "postheadline", uname="uname", date="date", de
                   </div>
                   <div className="mt-2">
                     <Inputfield
+                      valueState={[pitch,setPitch]}
                       type="text"
                       placeholder="Enter your pitch :"
                       className="border-gray-300 py-1 px-2 w-full rounded"
                     />
                   </div>
                   <div className="flex justify-end">
-                    <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 ">
+                    <button class=" mr-2 mt-4  w-[90px] py-3 text-center text-white font-semibold rounded-xl hover bg-slate-600 hover:bg-slate-500 active:bg-slate-600 focus:outline-none focus:ring focus:ring-slate-500 duration-50 transition ease-in-out delay-150 "
+                    onClick={handleClick}>
                       Submit
                     </button>
                   </div>
