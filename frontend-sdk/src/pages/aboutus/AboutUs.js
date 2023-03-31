@@ -15,10 +15,10 @@ import nashita from "./team/nashita.jpg";
 const AboutUs = () => {
   return (
     <div className="h-full lg:h-screen">
-      <div>
-      <Navbar />
-      </div>
-      <section className="bg-gradient-to-b from-black to-slate-900 w-full p-4 flex justify-center h-full lg:fixed">
+      
+      <Navbar className="fixed"/>
+      
+      <section className="bg-gradient-to-b from-black to-slate-900 w-full p-4 flex justify-center h-full ">
         <div className="container mt-10">
           <div className=" about_us_text text-white text-center">
             <h2 className="header bold text-4xl p-2">About Us</h2>

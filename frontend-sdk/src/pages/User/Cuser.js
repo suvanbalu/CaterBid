@@ -16,9 +16,9 @@ const Cuser = () => {
       <Navbar/>
 
       <div class="whole m-0 w-full p-2 bg-white h-full ">
-        <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
-          <div className=" profile_bio flex flex-col shadow w-1/3">
-            <div class="flex justify-center content-center p-5">
+        <div class=" toppart grid grid-cols-1 lg:grid-cols-3 items-center  justify-center w-full bg-white  lg:m-12 ">
+          <div className=" profile_bio flex flex-col shadow w-full rounded-xl">
+            <div class="flex justify-center content-center ">
               <div class="relative w-40 h-40 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                 <svg
                   class="relative text-gray-400 "
@@ -48,7 +48,7 @@ const Cuser = () => {
               </p>
             </div>
           </div>
-          <div class="media_Review flex justify-center h-fit w-1/4 ">
+          <div class="media_Review flex justify-center h-fit w-full my-10 ">
             <div className="media flex flex-col w-full h-full items-center">
               <div className="row1 flex m-2">
                 <div class="grid m-2 md:grid-rows-2 justify-center rounded-full bg-slate-200  h-24 w-24 hover:bg-blue-300 duration-300 transition ease-in-out delay-150 hover:-translate-y-1">
@@ -82,7 +82,7 @@ const Cuser = () => {
               </div>
             </div>
           </div>
-          <div class="Review flex flex-col items-top justify-left min-h-full w-1/3">
+          <div class="Review flex flex-col lg:items-start items-center justify-center min-h-full w-full">
             <div class="ratingcomp flex flex-col justify-center m-2">
             <p className="text-3xl font-bold align-left mb-2">Ratings</p>
             <div class="flex items-center">
