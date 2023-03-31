@@ -102,8 +102,8 @@ const ProfileUserMain = () => {
       <Navbar />
       {isloggedin() ? (
       <div class="whole m-0 w-full p-2 bg-white h-full ">
-        <div class=" toppart flex items-center space-x-12 justify-center w-full bg-white m-12 ">
-          <div className=" profile_bio flex flex-col shadow w-1/3">
+        <div class=" toppart flex flex-col lg:flex-row items-center lg:space-x-12 justify-center w-full bg-white m-12 ">
+          <div className=" profile_bio flex flex-col shadow w-full lg:w-1/3 ">
             <div class="flex justify-center content-center p-5">
               <div class="relative w-40 h-40 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                 <svg
@@ -176,15 +176,15 @@ const ProfileUserMain = () => {
             solid groove structure. An artist of considerable range.
           </p>
         </div>
-        <div class="flex space-x-4 p-12 w-full">
-          <div class="flex items-center justify-left w-2/3 h-full overflow-x-scroll overflow-y-scroll scrollbar-hide pl-6 mt-2">
+        <div class="flex flex-col lg:flex-row space-x-4 p-12 w-full">
+          <div class="flex items-center justify-left w-full  lg:w-2/3 h-full overflow-x-scroll overflow-y-scroll scrollbar-hide pl-6 mt-2">
             <div class="flex justify-center mt-3 h-48 w-screen">
               <div className="flex justify-center gap-x-6 ml-60">
                 {iteratePosts}
               </div>
             </div>
           </div>
-          <div className="w-1/3 flex justify-end">
+          <div className="w-full lg:w-1/3 flex justify-end">
             <div className="p-5 mt-5 mr-20 flex bg-white shadow rounded-xl transition flex-cols items-center delay-150  hover duration-300 h-40 w-96 ">
               <div className="ml-10  text-3xl font-semibold">Add new Event</div>
               <label htmlFor="my-modal-4">

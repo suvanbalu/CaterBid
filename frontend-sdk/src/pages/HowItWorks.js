@@ -6,7 +6,7 @@ const HowItWorks = () => {
     <React.Fragment>
       <Navbar />
       <section
-        className=" w-full flex flex-col items-center justify-center lg:h-screen mobile:h-fit "
+        className=" w-full flex flex-col items-center justify-center lg:h-full mobile:h-fit "
         style={{
           backgroundImage:
             "linear-gradient(to bottom left, rgba(220, 229, 230, 0.1), rgba(0, 50, 35, 0.9)), url(https://images.unsplash.com/photo-1533143708019-ea5cfa80213e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80)",
@@ -16,7 +16,7 @@ const HowItWorks = () => {
         }}
       >
         <div className=" how_it_works_text font-mont text-white text-center">
-          <h1 class="font-extrabold tracking-wide text-white lg:text-5xl lg:mt-4 mobile:text-3xl mobile:mt-10 pb-10 ">
+          <h1 class="font-extrabold tracking-wide text-white lg:text-5xl lg:mt-15 mobile:text-3xl mobile:mt-10 pb-10 ">
             How does CaterBid work?
           </h1>
         </div>
