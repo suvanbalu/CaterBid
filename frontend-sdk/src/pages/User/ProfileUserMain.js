@@ -222,7 +222,7 @@ const ProfileUserMain = () => {
                       <Inputfield
                         type="text"
                         valueState={[deadline,setdeadline]}
-                        placeholder="Deadline :"
+                        placeholder="Deadline (yyyy-mm-dd):"
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>
