@@ -8,7 +8,9 @@ self.addEventListener("install", function (event) {
       return cache.addAll(urlsToCache);
     })
   );
+  self.skipWaiting();
 });
+
 
 self.addEventListener("fetch", function (event) {
   event.respondWith(
@@ -22,10 +24,3 @@ self.addEventListener("fetch", function (event) {
   );
 });
 
-self.addEventListener("install", function (event) {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(function (cache) {
-      return cache.addAll(["/index.html", "/"]);
-    })
-  );
-});
