@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 // import { NavLink } from "react-router-dom";
-
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Scene } from 'three';
 
 const scene = new Scene();
 
 const Navbar = () => {
-
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Navbar = () => {
         position: "sticky",
         top: 0,
       }}
-      className="bg-white mobile:px-2  sm:px-4 lg:px-[calc(100vw/20)] sm:py-1 font-sans flex items-center sm:justify-between mobile:z-50"
+      className="bg-white mobile:px-2  mobile:px-4 lg:px-[calc(100vw/20)] sm:py-1 font-sans mobile:flex mobile:items-center mobile:justify-between  z-50"
     >
       <div className="flex items-center mobile:justify-center sm:justify-start w-1/4 mobile:space-2  sm:space-x-4 mobile:space-x-2">
         <img
@@ -45,7 +45,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex items-center m-4 mobile:m-1 gap-x-6 mobile:pr-2 mobile:space-x-2 w-2/3 px-12 mobile:px-8  justify-center">
+      <div className="hidden md:flex items-center m-4 mobile:m-1 gap-x-6 mobile:pr-2 mobile:space-x-2 w-2/3 px-12 mobile:px-8  justify-center">
         <Link to="/howitworks" className={`uppercase font-mont mobile:text-xs sm:text-base ${location.pathname === "/howitworks" && "text-red-500"} hover:text-red-500`}>
           How it Works
         </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
       
       </div>
       {/* {console.log("type",typeof(location))} */}
-      {!checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
+      {!checkLogin()&&<div className="hidden md:flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
         <button className="rounded-md sm:text-base mobile:text-xs px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 ">
           <Link to="/login">Login</Link>
         </button>
@@ -66,7 +66,7 @@ const Navbar = () => {
           <Link to="/usersignup">Sign Up</Link>
         </button>
       </div>}
-      {checkLogin()&&<div className="flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
+      {checkLogin()&&<div className="hidden md:flex items-center mobile:justify-center sm:justify-end w-1/3 space-x-4 mobile:space-x-2 mobile:ml-2">
         <button className="rounded-md sm:text-base mobile:text-xs px-2 py-1 transition ease-in-out text-white bg-red-500 hover:scale-110 hover:bg-phorange hover:text-black duration-150 "
         onClick={logout}>
           <Link to="/">Logout</Link>
@@ -74,6 +74,48 @@ const Navbar = () => {
         </button>
         </div>
       }
+      <div>
+      <div className="flex md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {isOpen ? (
+                <FaTimes className="block h-6 w-6 border-none outline-none" aria-hidden="true" />
+              ) : (
+                <FaBars className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+          {isOpen && (
+        <div className="md:hidden" id="mobile-menu">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="text-black hover:text-red-500 block px-3 py-2 rounded-md text-base font-medium">
+              <Link to="/howitworks">How it Works</Link>
+            </div>
+            <div className="text-black hover:text-red-500 block px-3 py-2 rounded-md text-base font-medium">
+              <Link to="/AboutUs">About Us</Link>
+              </div>
+              {checkLogin()&&<div className="text-black hover:text-red-500 block px-3 py-2 rounded-md text-base font-medium">
+              <Link to={`/User/${localStorage.getItem("Uname")}`}>Dashboard</Link>
+              </div>}
+              {!checkLogin()&&<div className="text-black hover:text-red-500 block px-3 py-2 rounded-md text-base font-medium">
+              <Link to="/login">Login</Link>
+              </div>}
+              {!checkLogin()&&<div className="text-black hover:text-red-500 block px-3 py-2 rounded-md text-base font-medium">
+              <Link to="/usersignup">Sign Up</Link>
+              </div>}
+              {checkLogin()&&<div className="text-black hover:text-red-500 block px-3 py-2 rounded-md text-base font-medium">
+              <Link to="/">Logout</Link>
+              </div>}
+          </div>
+        </div>
+      )}
+      </div>
     </nav>
   );
 };
