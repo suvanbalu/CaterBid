@@ -214,7 +214,7 @@ const ProfileUserMain = () => {
                       <Inputfield
                         type="text"
                         placeholder="Items needed :"
-                        // valueState={[p_items, setp_items]}
+                        valueState={[p_items, setp_items]}
                         className="border-gray-300 py-1 px-2 w-full rounded"
                       />
                     </div>

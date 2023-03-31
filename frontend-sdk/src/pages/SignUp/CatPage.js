@@ -72,6 +72,11 @@ const CatPage = () => {
           {/* <div class=" w-5/12 h-8 bg-gradient-to-r from-phorange absolute inset-y-[448px] left-0 " ></div><br></br> */}
           <div class="invisible  lg:visible w-96 h-8 bg-gradient-to-r from-phorange absolute inset-y-[512px] left-0 "></div>
           <br></br>
+          <div className="visible lg:invisible w-10 h-10 animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" id="arrow" x="0" y="0" version="1.1" viewBox="0 0 29 29" >
+              <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m20.5 11.5-6 6-6-6">
+              </path>
+              </svg>
+          </div>
           <div class="invisible lg:visible w-1/4 h-8 bg-gradient-to-r from-phorange absolute inset-y-[576px] left-0 "></div>
           <br></br>
           <div class="invisible lg:visible w-1/3 h-8 bg-gradient-to-r from-phorange absolute inset-y-[640px] left-0 "></div>
