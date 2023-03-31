@@ -48,7 +48,7 @@ const UserLogin = () => {
                 backgroundRepeat: "no-repeat",
               }}
         
-          className="flex flex-col items-center mobile:w-full mobile:h-full mobile:pb-20 mobile:pt-20 bg-white lg:py-0  ">
+          className="flex flex-col items-center mobile:w-full mobile:h-full mobile:pb-20 mobile:pt- bg-white lg:py-0  ">
           
 
           <div className="flex flex-col lg:flex-row w-full bg-transparent items-center justify-center mx-auto p-10 pt-28 pd-28">
@@ -59,7 +59,7 @@ const UserLogin = () => {
             >
               <img
                   src="\catPic.png"
-                  className="px-1 sm:h-64 mobile:h-8"
+                  className="px-1 sm:h-64 mobile:h-24"
                   alt="logo"
                 />
             </div>
