@@ -108,7 +108,7 @@ const UserSignUpMain = () => {
               <div className="mt-2">
                 <Inputfield
                   type="text"
-                  placeholder="username"
+                  placeholder="Username"
                   valueState={[Uname, setUname]}
                   className="border-gray-300 py-1 px-2 w-full rounded"
                 />
